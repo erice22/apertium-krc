@@ -3,28 +3,69 @@
 Multichar_Symbols
 
 %<n%>                   ! Noun
+%<abbr%>                ! Abbreviation
+%<post%>                ! Послелог
+%<num%>                 ! Numeral
+
 %<pl%>                  ! Plural
 %<sg%>                  ! Singular
+
 %<nom%>                 ! Nominative
+%<loc%>                 ! Locative
+%<abl%>                 ! Ablative
+
+
+%<prc_cond%>            ! -сA
+%<ger_past%>            ! -GAн
+
+%>
+
+%{A%}
+%{D%}
+%{G%}
+%{N%}
+%{I%}
+%{s%}
+%{n%}
+%{ъ%}
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
 
+Postpositions ; 
+Pronouns ;
+Determiners ; 
+Numerals ;
 Nouns ;
+Verbs ;
+Abbreviations ;
+Punctuation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON CLITICS-NO-COP 
+
+# ;
+
 LEXICON CASES
 
 %<nom%>: # ;
+%<gen%>:%>%{N%}%{I%} # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<abl%>:%>%{D%}%{A%}н # ;
 
 LEXICON CASES-ETC 
 
 CASES ;
 !GENERAL-POSSESSIVE-ETC ;
+
+LEXICON POSSESSIVES
+
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
 
 LEXICON PLURAL
 
@@ -44,12 +85,116 @@ LEXICON N1
 
 %<n%>: FULL-NOMINAL-INFLECTION ;
 
+
+LEXICON PRON-PERS-OL 
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:л # ; 
+
+LEXICON GER-INFL 
+
+FULL-NOMINAL-INFLECTION ;
+
+LEXICON V-NONFINITE-REGULAR_NEGATIVE
+
+%<prc_cond%>:%>с%{A%} # ; ! V-PERS-S2
+
+%<ger_past%>:%>%{G%}%{ъ%}%{A%}н GER-INFL ; 
+
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
+
+LEXICON V-COMMON
+
+V-NONFINITE-REGULAR_NEGATIVE ;
+
+LEXICON V-IV 
+
+%<v%>%<iv%>: V-COMMON ; 
+
+LEXICON ABBR-INIT
+
+%<abbr%>: # ;
+
+LEXICON POST 
+
+%<post%>: # ;
+
+LEXICON DET-DEM 
+
+%<det%>%<dem%>: # ;
+
+LEXICON NUM 
+
+%<num%>: # ;
+
+LEXICON NUM-ROMAN
+
+%<num%>%<ord%>: # ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON Postpositions
+
+бла:бла POST ; 
+
+LEXICON Pronouns 
+ 
+ол:о PRON-PERS-OL ; ! ""
+
+LEXICON Determiners 
+
+бу:бу DET-DEM ; ! ""
+
+LEXICON Numerals
+
+бир:бир NUM ; ! ""
+
+C:C NUM-ROMAN ; ! ""
+D:D NUM-ROMAN ; ! ""
+DC:DC NUM-ROMAN ; ! ""
+I:I NUM-ROMAN ; ! ""
+II:II NUM-ROMAN ; ! ""
+III:III NUM-ROMAN ; ! ""
+IV:IV NUM-ROMAN ; ! ""
+V:V NUM-ROMAN ; ! ""
+VI:VI NUM-ROMAN ; ! ""
+VII:VII NUM-ROMAN ; ! ""
+VIII:VIII NUM-ROMAN ; ! ""
+IX:IX NUM-ROMAN ; ! ""
+L:L NUM-ROMAN ; ! ""
+M:M NUM-ROMAN ; ! ""
+X:X NUM-ROMAN ; ! ""
+XI:XI NUM-ROMAN ; ! ""
+XII:XII NUM-ROMAN ; ! ""
+XIII:XIII NUM-ROMAN ; ! ""
+XIV:XIV NUM-ROMAN ; ! ""
+XV:XV NUM-ROMAN ; ! ""
+XVI:XVI NUM-ROMAN ; ! ""
+XVII:XVII NUM-ROMAN ; ! ""
+XVIII:XVIII NUM-ROMAN ; ! ""
+XIX:XIX NUM-ROMAN ; ! ""
+XX:XX NUM-ROMAN ; ! ""
+XXI:XXI NUM-ROMAN ; ! ""
+XXII:XXII NUM-ROMAN ; ! ""
+XXIV:XXIV NUM-ROMAN ; ! ""
+XXIII:XXIII NUM-ROMAN ; ! ""
+XXVII:XXVII NUM-ROMAN ; ! ""
+XXVI:XXVI NUM-ROMAN ; ! ""
+XXVIII:XXVIII NUM-ROMAN ; ! ""
+XXIX:XXIX NUM-ROMAN ; ! ""
+XXXI:XXXI NUM-ROMAN ; ! ""
+XXXIV:XXXIV NUM-ROMAN ; ! ""
+XXXIII:XXXIII NUM-ROMAN ; ! ""
+XXXII:XXXII NUM-ROMAN ; ! ""
+
 
 LEXICON Nouns
+
+ара:ара N1 ; ! ""
+
+!!!
 
 айыу:айыу  N1 ; ! " bear"
 айю:айю  N1 ; ! " bear"
@@ -104,4 +249,81 @@ LEXICON Nouns
 эшик:эшик  N1 ; ! "door"
 юй:юй  N1 ; ! "house"
 
+джыл:джыл N1 ; ! "год"
+сёз:сёз N1 ; ! ""
+интернет:интернет N1 ; ! ""
+заман:заман N1 ; ! ""
+адам:адам N1 ; ! ""
+себеб:себеб N1 ; ! ""
+домен:домен N1 ; ! ""
 
+LEXICON Verbs 
+
+бол:бол V-IV ; ! "быть"
+
+LEXICON Abbreviations
+
+А%.:А%. ABBR-INIT ; ! ""
+Б%.:Б%. ABBR-INIT ; ! ""
+В%.:В%. ABBR-INIT ; ! ""
+Г%.:Г%. ABBR-INIT ; ! ""
+Д%.:Д%. ABBR-INIT ; ! ""
+Е%.:Е%. ABBR-INIT ; ! ""
+Ж%.:Ж%. ABBR-INIT ; ! ""
+З%.:З%. ABBR-INIT ; ! ""
+И%.:И%. ABBR-INIT ; ! ""
+К%.:К%. ABBR-INIT ; ! ""
+Л%.:Л%. ABBR-INIT ; ! ""
+М%.:М%. ABBR-INIT ; ! ""
+Н%.:Н%. ABBR-INIT ; ! ""
+О%.:О%. ABBR-INIT ; ! ""
+П%.:П%. ABBR-INIT ; ! ""
+Р%.:Р%. ABBR-INIT ; ! ""
+С%.:С%. ABBR-INIT ; ! ""
+Т%.:Т%. ABBR-INIT ; ! ""
+У%.:У%. ABBR-INIT ; ! ""
+Ф%.:Ф%. ABBR-INIT ; ! ""
+Х%.:Х%. ABBR-INIT ; ! ""
+Ц%.:Ц%. ABBR-INIT ; ! ""
+Ч%.:Ч%. ABBR-INIT ; ! ""
+Ш%.:Ш%. ABBR-INIT ; ! ""
+Ы%.:Ы%. ABBR-INIT ; ! ""
+Э%.:Э%. ABBR-INIT ; ! ""
+Ю%.:Ю%. ABBR-INIT ; ! ""
+Я%.:Я%. ABBR-INIT ; ! ""
+
+LEXICON Punctuation
+
+%.%<sent%>:%. # ;
+%.%.%<sent%>:%.%. # ;
+%.%.%.%<sent%>:%.%.%. # ;
+…%<sent%>:… # ; 
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%-%<guio%>:%-%- # ;
+%-%<guio%>:%- # ;
+%−%<guio%>:%− # ; 
+%—%<guio%>:%— # ;
+%–%<guio%>:%– # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<quot%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
+
+! Temporary numeral lexicon
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+
+LEXICON DIGITLEX
+
+%<num%>: # ;
