@@ -1,0 +1,107 @@
+! Morphological Transducer for Karachay-Balkar
+
+Multichar_Symbols
+
+%<n%>                   ! Noun
+%<pl%>                  ! Plural
+%<sg%>                  ! Singular
+%<nom%>                 ! Nominative
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Root
+
+Nouns ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON CASES
+
+%<nom%>: # ;
+
+LEXICON CASES-ETC 
+
+CASES ;
+!GENERAL-POSSESSIVE-ETC ;
+
+LEXICON PLURAL
+
+%<pl%>:%>%{L%}%{A%}р CASES-ETC ;
+%<pl%>:%>%{L%}%{A%}р POSSESSIVES ;
+!%<pl%>:%>%{L%}%{A%}р ABESSIVE-POSTPOSITION ;
+
+LEXICON FULL-NOMINAL-INFLECTION
+
+PLURAL ;
+CASES-ETC ;
+POSSESSIVES ;
+!ABESSIVE-POSTPOSITION ;
+!LI-POSTPOSITION ;
+
+LEXICON N1
+
+%<n%>: FULL-NOMINAL-INFLECTION ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          L E X I C O N                                  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+LEXICON Nouns
+
+айыу:айыу  N1 ; ! " bear"
+айю:айю  N1 ; ! " bear"
+алма:алма  N1 ; ! "apple"
+алтын:алтын  N1 ; ! "gold"
+ана:ана  N1 ; ! "mother"
+ата:ата  N1 ; ! "father"
+атыш:атыш  N1 ; ! "shot"
+аууз:аууз  N1 ; ! "mouth"
+багъыр:багъыр  N1 ; ! "copper"
+балта:балта  N1 ; ! "axe"
+бармакъ:бармакъ  N1 ; ! "finger"
+без:без  N1 ; ! "gland"
+булут:булут  N1 ; ! "cloud"
+бурун:бурун  N1 ; ! "nose"
+джаш:джаш  N1 ; ! "boy, son"
+ёгюз:ёгюз  N1 ; ! "ox"
+ёсюмлюк:ёсюмлюк  N1 ; ! "plant"
+ётмек:ётмек  N1 ; ! "bread"
+жулдуз:жулдуз  N1 ; ! "star"
+ийнек:ийнек  N1 ; ! "cow"
+кече:кече  N1 ; ! "night"
+кёз:кёз  N1 ; ! "eye"
+киштик:киштик  N1 ; ! "cat"
+къан:къан  N1 ; ! "blood"
+къар:къар  N1 ; ! "snow"
+къарнаш:къарнаш  N1 ; ! " brother"
+къарындаш:къарындаш  N1 ; ! " brother"
+къач:къач  N1 ; ! "cross"
+къоян:къоян  N1 ; ! "hare"
+къулакъ:къулакъ  N1 ; ! " ear"
+къум:къум  N1 ; ! "sand"
+къурт:къурт  N1 ; ! "worm"
+къыз:къыз  N1 ; ! "daughter, girl"
+кюн:кюн  N1 ; ! "sun"
+мермер:мермер  N1 ; ! "marble"
+от:от  N1 ; ! "fire"
+сарыубек:сарыубек  N1 ; ! "crocodile"
+сарыуек:сарыуек  N1 ; ! "crocodile"
+сёзлюк:сёзлюк  N1 ; ! "dictionary"
+сют:сют  N1 ; ! "milk"
+тамчы:тамчы  N1 ; ! "drop"
+тюлкю:тюлкю  N1 ; ! "fox"
+тютюн:тютюн  N1 ; ! "smoke"
+хайуан:хайуан  N1 ; ! "animal"
+чабакъ:чабакъ  N1 ; ! "fish"
+чыпчыкъ:чыпчыкъ  N1 ; ! "bird"
+шекер:шекер  N1 ; ! "sugar"
+эгеч:эгеч  N1 ; ! "sister"
+эртден:эртден  N1 ; ! "morning"
+эшек:эшек  N1 ; ! "donkey, ass"
+эшик:эшик  N1 ; ! "door"
+юй:юй  N1 ; ! "house"
+
+
