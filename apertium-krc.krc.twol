@@ -18,6 +18,8 @@ Alphabet
  %{р%}:р %{р%}:0
  %{n%}:н %{n%}:0
 
+ %-
+
  %>:0  ;
 
 Sets
@@ -29,11 +31,21 @@ Cns =     Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
           б в г д ж з й к л м н о п р с т ф х ц ч ш щ 
           %{s%} %{n%} %{р%} %{G%} %{D%} %{L%} %{N%} ; 
 
+CnsRight = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ Ъ 
+           б в г д ж з й к л м н о п р с т ф х ц ч ш щ ъ ; 
+
+AbstrCns = %{s%} %{n%} %{р%} %{G%} %{D%} %{L%} %{N%} ; 
+
 RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
           б в г д ж з й к л м н о п р с т ф х ц ч ш щ ; 
 
 Rules 
 
-"Remove suffix vowel with vowel-ending stem"
+"Remove soft sign with suffix"
 ь:0 <=> _ %>: [ Cns: | Vow: ] ;
+
+
+"Deletion of {s} after a consonant"
+%{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
+            AbstrCns:/[ %>: | %-: ] _ ;
 
