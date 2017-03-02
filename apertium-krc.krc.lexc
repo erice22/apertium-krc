@@ -284,6 +284,7 @@ LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ; 
 %<v%>%<tv%>: V-DER ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON-AR ; 
 
 LEXICON V-IV-AR
 
@@ -294,6 +295,7 @@ LEXICON V-TV-AR
 
 %<v%>%<tv%>: V-COMMON-AR ; 
 %<v%>%<tv%>: V-DER ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON-AR ; 
 
 LEXICON Vinfl-AUX
 
@@ -2374,7 +2376,13 @@ LEXICON Verbs
 де:де V-TV ; ! "говорить, сказать"           !  Inf/дерге
 
 бирик:бирик V-IV ; ! "объединяться"          !  Inf/биригирге
-
+кир:кир V-IV ; ! "входить"                   !  Inf/кирирге
+чыкъ:чыкъ V-IV ; ! "входить"                 !  Inf/чыгъаргъа
+ёт:ёт V-IV-AR ; ! "проходить"                !  Inf/ётерге
+изле:изле V-TV-AR ; ! "искать"               !  Inf/излерге
+бирлеш:бирлеш V-IV ; ! "объединяться"        !  Inf/бирлеширге
+тыш:тыш V-IV-AR ; ! "падать"                 !  Inf/тюшерге
+къур:къур V-TV-AR ; ! "собирать"             !  Inf/къураргъа
 
 LEXICON Abbreviations
 
