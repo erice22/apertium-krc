@@ -27,6 +27,7 @@ Multichar_Symbols
 %{N%}
 %{I%}
 %{s%}
+%{y%}
 %{р%}
 %{n%}
 %{ъ%}
@@ -220,7 +221,6 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<prc_perf%>:%>%{I%}б # ; ! CLIT-GHANA-ETC 
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} # ; ! CLIT-GHANA-ETC 
 
-
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 %<prc_cond%>:%>с%{A%} V-PERS-S2 ; 
@@ -234,6 +234,18 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 %<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
 
+LEXICON V-AOR-FORMS-IR 
+
+%<aor%>:%>%{I%}р V-PERS-S1 ; 
+
+%<ger_aor%>:%>%{I%}р GER-INFL ; 
+
+LEXICON V-AOR-FORMS-AR 
+
+%<aor%>:%>%{A%}р V-PERS-S1 ; 
+
+%<ger_aor%>:%>%{A%}р GER-INFL ; 
+
 LEXICON V-COMMON
 
 V-NONFINITE-REGULAR_NEGATIVE ;
@@ -243,6 +255,20 @@ V-FINITE-REGULAR_NEGATIVE ;
 %<neg%>:%>м%{A%} V-FINITE-REGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
+
+V-AOR-FORMS-IR ; 
+
+LEXICON V-COMMON-AR
+
+V-NONFINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>м%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
+
+V-FINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>м%{A%} V-FINITE-REGULAR_NEGATIVE ;
+
+V-NONFINITE-IRREGULAR_NEGATIVE ;
+
+V-AOR-FORMS-AR ; 
 
 LEXICON V-DER
 
@@ -257,6 +283,16 @@ LEXICON V-IV
 LEXICON V-TV 
 
 %<v%>%<tv%>: V-COMMON ; 
+%<v%>%<tv%>: V-DER ; 
+
+LEXICON V-IV-AR
+
+%<v%>%<iv%>: V-COMMON-AR ; 
+%<v%>%<iv%>: V-DER ; 
+
+LEXICON V-TV-AR
+
+%<v%>%<tv%>: V-COMMON-AR ; 
 %<v%>%<tv%>: V-DER ; 
 
 LEXICON Vinfl-AUX
@@ -1946,6 +1982,9 @@ LEXICON Nouns
 ат:ат N1 ; ! "имя"
 тыш:тыш N1 ; ! ""
 джамагъат:джамагъат N1 ; ! ""
+закон:закон N1 ; ! "" ! Loan/rus
+
+орун:ор%{y%}н N1 ; ! ""
 
 LEXICON ProperNouns 
 
@@ -2318,21 +2357,23 @@ LEXICON Verbs
 къой:къой Vinfl-AUX ; ! ""
 бер:бер Vinfl-AUX ; ! ""
 
-бол:бол V-IV ; ! "быть" ! Aor/Ir
-кел:кел V-IV ; ! "прибыть"
-тур:тур V-IV ; ! ""
-кет:кет V-IV ; ! ""
-айт:айт V-TV ; ! "сказать"
-бар:бар V-IV ; ! ""
-ал:ал V-TV ; ! ""
-окъу:окъу V-TV ; ! ""
-бер:бер V-TV ; ! ""
-къал:къал V-IV ; ! ""
-къой:къой V-TV ; ! ""
-эт:эт V-TV ; ! "" ! Aor/Ar
-кёр:кёр V-TV ; ! ""
-ишле:ишле V-TV ; ! ""
-де:де V-TV ; ! ""
+бол:бол V-IV ; ! "быть"                      !  Inf/болургъа
+эт:эт V-TV-AR ; ! "делать"                   !  Inf/этерге
+кел:кел V-IV ; ! "прибыть"                   !  Inf/келирге
+тур:тур V-IV ; ! "вставать, подниматься"     !  Inf/турургьа
+кет:кет V-IV-AR ; ! "уходить, уезжать"       !  Inf/кетерге
+айт:айт V-TV ; ! "сказать"                   !  Inf/айтыргъа
+бар:бар V-IV ; ! "идти, ехать"               !  Inf/барыргъа
+ал:ал V-TV ; ! "брать"                       !  Inf/алыргъа
+окъу:окъу V-TV ; ! "читать"                  !  Inf/окъургъа
+бер:бер V-TV ; ! "давать"                    !  Inf/берирге
+къал:къал V-IV ; ! "оставаться"              !  Inf/къалыргъа
+къой:къой V-TV-AR ; ! ""                     !  Inf/къояргъа
+кёр:кёр V-TV ; ! ""                          !  Inf/кёрюрге
+ишле:ишле V-TV ; ! ""                        !  Inf/ишлерге
+де:де V-TV ; ! "говорить, сказать"           !  Inf/дерге
+
+бирик:бирик V-IV ; ! "объединяться"          !  Inf/биригирге
 
 
 LEXICON Abbreviations
