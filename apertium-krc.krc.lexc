@@ -48,6 +48,7 @@ Numerals ;
 Nouns ;
 ProperNouns ;
 Adjectives ;
+Adverbs ;
 Verbs ;
 Abbreviations ;
 Punctuation ;
@@ -128,6 +129,11 @@ LEXICON A2
 %<adj%>: CLITICS-INCL-COP ;
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{G%}%{ъ%} CLITICS-INCL-COP ;
 
+LEXICON A3
+
+%<adj%>: CLITICS-INCL-COP ;
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ; 
+
 LEXICON A4
 
 %<adj%>: CLITICS-INCL-COP ;
@@ -136,6 +142,9 @@ LEXICON A4
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{G%}%{ъ%} CLITICS-INCL-COP ;
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{G%}%{ъ%} FULL-NOMINAL-INFLECTION ;
 
+LEXICON ADV 
+
+%<adv%>: # ;
 
 LEXICON PRON-PERS-MEN
 
@@ -153,7 +162,11 @@ LEXICON PRON-PERS-SEN
 
 LEXICON PRON-PERS-OL 
 
-%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:л # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:аны # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:аны # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:андан # ; 
 
 LEXICON PRON-PERS-BIZ
 
@@ -290,20 +303,23 @@ LEXICON Copula
 LEXICON Conjunctions 
 
 эмда:эмда CC ;
+неда:неда CC ; ! "или"
 эм:эм CC ;
 
 LEXICON Postpositions
 
 бла:бла POST ; 
 дери:дери POST ; 
+себебли:себебли POST ; ! ""
+кибик:кибик POST ; ! ""
 
 LEXICON Pronouns 
  
-мен:м PRON-PERS-MEN ; ! ""
-сен:с PRON-PERS-SEN ; ! ""
-ол:о PRON-PERS-OL ; ! ""
-биз:б PRON-PERS-BIZ ; ! ""
-сиз:с PRON-PERS-SIZ ; ! ""
+мен:м  PRON-PERS-MEN ; ! ""
+сен:с  PRON-PERS-SEN ; ! ""
+       PRON-PERS-OL ; ! ""
+биз:б  PRON-PERS-BIZ ; ! ""
+сиз:с  PRON-PERS-SIZ ; ! ""
 ала:ал PRON-PERS-ALA ; ! ""
 
 бу:бу PRON-DEM-BU ; ! ""
@@ -372,6 +388,7 @@ LEXICON Nouns
 арт:арт N1 ; ! ""
 ич:ич N1 ; ! ""
 юс:юс N1 ; ! ""
+джан:джан N1 ; ! ""
 
 !!!
 
@@ -585,8 +602,6 @@ LEXICON Nouns
 ботаник:ботаник N1 ; ! "ботаник"
 ботаника:ботаника N1 ; ! ""
 брага:брага N1 ; ! "брага"
-бу:бу PRON-DEM-BU ; ! ""
-бу:бу DET-DEM ; ! ""
 бугъа:бугъа N1 ; ! "IIуст. паровоз"
 будай:будай N1 ; ! "пшеница"
 бульвар:бульвар N1 ; ! "бульвар"
@@ -1916,6 +1931,22 @@ LEXICON Nouns
 таш:таш N1 ; ! ""
 тау:тау N1 ; ! ""
 
+суу:суу N1 ; ! "вода"
+аскер:аскер N1 ; ! ""
+къазауат:къазауат N1 ; ! "война"
+дуния:дуния N1 ; ! ""
+къыбыла:къыбыла N1 ; ! "юг"
+къол:къол N1 ; ! "рука"
+оноу:оноу N1 ; ! "совет"
+орта:орта N1 ; ! "середина"
+
+башчылыкъ:башчылыкъ N1 ; ! "руководство"
+джер:джер N1 ; ! "земля"
+къауум:къауум N1 ; ! "группа"
+ат:ат N1 ; ! "имя"
+тыш:тыш N1 ; ! ""
+джамагъат:джамагъат N1 ; ! ""
+
 LEXICON ProperNouns 
 
 Германия:Германия NP-TOP ; ! ""
@@ -2256,7 +2287,22 @@ LEXICON Adjectives
 
 узун:узун A2 ; ! ""
 
+башха:башха A3 ; ! "другой"
+кёб:кёб A3 ; ! "много"
+тюрлю:тюрлю A3 ; ! "разный"
+официал:официал A3 ; ! ""
+
 къара:къара A4 ; ! ""
+уллу:уллу A4 ; ! ""
+джангы:джангы A4 ; ! "новый"
+белгили:белгили A4 ; ! ""
+кючлю:кючлю A4 ; ! "крепкий"
+ачыкъ:ачыкъ A4 ; ! "открытый"
+мийик:мийик A4 ; ! "высокий"
+
+LEXICON Adverbs 
+
+бек:бек ADV ; ! "очень"
 
 
 LEXICON Verbs 
@@ -2272,7 +2318,7 @@ LEXICON Verbs
 къой:къой Vinfl-AUX ; ! ""
 бер:бер Vinfl-AUX ; ! ""
 
-бол:бол V-IV ; ! "быть"
+бол:бол V-IV ; ! "быть" ! Aor/Ir
 кел:кел V-IV ; ! "прибыть"
 тур:тур V-IV ; ! ""
 кет:кет V-IV ; ! ""
@@ -2283,9 +2329,10 @@ LEXICON Verbs
 бер:бер V-TV ; ! ""
 къал:къал V-IV ; ! ""
 къой:къой V-TV ; ! ""
-эт:эт V-TV ; ! ""
+эт:эт V-TV ; ! "" ! Aor/Ar
 кёр:кёр V-TV ; ! ""
 ишле:ишле V-TV ; ! ""
+де:де V-TV ; ! ""
 
 
 LEXICON Abbreviations
