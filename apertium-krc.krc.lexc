@@ -122,6 +122,10 @@ LEXICON NP-TOP
 
 %<np%>%<top%>: CASES ; 
 
+LEXICON NP-COG-MF 
+
+%<np%>%<cog%>%<mf%>: CASES ; 
+
 LEXICON NP-COG-OV
 
 %<np%>%<cog%>%<m%>: CASES ; 
@@ -131,6 +135,15 @@ LEXICON NP-COG-IN
 
 %<np%>%<cog%>%<m%>: CASES ; 
 %<np%>%<cog%>%<f%>:а CASES ; 
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: CASES ; 
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: CASES ; 
+
 
 LEXICON A1 
 
@@ -324,6 +337,14 @@ LEXICON Vinfl-AUX
 
 
 LEXICON ABBR-INIT
+
+%<abbr%>: # ;
+
+LEXICON ABBR-SENT
+
+%<abbr%>:%. # ;
+
+LEXICON ABBR
 
 %<abbr%>: # ;
 
@@ -2106,6 +2127,12 @@ LEXICON Nouns
 нефть:нефть N1 ; ! "" ! Loan/rus
 тарих:тарих N1 ; ! ""
 кесек:кесек N1 ; ! ""
+мюлк:мюлк N1 ; ! ""
+джол:джол N1 ; ! "путь"
+кесамат:кесамат N1 ; ! "договор"
+
+терклик:терклик N1 ; ! "скорость"
+
 
 орун:ор%{y%}н N1 ; ! ""
 
@@ -2123,6 +2150,17 @@ LEXICON ProperNouns
 РСФСР:РСФСР NP-TOP ; ! ""
 РФ:РФ NP-TOP ; ! ""
 АКШ:АКШ NP-TOP ; ! ""
+
+Сан%-Франциско:Сан%-Франциско NP-TOP ; ! ""
+Сан%-Хосе:Сан%-Хосе NP-TOP ; ! ""
+Санкт%-Петербург:Санкт%-Петербург NP-TOP ; ! ""
+Сантьяго%-де%-Компостела:Сантьяго%-де%-Компостела NP-TOP ; ! ""
+Санта%-Крус%-де%-ла%-Сьерра:Санта%-Крус%-де%-ла%-Сьерра NP-TOP ; ! ""
+Сан%-Бернардино:Сан%-Бернардино NP-TOP ; ! ""
+Сан%-Марино:Сан%-Марино NP-TOP ; ! ""
+Сан%-Диего:Сан%-Диего NP-TOP ; ! ""
+Сан%-Мало:Сан%-Мало NP-TOP ; ! ""
+
 
 Куба:Куба NP-TOP ; ! ""
 Варшава:Варшава NP-TOP ; ! ""
@@ -2514,6 +2552,15 @@ LEXICON ProperNouns
 Хлопонин:Хлопонин NP-COG-IN ; ! ""
 Бабушкин:Бабушкин NP-COG-IN ; ! ""
 
+Гитлер:Гитлер NP-COG-MF ; ! ""
+
+Карл:Карл NP-ANT-M ; ! ""
+Мухаммад:Мухаммад NP-ANT-M ; ! ""
+Наполеон:Наполеон NP-ANT-M ; ! ""
+
+Севилай:Севилай NP-ANT-F ; ! ""
+Зарема:Зарема NP-ANT-F ; ! ""
+Мария:Мария NP-ANT-F ; ! ""
 
 
 LEXICON Adjectives 
@@ -2531,6 +2578,7 @@ LEXICON Adjectives
 сау:сау A1 ; ! ""
 тынч:тынч A1 ; ! ""
 ууакъ:ууакъ A1 ; ! ""
+терк:терк A1 ; ! ""
 
 артыкъсыз:артыкъсыз A1 ; ! ""
 
@@ -2704,6 +2752,10 @@ LEXICON Abbreviations
 Э%.:Э%. ABBR-INIT ; ! ""
 Ю%.:Ю%. ABBR-INIT ; ! ""
 Я%.:Я%. ABBR-INIT ; ! ""
+
+дж%.:дж ABBR-SENT ; ! ""
+км:км ABBR ; ! ""
+млрд:млрд ABBR ; ! ""
 
 LEXICON Punctuation
 
