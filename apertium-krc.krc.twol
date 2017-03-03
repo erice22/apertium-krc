@@ -8,7 +8,6 @@ Alphabet
 
  %{I%}:ы %{I%}:и %{I%}:у %{I%}:ю %{I%}:0
  %{y%}:ы %{y%}:и %{y%}:у %{y%}:ю %{y%}:0
- %{L%}:л
  %{G%}:г %{G%}:0
  %{D%}:д %{D%}:т
  %{N%}:н %{N%}:0
@@ -49,6 +48,11 @@ Rules
 "Deletion of {s} after a consonant"
 %{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
                  AbstrCns:/[ %>: | %-: ] _ ;
+          except 
+            :Vow %>: _ ; 
+
+"Surfacing of {s} after a vowel"
+%{s%}:с <=> :Vow %>: _ ;
 
 "Epenthesis in some stems"
 %{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
