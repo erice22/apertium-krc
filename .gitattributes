@@ -14,3 +14,6 @@
 /configure.ac -text
 /krc.prob -text svneol=unset#unset
 /modes.xml -text
+texts/krc-feats.tsv -text
+texts/puupankki/puupankki.krc.conllu -text
+texts/wikipedia-misc.vislcg.txt -text

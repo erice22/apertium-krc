@@ -448,6 +448,7 @@ LEXICON Postpositions
 сора:сора POST ; ! ""
 хакъындан:хакъындан POST ; ! "о, об"
 чакълы:чакълы POST ; ! "" ! FIXME:CHECK
+ючюн:ючюн POST ; ! ""
 
 LEXICON Pronouns 
  
@@ -2247,6 +2248,7 @@ LEXICON Nouns
 айрымкан:айрымкан N1 ; ! "остров"
 сагъат:сагъат N1 ; ! "час"
 пакт:пакт N1 ; ! ""
+сый:сый N1 ; ! "честь"
 
 орун:ор%{y%}н N1 ; ! ""
 
@@ -4107,6 +4109,7 @@ LEXICON Adjectives
 LEXICON Adverbs 
 
 бек:бек ADV ; ! "очень"
+эм:эм ADV ; ! "самый"
 
 алай:алай ADV ; ! "так"
 
