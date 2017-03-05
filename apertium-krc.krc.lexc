@@ -40,6 +40,7 @@ Multichar_Symbols
 %{n%}
 %{н%}
 %{ъ%}
+%{·%}
 
 %-
 
@@ -141,6 +142,12 @@ LEXICON N1
 
 %<n%>%<attr%>: # ;
 %<n%>: FULL-NOMINAL-INFLECTION ;
+
+LEXICON N2
+
+%<n%>%<attr%>: # ;
+%<n%>:%{·%} FULL-NOMINAL-INFLECTION ;
+
 
 LEXICON NP-AL
 
@@ -355,7 +362,8 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_past%>:%>%{н%}%{G%}%{ъ%}%{A%}н GER-INFL ; 
 
 %<gna_after%>:%>%{G%}%{ъ%}%{A%}нл%{I%} # ;
-%<gna_until%>:%>%{G%}%{ъ%}%{I%}нч%{A%} # ; ! FIXME: TTL has -GğnčX
+%<gna_until%>:%>%{G%}%{ъ%}%{I%}нч%{A%} # ; ! Dir/LR ! FIXME: TTL has -GğnčX
+%<gna_until%>:%>%{G%}%{ъ%}%{A%}нч%{A%} # ; 
 
 %<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
 
@@ -2853,7 +2861,7 @@ LEXICON Nouns
 кюч:кюч N1 ; ! "сила"
 джагъа:джагъа N1 ; ! "берег"
 ие:ие N1 ; ! "хозяин"
-хакъ:хакъ N1 ; ! "доля"
+хакъ:хакъ N2 ; ! "доля"
 хайыр:хайыр N1 ; ! "выгода"
 къуллукъ:къуллукъ N1 ; ! "работа"
 ёлчем:ёлчем N1 ; ! "мера"
@@ -3089,6 +3097,7 @@ LEXICON Nouns
 номерь:номерь N1 ; ! ""
 вариант:вариант N1 ; ! ""
 керек:керек N1 ; ! ""
+плебисцит:плебисцит N1 ; ! ""
 
 орун:ор%{y%}н N1 ; ! ""
 
