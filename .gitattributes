@@ -17,3 +17,4 @@
 texts/krc-feats.tsv -text
 texts/puupankki/puupankki.krc.conllu -text
 texts/wikipedia-misc.vislcg.txt -text
+texts/норег_тил.vislcg.txt -text
