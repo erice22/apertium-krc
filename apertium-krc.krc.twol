@@ -15,7 +15,7 @@ Alphabet
 ! %{н%}:н %{н%}:0   ! no longer needed
  %{A%}:а ! %{A%}:е 
  %{E%}:а %{E%}:е %{E%}:й
- %{ъ%}:0 ! %{ъ%}:ъ 
+ %{ъ%}:0   ! for forms with гъ that alternates with к etc.
  %{s%}:с %{s%}:0
  %{р%}:р %{р%}:0
  %{n%}:н %{n%}:0
@@ -23,8 +23,8 @@ Alphabet
  %{·%}:0
  %{☭%}:0
  %{❗%}:0
- %{ꚜ%}:0
- %{ь%}:0
+ %{ꚜ%}:0   ! force back harmony
+ %{ь%}:0   ! force front harmony
 
  %-
 
