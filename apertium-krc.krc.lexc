@@ -45,6 +45,8 @@ Multichar_Symbols
 %{·%}
 %{☭%}                   ! Yo ho an' a bottle o' ром
 %{❗%}                    ! Here be monsters
+%{ꚜ%}                   ! force back vowel harmony
+%{ь%}                   ! force front vowel harmony
 
 %-
 
@@ -2525,7 +2527,7 @@ LEXICON Nouns
 февраль:февраль N1 ; ! ""
 март:март N1 ; ! ""
 май:май N1 ; ! ""
-июль:июль N1 ; ! ""
+июль:июль%{ꚜ%} N1 ; ! ""
 июнь:июнь N1 ; ! ""
 август:август N1 ; ! ""
 сентябрь:сентябрь N1 ; ! ""

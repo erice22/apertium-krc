@@ -23,6 +23,8 @@ Alphabet
  %{·%}:0
  %{☭%}:0
  %{❗%}:0
+ %{ꚜ%}:0
+ %{ь%}:0
 
  %-
 
@@ -58,7 +60,7 @@ RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
 Rules 
 
 "Remove soft sign with suffix"
-ь:0 <=> _ %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
+ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
 
 
 "Deletion of {s} after a consonant"
@@ -153,8 +155,8 @@ Rules
 !!!! Vowel harmony !!!!
 
 "{A} as е after front vowels"
-%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ :0 | :ь | %{ъ%}: ]* _ ;
-            [ :Cns | :Vow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ :0 | :ь | %{ъ%}: ]* _ ;
+%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+            [ :Cns | :Vow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
