@@ -145,22 +145,22 @@ POSSESSIVES ;
 ABESSIVE-POSTPOSITION ;
 !LI-POSTPOSITION ;
 
-LEXICON N1
+LEXICON N1                                ! Standard noun
 
 %<n%>%<attr%>: # ;
 %<n%>: FULL-NOMINAL-INFLECTION ;
 
-LEXICON N1-ForcedBack
-
-%<n%>%<attr%>: # ;
-%<n%>:%{ꚜ%} FULL-NOMINAL-INFLECTION ;
-
-LEXICON N2
+LEXICON N2                                ! Noun with voicing block
 
 %<n%>%<attr%>: # ;
 %<n%>:%{·%} FULL-NOMINAL-INFLECTION ;
 
-LEXICON N5
+LEXICON N3                                ! Noun with forced back harmony
+
+%<n%>%<attr%>: # ;
+%<n%>:%{ꚜ%} FULL-NOMINAL-INFLECTION ;
+
+LEXICON N5                                ! Loan word
 
 %<n%>%<attr%>: # ;
 %<n%>:%{☭%} FULL-NOMINAL-INFLECTION ;
@@ -839,7 +839,7 @@ LEXICON Nouns
 азербайджанлы:азербайджанлы N1 ; ! "азербайджанец"
 азиат:азиат N1 ; ! "азиат"
 айсберг:айсберг N1 ; ! "айсберг"
-аквариум:аквариум N1-ForcedBack ; ! "аквариум"
+аквариум:аквариум N3 ; ! "аквариум"
 аккумулятор:аккумулятор N1 ; ! "аккумулятор"
 акр:акр N1 ; ! "акр"
 актёр:актёр N1 ; ! "актёр"
@@ -2032,7 +2032,7 @@ LEXICON Nouns
 альбом:альбом N1 ; ! "" ! Loan/rus 
 астроном:астроном N1 ; ! "" ! Loan/rus 
 референдум:референдум N1 ; ! "" ! Loan/rus 
-президиум:президиум N1 ; ! "" ! Loan/rus 
+президиум:президиум N3 ; ! "" ! Loan/rus 
 техникум:техникум N1 ; ! "" ! Loan/rus 
 вакуум:вакуум N1 ; ! "" ! Loan/rus 
 каган:каган N1 ; ! "" ! Loan/rus 
@@ -3513,6 +3513,8 @@ LEXICON Nouns
 эмират:эмират N1 ; ! ""
 биомасса:биомасса N1 ; ! ""
 барлыкъ:барлыкъ N1 ; ! ""
+этника:этника N1 ; ! ""
+субэтника:субэтника N1 ; ! ""
 
 джюз:джюз N1 ; ! ""
 
@@ -5551,7 +5553,7 @@ LEXICON Adjectives
 этникалыкъ:этникалыкъ A3 ; ! ""
 
 
-артыкъсыз:артыкъсыз A1 ; ! ""
+артыкъсыз:артыкъсыз A3 ; ! ""
 тас:тас A1 ; ! "утерянный"
 
 узун:узун A2 ; ! ""
