@@ -1680,8 +1680,7 @@ LEXICON Nouns
 режиссёр:режиссёр N1 ; ! "" Loan/rus
 риф:риф N1 ; ! "" Loan/rus
 рифт:рифт N1 ; ! "" Loan/rus
-самолёт:самолёт N1 ; ! "" Loan/rus
-самолёт:самолeт N1 ; ! "" Loan/rus ! Dir/LR
+самолёт:самолёт N3 ; ! "" Loan/rus
 сейм:сейм N1 ; ! "" Loan/rus
 словак:словак N1 ; ! "" Loan/rus
 сом:сом N1 ; ! "" Loan/rus

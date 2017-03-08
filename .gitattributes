@@ -12,6 +12,8 @@
 /apertium-krc.post-krc.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/countstems.sh -text
+dev/spellrelax.twol -text
 /krc.prob -text svneol=unset#unset
 /modes.xml -text
 tests/dative.yaml -text
