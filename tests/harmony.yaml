@@ -1,0 +1,12 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../krc.autogen.hfst
+      Morph: ../krc.automorf.hfst
+
+Tests:
+
+ "[twol] Harmony stuff":
+    июль<n><loc> : июлда
+    кёзюу<n><loc> : кёзюуде
+
