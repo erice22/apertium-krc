@@ -87,9 +87,11 @@ Rules
 %{G%}:0 <=> %{I%}: [ м | [ н г ] | %{n%}: ] %>: _ %{ъ%}: %{A%}: ; 
 
 
-"{ъ} of dative is ъ only in back vowel context after г"
+"{ъ} of dative or p1.sg is ъ only in back vowel context after г"
 %{ъ%}:ъ <=> :BackVow [ :к | :г ] _ ;
-            [ :к | :г ] _ :BackVow ;
+                     [ :к | :г ] _ :BackVow ;
+                 :BackVow %>: :к _  ; 
+
 !%{ъ%}:ъ <=> :BackVow [ :Cns ]*/[ :0 | :ъ ]* %{G%}:г _ ;
 !        except
 !            %{G%}:н _ ;  ! not sure why this isn't already excluded, but seems to be necessary to avoid conflicts
