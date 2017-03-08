@@ -79,6 +79,7 @@ Rules
 "Plural -р- only appears before possessives"
 %{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
 
+
 !!!! Dative stuff !!!!
 
 "{G} of dative deletes after px.sg"
@@ -139,6 +140,8 @@ Rules
 %{ъ%}:г <=> %{G%}:н _ ;
 
 
+!!!! Voicing !!!!
+
 "Voicing between vowels"
 к:г <=> :Vow _ (:ъ) %>: (:0) :Vow ;  
 
@@ -146,11 +149,12 @@ Rules
 
 !@ а:а р:р а:а л:л ы:ы к:г ъ:ъ >:0 {s}:0 {I}:ы {n}:0
 
+
 !!!! Vowel harmony !!!!
 
 "{A} as е after front vowels"
-%{A%}:е <=> :FrontVow :Cns*/[ :0 | :ь ]* _ ;
-            [ :Cns | :Vow ] :AmbigVow :Cns*/[ :0 | :ь ]* _ ;
+%{A%}:е <=> :FrontVow :Cns+/[ :0 | :ь | %{ъ%}: ]* _ ;
+            [ :Cns | :Vow ] :AmbigVow :Cns+/[ :0 | :ь | %{ъ%}: ]* _ ;
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
