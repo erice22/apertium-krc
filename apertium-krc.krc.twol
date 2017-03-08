@@ -157,8 +157,9 @@ Rules
 
 "{A} as е after front vowels"
 %{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
-            [ :Cns | :Vow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+            [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
             %{ь%}: [ :Cns | :0 ]* _ ;
+            :Cns л ь: [ :Cns | :0 ]* _ ;
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
