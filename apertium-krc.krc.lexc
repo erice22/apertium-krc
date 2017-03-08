@@ -14,9 +14,24 @@ Multichar_Symbols
 %<nom%>                 ! Nominative
 %<loc%>                 ! Locative
 %<abl%>                 ! Ablative
+%<dat%>
+%<gen%>
+%<acc%>
+
+%<ord%>
+%<dem%>
 
 %<tv%>
 %<iv%>
+
+%<subst%>
+%<attr%>
+
+%<px1sg%>
+%<px2sg%>
+%<px3sp%>
+%<px1pl%>
+%<px2pl%>
 
 %<past%>
 
@@ -27,6 +42,9 @@ Multichar_Symbols
 %<prc_cond%>            ! -сA
 %<ger_past%>            ! -GAн
 
+
+%<guio%>
+%<sent%>
 
 %{A%}
 %{E%}
@@ -41,6 +59,17 @@ Multichar_Symbols
 %{n%}
 !%{н%}                  ! no longer needed
 %{ъ%}
+
+! Harmony for numerals
+%{а%}
+%{э%}
+%{о%}
+%{ү%}
+
+%{н%}
+%{з%}
+%{т%}
+
 
 %{·%}
 %{☭%}                   ! Yo ho an' a bottle o' ром
@@ -72,11 +101,156 @@ Interjections ;
 Abbreviations ;
 Punctuation ;
 Guesser ; 
+Digits ;
 !Temp ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!==============================================================================!
+!
+!                               N U M E R A L S
+!
+!    WARNING: This section should not be modified without consultation.
+!             Test cases are in dev/numerals.
+!==============================================================================!
+
+LEXICON CASE-ETC-NONOM
+
+CASES-OBL ;
+GENERAL-POSSESSIVE-ETC ;
+
+LEXICON N-INFL-COMMON-NONOM
+
+POSSESSIVES ;
+CASE-ETC-NONOM ;
+
+LEXICON SUBST-NONOM
+
+N-INFL-COMMON-NONOM ;
+%<pl%>:%>л%{A%}%{r%} N-INFL-COMMON-NONOM ;
+
+
+LEXICON SQRD
+
+²%<num%>:2 # ;  ! Dir/LR
+³%<num%>:3 # ;  ! Dir/LR
+²%<num%>:² # ;
+³%<num%>:³ # ;
+%<num%>: # ;
+
+LEXICON NUM
+
+%<num%>: # ;
+%<num%>%<subst%>%<nom%>: # ;
+%<num%>%<subst%>:%- SUBST-NONOM ;
+%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
+
+%<num%>%<ord%>:%-ч%{I%} # ;
+%<num%>%<ord%>%<subst%>%<nom%>:%-ч%{I%} # ;
+%<num%>%<ord%>%<subst%>:%-ч%{I%} SUBST-NONOM ;
+
+%<num%>%<coll%>%<advl%>:%-%{е%}в # ;
+%<num%>%<coll%>%<nom%>:%-%{е%}в # ;
+%<num%>%<coll%>:%-%{е%}в SUBST-NONOM ;
+
+%<num%>%<percent%>:%% # ; ! Dir/LR
+%<num%>%<percent%>:% %% # ; ! Dir/LR
+%<num%>%<percent%>:% %% # ;
+%<num%>%<percent%>%<subst%>%<nom%>:%% # ; ! Dir/LR
+%<num%>%<percent%>%<subst%>%<nom%>:% %% # ; ! Dir/LR
+%<num%>%<percent%>%<subst%>%<nom%>:% %% # ;
+
+%<num%>%<percent%>%<subst%>:%%%{а%}%{н%}%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>:%%%{а%}%{н%} SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{э%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{э%}%{н%} SUBST-NONOM ; ! Dir/LR
+
+°С%<num%>:°С # ;
+°С%<num%>%<subst%>%<nom%>:°С # ;
+°С%<num%>%<subst%>:°С%{а%}%{н%}%- SUBST-NONOM ;
+°С%<num%>%<subst%>:°С%{э%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{а%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{э%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>:С%{а%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>%<subst%>:С%{э%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+
+С%<num%>:° # ; ! Dir/LR
+С%<num%>%<subst%>%<nom%>:° # ; ! Dir/LR
+С%<num%>%<subst%>:°%{а%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+С%<num%>%<subst%>:°%{э%}%{н%}%- SUBST-NONOM ; ! Dir/LR
+
+км:км SQRD ;
+мм:мм SQRD ;
+см:см SQRD ;
+м:м SQRD ;
+
+LEXICON LASTDIGIT
+
+1:1%{э%}%{т%} NUM ; ! "бир"
+2:2%{э%} NUM ; ! "эки"
+3:3%{ү%}%{т%} NUM ; ! "юч"
+4:4%{ү%}%{т%} NUM ; ! "тёрт"
+5:5%{э%}%{т%} NUM ; ! "беш"
+6:6%{а%} NUM ; ! "алты"
+7:7%{э%} NUM ; ! "джети"
+8:8%{э%}%{з%} NUM ; ! "сегиз"
+9:9%{о%}%{з%} NUM ; ! "тогъуз"
+
+LEXICON LASTDIGIT-REST
+
+1%0:1%0%{о%}%{н%} NUM ; ! "он"
+2%0:2%0%{а%} NUM ; ! "джыйырма"
+3%0:3%0%{о%}%{з%} NUM ; ! "отуз"
+4%0:4%0%{а%}%{т%} NUM ; ! "къыркъ"
+5%0:5%0%{э%} NUM ; ! "элли"
+6%0:6%0%{а%}%{т%} NUM ; ! "алтмыш"
+7%0:7%0%{э%}%{т%} NUM ; ! "джетмиш"
+8%0:8%0%{а%}%{н%} NUM ; ! "сексан"
+9%0:9%0%{а%}%{н%} NUM ; ! "тохсан"
+
+LEXICON POWERS
+!%0:%0%{а%}%{н%} NUM ; ! "он"
+%0%0:%0%0%{ү%}%{з%} NUM ; ! "джюз"
+%0%0%0:%0%0%0%{э%}%{н%} NUM ; ! "минг"
+
+LEXICON LOOP
+
+%,:%, DIGITLEX ;
+%.:%. DIGITLEX ;
+%,:%, LASTDIGIT ;
+%.:%. LASTDIGIT ;
+%,:%, LASTDIGIT-REST ;
+%.:%. LASTDIGIT-REST ;
+%,:%, POWERS ;
+%.:%. POWERS ;
+      DIGITLEX ;
+      LASTDIGIT ;
+      LASTDIGIT-REST ;
+      POWERS ;
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1 LOOP ;
+2:2 LOOP ;
+3:3 LOOP ;
+4:4 LOOP ;
+5:5 LOOP ;
+6:6 LOOP ;
+7:7 LOOP ;
+8:8 LOOP ;
+9:9 LOOP ;
+
+!==============================================================================!
+!          N U M E R A L     L E X I C O N     E N D S     H E R E
+!==============================================================================!
+
 
 LEXICON CLITICS-NO-COP 
 
@@ -91,15 +265,20 @@ LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
 CLITICS-NO-COP ;
 CLIT-COP ;
 
-LEXICON CASES
+LEXICON CASES-OBL
 
-%<nom%>: CLITICS-INCL-COP ;
 %<gen%>:%>%{N%}%{I%} # ;
 %<acc%>:%>%{N%}%{I%} # ;
 %<dat%>:%>%{G%}%{ъ%}%{A%} # ;
 %<dat%>:%>%{❗%}%{G%}%{ъ%}%{A%} # ; ! Use/Sub
 %<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
+
+LEXICON CASES
+
+%<nom%>: CLITICS-INCL-COP ;
+CASES-OBL ; 
+
 
 LEXICON ATTR-SUBST
 
@@ -507,7 +686,7 @@ LEXICON DET-DEM
 
 %<det%>%<dem%>: # ;
 
-LEXICON NUM 
+LEXICON NUM-FULL
 
 %<num%>: # ;
 %<num%>%<subst%>: FULL-NOMINAL-INFLECTION ;
@@ -609,46 +788,47 @@ LEXICON Determiners
 
 LEXICON Numerals
 
-бир:бир NUM ; ! ""
-эки:эки NUM ; ! ""
-тёрт:тёрт  NUM ; ! ""
-юч:юч%{ь%} NUM ; ! ""
-беш:беш NUM ; ! ""
-алты:алты NUM ; ! ""
-джети:джети NUM ; ! ""
-сегиз:сегиз NUM ; ! ""
-тогъуз:тогъуз NUM ; ! ""
-он:он NUM ; ! ""
+бир:бир NUM-FULL ; ! ""
+эки:эки NUM-FULL ; ! ""
+тёрт:тёрт  NUM-FULL ; ! ""
+юч:юч%{ь%} NUM-FULL ; ! ""
+беш:беш NUM-FULL ; ! ""
+алты:алты NUM-FULL ; ! ""
+джети:джети NUM-FULL ; ! ""
+сегиз:сегиз NUM-FULL ; ! ""
+тогъуз:тогъуз NUM-FULL ; ! ""
+он:он NUM-FULL ; ! ""
 
-онбир:онбир NUM ; ! " одиннадцать"
-онеки:онеки NUM ; ! " двенадцать"
-онюч:онюч NUM ; ! " тринадцать"
-онтёрт:онтёрт NUM ; ! " четырнадцать"
-онбеш:онбеш NUM ; ! " пятнадцать"
-оналты:оналты NUM ; ! " шестнадцать"
-онджети:онджети NUM ; ! " семнадцать"
-онсегиз:онсегиз NUM ; ! " восемнадцать"
-онтогъуз:онтогъуз NUM ; ! " девятнадцать"
-он:он NUM ; ! " десять"
+онбир:онбир NUM-FULL ; ! " одиннадцать"
+онеки:онеки NUM-FULL ; ! " двенадцать"
+онюч:онюч NUM-FULL ; ! " тринадцать"
+онтёрт:онтёрт NUM-FULL ; ! " четырнадцать"
+онбеш:онбеш NUM-FULL ; ! " пятнадцать"
+оналты:оналты NUM-FULL ; ! " шестнадцать"
+онджети:онджети NUM-FULL ; ! " семнадцать"
+онсегиз:онсегиз NUM-FULL ; ! " восемнадцать"
+онтогъуз:онтогъуз NUM-FULL ; ! " девятнадцать"
+он:он NUM-FULL ; ! " десять"
 
-отуз:отуз NUM ; ! ""
-къыркъ:къыркъ NUM ; ! "сорок"
-элли:элли NUM ; ! ""
-сексан:сексан NUM ; ! ""
-стажди:стажди NUM ; ! ""
-алтмыш:алтмыш NUM ; ! ""
-джетмиш:джетмиш NUM ; ! ""
+джыйырма:джыйырма NUM-FULL ; ! ""
+отуз:отуз NUM-FULL ; ! ""
+къыркъ:къыркъ NUM-FULL ; ! "сорок"
+элли:элли NUM-FULL ; ! ""
+сексан:сексан NUM-FULL ; ! ""
+стажди:стажди NUM-FULL ; ! ""
+алтмыш:алтмыш NUM-FULL ; ! ""
+джетмиш:джетмиш NUM-FULL ; ! ""
+тохсан:тохсан NUM-FULL ; ! ""
+
+дыс:дыс NUM-FULL ; ! ""
+дууу:дууу NUM-FULL ; ! ""
+дууардыс:дууардыс NUM-FULL ; ! ""
 
 
-дыс:дыс NUM ; ! ""
-дууу:дууу NUM ; ! ""
-дууардыс:дууардыс NUM ; ! ""
+джюз:джюз NUM-FULL ; ! ""
+минг:минг NUM-FULL ; ! ""
 
-
-джюз:джюз NUM ; ! ""
-минг:минг NUM ; ! ""
-
-миллион:миллион NUM ; ! ""
+миллион:миллион NUM-FULL ; ! ""
 
 C:C NUM-ROMAN ; ! ""
 D:D NUM-ROMAN ; ! ""
@@ -6232,17 +6412,18 @@ LEXICON Punctuation
 %/%<sent%>:%/ # ;
 
 %$%<sym%>:%$ # ; 
+%×%<sym%>:%× # ; 
 %%%<sym%>:%% # ; 
 
 ! Temporary numeral lexicon
-<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
-LEXICON DIGITLEX
+!LEXICON DIGITLEX
 
-%<num%>: # ;
-%<num%>%<percent%>:%% # ; ! Dir/LR
-%<num%>%<percent%>:% %% # ; ! Dir/LR
-%<num%>%<percent%>:% %% # ;
+!%<num%>: # ;
+!%<num%>%<percent%>:%% # ; ! Dir/LR
+!%<num%>%<percent%>:% %% # ; ! Dir/LR
+!%<num%>%<percent%>:% %% # ;
 
 LEXICON NP-UNK 
 
@@ -6283,4 +6464,12 @@ Z:Z GUESS-QUEUE ;
 
 
 !LEXICON Temp
+
+LEXICON Digits ! Use/Circ
+
+%0:%0 NUM ;  ! Use/Circ
+№:№ DIGITLEX ;  ! Use/Circ
+DIGITLEX ; ! Use/Circ
+LASTDIGIT ; ! Use/Circ
+LASTDIGIT-REST ; ! Use/Circ
 
