@@ -153,8 +153,8 @@ Rules
 !!!! Vowel harmony !!!!
 
 "{A} as е after front vowels"
-%{A%}:е <=> :FrontVow :Cns+/[ :0 | :ь | %{ъ%}: ]* _ ;
-            [ :Cns | :Vow ] :AmbigVow :Cns+/[ :0 | :ь | %{ъ%}: ]* _ ;
+%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ :0 | :ь | %{ъ%}: ]* _ ;
+            [ :Cns | :Vow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ :0 | :ь | %{ъ%}: ]* _ ;
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
