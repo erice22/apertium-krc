@@ -44,6 +44,7 @@ Multichar_Symbols
 
 %{·%}
 %{☭%}
+%{❗%}                    ! Here be monsters
 
 %-
 
@@ -94,6 +95,7 @@ LEXICON CASES
 %<gen%>:%>%{N%}%{I%} # ;
 %<acc%>:%>%{N%}%{I%} # ;
 %<dat%>:%>%{G%}%{ъ%}%{A%} # ;
+%<dat%>:%>%{❗%}%{G%}%{ъ%}%{A%} # ; ! Use/Sub
 %<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
 

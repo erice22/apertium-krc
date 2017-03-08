@@ -22,6 +22,7 @@ Alphabet
 
  %{·%}:0
  %{☭%}:0
+ %{❗%}:0
 
  %-
 
@@ -57,7 +58,7 @@ RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
 Rules 
 
 "Remove soft sign with suffix"
-ь:0 <=> _ %>: [ Cns: | Vow: ] ;
+ь:0 <=> _ %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
 
 
 "Deletion of {s} after a consonant"
@@ -132,6 +133,7 @@ Rules
 %{G%}:н <=> [ :н | :м | [ :н :г ] ]/:0* _ ;
         except
             %{I%}: [ м | [ н г ] | %{n%}: ] %>: _  %{ъ%}: %{A%}: ;  ! we need to delete when px.sg
+            %{❗%}:0 _ ;  ! this is an orthography error, but good for analysis
 
 "{G}{ъ} as нг after nasals - г"
 %{ъ%}:г <=> %{G%}:н _ ;

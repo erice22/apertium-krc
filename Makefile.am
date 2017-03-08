@@ -28,7 +28,7 @@ TARGETS_COMMON =			\
 	hfst-twolc $< -o $@
 
 .deps/$(LANG1).RL.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v 'Dir/LR' > $@
+	cat $< | grep -v 'Dir/LR' | grep -v 'Use/Sub' > $@
 
 .deps/$(LANG1).LR.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
 	cat $< | grep -v 'Dir/RL' > $@
