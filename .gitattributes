@@ -16,6 +16,7 @@
 /modes.xml -text
 tests/dative.yaml -text
 tests/harmony.yaml -text
+tests/miscellaneous.yaml -text
 tests/run-twol-pairtests.sh -text
 texts/krc-feats.tsv -text
 texts/puupankki/puupankki.krc.conllu -text
