@@ -14,6 +14,7 @@
 /configure.ac -text
 /krc.prob -text svneol=unset#unset
 /modes.xml -text
+tests/dative.yaml -text
 tests/run-twol-pairtests.sh -text
 texts/krc-feats.tsv -text
 texts/puupankki/puupankki.krc.conllu -text
