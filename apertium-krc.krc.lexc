@@ -39,11 +39,11 @@ Multichar_Symbols
 %{y%}
 %{р%}
 %{n%}
-%{н%}
+!%{н%}                  ! no longer needed
 %{ъ%}
 
 %{·%}
-%{☭%}
+%{☭%}                   ! Yo ho an' a bottle o' ром
 %{❗%}                    ! Here be monsters
 
 %-
@@ -347,7 +347,7 @@ FULL-NOMINAL-INFLECTION ;
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
-%<past%>:%>%{н%}%{G%}%{ъ%}%{A%}н V-PERS-S1 ; 
+%<past%>:%>%{G%}%{ъ%}%{A%}н V-PERS-S1 ; 
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; 
 %<ifi%>%<evid%>:%>%{I%}б V-PERS-S1 ; 
 %<fut2%>:%>%{R%}%{I%}к%{ъ%} V-PERS-S1 ; 
@@ -369,12 +369,12 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<prc_impf%>:%>%{E%} # ; 
 
 %<ger%>:%>%{I%}у GER-INFL ;  
-%<ger_past%>:%>%{н%}%{G%}%{ъ%}%{A%}н GER-INFL ; 
+%<ger_past%>:%>%{G%}%{ъ%}%{A%}н GER-INFL ; 
 %<ger_pres%>:%>%{I%}уч%{I%} GER-INFL ;  ! ger_pot?
 %<ger_fut2%>:%>%{R%}%{I%}к%{ъ%} GER-INFL ; 
 %<ger_perf%>:%>м%{A%}к%{ъ%}л%{I%}к%{ъ%} GER-INFL ; ! 
 
-%<gpr_past%>:%>%{н%}%{G%}%{ъ%}%{A%}н # ; 
+%<gpr_past%>:%>%{G%}%{ъ%}%{A%}н # ; 
 %<gpr_pres%>:%>%{I%}уч%{I%} # ;  ! gpr_pot?
 %<gpr_fut2%>:%>%{R%}%{I%}к%{ъ%} # ; 
 
