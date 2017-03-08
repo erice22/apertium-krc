@@ -90,6 +90,7 @@ Rules
 
 "{ъ} of dative is ъ only in back vowel context after г"
 %{ъ%}:ъ <=> %{G%}:г _ %{A%}:а ;
+            :BackVow к _ ;
 !%{ъ%}:ъ <=> :BackVow [ :Cns ]*/[ :0 | :ъ ]* %{G%}:г _ ;
 !        except
 !            %{G%}:н _ ;  ! not sure why this isn't already excluded, but seems to be necessary to avoid conflicts
