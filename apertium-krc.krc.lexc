@@ -312,7 +312,9 @@ LEXICON PRON-ITG-KIM
 
 LEXICON PRON-QNT
 
-%<prn%>%<qnt%>: CASES ; 
+%<prn%>%<qnt%>: POSSESSIVES ; 
+!%<prn%>%<qnt%>%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
+
 
 LEXICON PRON-REFL
 
@@ -571,8 +573,8 @@ LEXICON Pronouns
 
 бютеу:бютеу PRON-QNT ; ! ""
 асламы:асламы PRON-QNT ; ! "" ! FIXME:CHECK
-асламысы:асламысы%{n%} PRON-QNT ; ! ""
-кёбюсю:кёбюсю%{n%} PRON-QNT ; ! ""
+кёбю:кёбю PRON-QNT ; ! ""
+!асламысы:асламысы%{n%} PRON-QNT ; ! ""
 
 кеси:кес PRON-REFL ; ! ""
 
