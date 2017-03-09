@@ -148,6 +148,7 @@ Rules
             [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
             %{ь%}: [ :Cns | %{ъ%}: | [ :0 - %{ь%}: ] | %-: ]* _ ; ! for forced front harmony
             :Cns л ь: [ :Cns | :0 ]* _ ;   ! for words like ансамбль/ансамблда
+            [ :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
@@ -155,14 +156,16 @@ Rules
 
 !@ п р а в и т е л ь с т в о >:0 {G}:г {ъ}:ъ {A}:а
 
-!@ ё т {ь}:0 %>:0 {G}:г {ъ}:0 {A}:е н
+!@ ё т {ь}:0 >:0 {G}:г {ъ}:0 {A}:е н
 
 "{I} as и after front unrounded vowels"
 %{I%}:и <=> :FrontVow :Cns+/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
 
 "{I} as ю after front rounded vowels"
 %{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
-            :FrontVow [ :у :Cns* ]/[ :0 ]* _ ;
+            :FrontVow [ :у :Cns* ]/[ :0 ]* _ ; ! e.g., тёлеую
+
+!@ т ё л е у >:0 {I}:ю
 
 "{I} as у after back rounded vowels"
 %{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
