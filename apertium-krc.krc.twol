@@ -88,9 +88,6 @@ Rules
 !@ о:о н:н о:о у:у >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а 
 
 
-"Epenthesis in some stems"
-%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
-
 "Plural -р- only appears before possessives"
 %{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
 
@@ -182,6 +179,16 @@ Rules
 
 !@ ё т {ь}:0 %>:0 {G}:г {ъ}:ъ {A}:е н
 
+"{I} as и after front unrounded vowels"
+%{I%}:и <=> [ :и | :е | :э ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+
+
+!!!! Epenthesis !!!!
+
 "Always realise {е} as е after ск"
 %{е%}:е <=> с к (%{ь%}:) _ (%{☭%}:) %>: ;
+
+"Epenthesis in some stems"
+%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
+
 
