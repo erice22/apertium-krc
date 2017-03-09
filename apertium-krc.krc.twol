@@ -196,7 +196,7 @@ Rules
 !            [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
             [ :AmbigVow :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: [ :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: ]* ]/[ :0 - [ AbsVow: | %{ь%}: | %{ꚜ%}: ] ]* _ ; ! самолётун
 !            :AmbigVow :Cns %{ꚜ%}: :0* _ ;
-            [ :BackVow ] :у/[ :0 - AbsVow: | %{ь%}: ]* _ ;
+            [ :BackVow ] :у/[ :0 - AbsVow: | %{ь%}: ]* _ ; ! башланыуу
         except
             %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
 
@@ -260,6 +260,7 @@ Rules
 				! avoid conflict with {I}:у 
             [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 ] | :ь | :ъ | %{ъ%}: ]* _ ;  
             [ :BackVow :ю :Cns+ ]/:0* _ ; ! союзну
+            [ :BackVow ] :у/[ :0 - AbsVow: | %{ь%}: ]* _ ;
 
 "Delete {n} before gen, acc, and end of word"
 %{n%}:0 <=> _ :0* :н ;
