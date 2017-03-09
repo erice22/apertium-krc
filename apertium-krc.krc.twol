@@ -17,7 +17,7 @@ Alphabet
  %{ъ%}:0   ! for forms with гъ that alternates with к etc.
  %{s%}:0 ! %{s%}:с 
  %{р%}:р %{р%}:0
- %{n%}:н %{n%}:0
+ %{n%}:н ! %{n%}:0
  %{е%}:0 
 
 %{а%}:0
@@ -250,3 +250,7 @@ Rules
 				! avoid conflict with {I}:у 
             [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 ] | :ь | :ъ | %{ъ%}: ]* _ ;  
             [ :BackVow :ю :Cns+ ]/:0* _ ; ! союзну
+
+"Delete {n} before gen, acc, and end of word"
+%{n%}:0 <=> _ :0* :н ;
+            _ .#. ;
