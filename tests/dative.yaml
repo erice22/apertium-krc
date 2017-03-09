@@ -32,10 +32,12 @@ Tests:
  "[twol] consonantal у":
     кёзюу<n><dat> : кёзюуге
 
-
  "[twol] deleting ь":
     власть<n><dat> : властха
     гавань<n><dat> : гаваннга
+
+ "[twol] Russian loans with final unvoiced":
+    секунд<n><dat> : секундха
 
  "[twol] Russian loans in -ство":
     правительство<n><dat> : правительствогъа
