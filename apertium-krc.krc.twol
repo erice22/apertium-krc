@@ -148,7 +148,7 @@ Rules
             [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
             %{ь%}: [ :Cns | %{ъ%}: | [ :0 - %{ь%}: ] | %-: ]* _ ; ! for forced front harmony
             :Cns л ь: [ :Cns | :0 ]* _ ;   ! for words like ансамбль/ансамблда
-            [ :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
+            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
