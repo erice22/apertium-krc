@@ -7,27 +7,29 @@ Config:
 Tests:
 
  "[twol] Harmony stuff":
-    июль<n><loc> : июлда
-    кёзюу<n><loc> : кёзюуде
     август<n><loc><attr> : августдагъы
     ёт<v><iv><gpr_past> : ётген
     ансамбль<n><pl><acc> : ансамбллени
     спектакль<n><loc> : спектаклде
+
+ "[twol] More harmony":
+    де<v><tv><prc_perf> : деб
+    эки<num><ord> : экинчи
+    джокъ<adj>+э<cop><aor><p3><sg> : джокъду
+    къура<v><tv><pass><past><p3><sg> : къуралгъанды
+    башла<vaux><prc_perf> : башлаб
+
+ "[twol] with ю":
+    союз<n><acc> : союзну
+    июль<n><loc> : июлда
+    июн<n><px3sp><loc> : июнунда
     къую<n><loc> : къуюда
     оюн<n><loc> : оюнда
     союз<n><loc> : союзда
     чоюн<n><loc> : чоюнда
 
- "[twol] More harmony":
-    де<v><tv><prc_perf> : деб
-    эки<num><ord> : экинчи
+ "[twol] with consonantal у":
     серме<v><tv><coop><ger><nom> : сермешиу
+    серме<v><tv><coop><ger><dat> : сермешиуге
+    кёзюу<n><loc> : кёзюуде
     юс<n><px3sp><abl> : юсюнден
-    джокъ<adj>+э<cop><aor><p3><sg> : джокъду
-    къура<v><tv><pass><past><p3><sg> : къуралгъанды
-    башла<vaux><prc_perf> : башлаб
-
- "[twol] Even more"
-    самолёт<n><px3sp><nom> : самолёту
-    июнь<n><px3sp><loc> : июнунда
-    июль<n><px3sp><loc> : июлунда
