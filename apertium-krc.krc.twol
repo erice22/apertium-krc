@@ -189,6 +189,8 @@ Rules
 
 !@ т ё л е у >:0 {I}:ю
 
+!@ т ю б >:0 {s}:0 {I}:ю {n}:0
+
 "{I} as у after back rounded vowels"
 %{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
