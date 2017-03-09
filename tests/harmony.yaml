@@ -17,3 +17,12 @@ Tests:
     оюн<n><loc> : оюнда
     союз<n><loc> : союзда
     чоюн<n><loc> : чоюнда
+
+ "[twol] More harmony":
+    де<v><tv><prc_perf> : деб
+    эки<num><ord> : экинчи
+    серме<v><tv><coop><ger><nom> : сермешиу
+    юс<n><px3sp><abl> : юсюнден
+    джокъ<adj>+э<cop><aor><p3><sg> : джокъду
+    къура<v><tv><pass><past><p3><sg> : къуралгъанды
+
