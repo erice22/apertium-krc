@@ -68,9 +68,10 @@ Multichar_Symbols
 
 
 ! Harmony for numerals
-%{а%}
-%{о%}
-%{ү%}
+%{а%}                   ! Back unrounded
+%{э%}                   ! Front unrounded
+%{о%}                   ! Back rounded
+%{ү%}                   ! Front rounded
 
 %{н%}
 %{з%}
