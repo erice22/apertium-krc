@@ -68,6 +68,8 @@ RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
 
 VclsCns = с б т ш ч х д ж щ ф п ;
 
+AbsVow = %{а%} %{э%} %{о%} %{ү%} ;
+
 
 Rules 
 
@@ -168,19 +170,20 @@ Rules
 !@ ё т {ь}:0 >:0 {G}:г {ъ}:0 {A}:е н
 
 "{I} as и after front unrounded vowels"
-%{I%}:и <=> :FrontVow :Cns+/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
-            %{э%}: [ [ :0 - %{э%}: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+%{I%}:и <=> :FrontVow :Cns+/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
+            %{э%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
 
 "{I} as ю after front rounded vowels"
-%{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | %{э%}: ] ] | :ь | %{ъ%}:0 ]* _ ;
-            :FrontVow [ :у :Cns* ]/[ :0 - %{э%}: ]* _ ; ! e.g., тёлеую
-            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - %{э%}: ] _ ;  ! for words like кёзюуюнде
-            [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | %{э%}: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
+%{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
+            :FrontVow [ :у :Cns* ]/[ :0 - AbsVow: ]* _ ; ! e.g., тёлеую
+            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - AbsVow: ] _ ;  ! for words like кёзюуюнде
+            [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
 
 !@ т ё л е у >:0 {I}:ю
 
 "{I} as у after back rounded vowels"
-%{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | %{э%}: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
+%{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
+            %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
 
 
 !!!! Epenthesis !!!!
@@ -228,4 +231,4 @@ Rules
             [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
             [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
             [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | :ъ | %{ъ%}: ]* _ ;  ! avoid conflict with {I}:у
-            %{э%}: [ [ :0 - %{э%}: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+            AbsVow: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
