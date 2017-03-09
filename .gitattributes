@@ -19,6 +19,7 @@ dev/spellrelax.twol -text
 tests/dative.yaml -text
 tests/harmony.yaml -text
 tests/miscellaneous.yaml -text
+tests/numerals.yaml -text
 tests/run-twol-pairtests.sh -text
 tests/yots.yaml -text
 texts/krc-feats.tsv -text
