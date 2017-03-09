@@ -6,7 +6,7 @@ Alphabet
  У у  Ў ў  Ф ф  Х х  Ц ц  Ч ч  Ш ш  Щ щ
  Ъ ъ  Ы ы  Ь ь  Э э  Ю ю  Я я  
 
- %{I%}:ы %{I%}:и %{I%}:у %{I%}:ю %{I%}:0
+ %{I%}:ы ! %{I%}:и %{I%}:у %{I%}:ю %{I%}:0
  %{y%}:ы %{y%}:и %{y%}:у %{y%}:ю %{y%}:0
  %{G%}:г ! %{G%}:х %{G%}:0
  %{D%}:д ! %{D%}:т
@@ -15,7 +15,7 @@ Alphabet
  %{A%}:а ! %{A%}:е 
  %{E%}:а %{E%}:е %{E%}:й
  %{ъ%}:0   ! for forms with гъ that alternates with к etc.
- %{s%}:с %{s%}:0
+ %{s%}:0 ! %{s%}:с 
  %{р%}:р %{р%}:0
  %{n%}:н %{n%}:0
  %{е%}:0 
@@ -54,7 +54,6 @@ BackVow = А О Ы У
 AmbigVow = Ё Ю
            ё ю ;
 
-
 Cns =     Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Щ 
           б в г д ж з й к л м н п р с т ф х ц ч ш щ 
           %{s%} %{n%} %{р%} %{G%} %{D%} %{L%} %{N%} ; 
@@ -69,27 +68,6 @@ RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
 
 Rules 
 
-"Remove soft sign with suffix"
-ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
-
-
-"Deletion of {s} after a consonant"
-%{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
-                 AbstrCns:/[ %>: | %-: ] _ ;
-                           :BackVow  :у  %>: _ ;
-          except 
-            [ [ ? :Vow ] - [ :BackVow  :у ] ] %>: _ ;
-
-!@ к:к ё:ё з:з ю:ю у:у >:0 {s}:0 {I}:ю {n}:н >:0 {D}:д {A}:а 
-
-"Surfacing of {s} after a vowel"
-%{s%}:с <=> [ [ ? :Vow ] - [ :BackVow :у ] ] %>: _ ;
-
-!@ о:о н:н о:о у:у >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а 
-
-
-"Plural -р- only appears before possessives"
-%{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
 
 
 !!!! Dative stuff !!!!
@@ -99,9 +77,9 @@ Rules
 
 
 "{ъ} of dative or p1.sg is ъ only in back vowel context after г"
-%{ъ%}:ъ <=> :BackVow [ :к | :г ] _ ;
-                     [ :к | :г ] _ :BackVow ;
-                 :BackVow %>: :к _  ; 
+%{ъ%}:ъ <=> [ :BackVow :Cns* ]/:0* [ :к | :г ] _ ;
+                                   [ :к | :г ] _ :BackVow ;
+            [ .#. | :BackVow ] :AmbigVow/[ :0 - %{ь%}: ] [ :к | :г ] _ ;
 
 !%{ъ%}:ъ <=> :BackVow [ :Cns ]*/[ :0 | :ъ ]* %{G%}:г _ ;
 !        except
@@ -124,7 +102,7 @@ Rules
 
 !@ б:б а:а ш:ш л:л а:а н:н >:0 {G}:г {ъ}:0 {A}:а н:н >:0 д:д {I}:ы 
 
-"{G} is х after -т- and -ш- in back vowel contexts"
+"{G} is х after voiceless consonants in back vowel contexts"
 %{G%}:х <=> [ :с | :б | :т | :ш | :ч | :х ] ( ь: ) %>: _ %{ъ%}: :а  ;
 
 !@ к:к ъ:ъ а:а т:т ы:ы ш:ш >:0 {G}:х {ъ}:0 {A}:а н:н >:0 д:д {I}:ы 
@@ -166,9 +144,9 @@ Rules
 !!!! Vowel harmony !!!!
 
 "{A} as е after front vowels"
-%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: | %{n%}: ]* _ ;
             [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
-            %{ь%}: [ :Cns | %{ъ%}: | :0 | %-: ]* _ ;
+            %{ь%}: [ :Cns | %{ъ%}: | [ :0 - %{ь%}: ] | %-: ]* _ ; ! for forced front harmony
             :Cns л ь: [ :Cns | :0 ]* _ ;   ! for words like ансамбль/ансамблда
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
@@ -177,10 +155,17 @@ Rules
 
 !@ п р а в и т е л ь с т в о >:0 {G}:г {ъ}:ъ {A}:а
 
-!@ ё т {ь}:0 %>:0 {G}:г {ъ}:ъ {A}:е н
+!@ ё т {ь}:0 %>:0 {G}:г {ъ}:0 {A}:е н
 
 "{I} as и after front unrounded vowels"
-%{I%}:и <=> [ :и | :е | :э ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+%{I%}:и <=> :FrontVow :Cns+/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
+
+"{I} as ю after front rounded vowels"
+%{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
+            :FrontVow [ :у :Cns* ]/[ :0 ]* _ ;
+
+"{I} as у after back rounded vowels"
+%{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
 
 
 !!!! Epenthesis !!!!
@@ -191,4 +176,29 @@ Rules
 "Epenthesis in some stems"
 %{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
 
+"{s} realised after vowels"
+%{s%}:с <=> [ [ ? :Vow ] - [ :Vow :у ] ] [ :0 ]* _ ;
 
+!@ к:к ё:ё з:з ю:ю у:у >:0 {s}:0 {I}:ю {n}:н >:0 {D}:д {A}:а 
+
+!"Deletion of {s} after a consonant"
+!%{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
+!                 AbstrCns:/[ %>: | %-: ] _ ;
+!                           :BackVow  :у  %>: _ ;
+!          except 
+!            [ [ ? :Vow ] - [ :BackVow  :у ] ] %>: _ ;
+!
+!
+!"Surfacing of {s} after a vowel"
+!%{s%}:с <=> [ [ ? :Vow ] - [ :BackVow :у ] ] %>: _ ;
+!
+!@ о:о н:н о:о у:у >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а 
+
+
+!!!! Deleteion !!!!
+
+"Remove soft sign with suffix"
+ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
+
+"Plural -р- only appears before possessives"
+%{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
