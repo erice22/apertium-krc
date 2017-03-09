@@ -187,9 +187,14 @@ Rules
 %{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
             [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
-            [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
+!            [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
+            [ :AmbigVow :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: [ :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: ]* ]/[ :0 - [ AbsVow: | %{ь%}: | %{ꚜ%}: ] ]* _ ;
+!            :AmbigVow :Cns %{ꚜ%}: :0* _ ;
+
 
 !@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
+
+!@ с а м о л ё т {ꚜ}:0 >:0 {s}:0 {I}:у {n}:0
 
 
 !!!! Epenthesis !!!!
@@ -204,6 +209,8 @@ Rules
 %{s%}:с <=> [ [ ? :Vow ] - [ :Vow :у ] ] [ :0 ]* _ ;
 
 !@ к:к ё:ё з:з ю:ю у:у >:0 {s}:0 {I}:ю {n}:н >:0 {D}:д {A}:е 
+
+!@ к ё з ю у >:0 {s}:0 {I}:ю {n}:0 >:0 {N}:н {I}:ю
 
 !"Deletion of {s} after a consonant"
 !%{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
