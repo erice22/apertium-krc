@@ -172,6 +172,9 @@ Rules
 "{I} as и after front unrounded vowels"
 %{I%}:и <=> :FrontVow :Cns+/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
             %{э%}: [ [ :0 - [ AbsVow: | %{ꚜ%}: ] ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+
 
 "{I} as ю after front rounded vowels"
 %{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
@@ -180,6 +183,9 @@ Rules
             [ [ :AmbigVow | :FrontVow ] :у :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: |  %{ꚜ%}: ] ]* _ ;  ! for words like кёзюуюнде
             [ ( \:BackVow ) :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
             %{ү%}: [ [ :0 - [ AbsVow: | %{ꚜ%}: ] ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+
 
 !@ т ё л е у >:0 {I}:ю
 
@@ -188,8 +194,10 @@ Rules
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
             [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
 !            [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
-            [ :AmbigVow :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: [ :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: ]* ]/[ :0 - [ AbsVow: | %{ь%}: | %{ꚜ%}: ] ]* _ ;
+            [ :AmbigVow :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: [ :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: ]* ]/[ :0 - [ AbsVow: | %{ь%}: | %{ꚜ%}: ] ]* _ ; ! самолётун
 !            :AmbigVow :Cns %{ꚜ%}: :0* _ ;
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
 
 
 !@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
@@ -237,6 +245,7 @@ Rules
 
 "Delete {I} after vowels"
 %{I%}:0 <=> :Vow/:0* _ ;
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
         except
             [ [ :Cns | .#. ] :Vow :у ]/[ :0 | :ь | :ъ ]* _ ;
             [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
