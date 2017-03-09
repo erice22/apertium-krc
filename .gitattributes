@@ -18,6 +18,7 @@ dev/spellrelax.twol -text
 /modes.xml -text
 tests/dative.yaml -text
 tests/harmony.yaml -text
+tests/kün.yaml -text
 tests/miscellaneous.yaml -text
 tests/numerals.yaml -text
 tests/run-twol-pairtests.sh -text
