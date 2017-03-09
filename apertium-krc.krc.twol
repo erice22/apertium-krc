@@ -178,6 +178,7 @@ Rules
             :FrontVow [ :у :Cns* ]/[ :0 - AbsVow: ]* _ ; ! e.g., тёлеую
             [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - AbsVow: ] _ ;  ! for words like кёзюуюнде
             [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
+            %{ү%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
 
 !@ т ё л е у >:0 {I}:ю
 
