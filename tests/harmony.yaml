@@ -21,15 +21,20 @@ Tests:
 
  "[twol] with ю":
     союз<n><acc> : союзну
+    самолёт<n><px3sp><nom> : самолёту
     июль<n><loc> : июлда
     июн<n><px3sp><loc> : июнунда
     къую<n><loc> : къуюда
     оюн<n><loc> : оюнда
     союз<n><loc> : союзда
     чоюн<n><loc> : чоюнда
+    июнь<n><px3sp><loc> : июнунда
+    июль<n><px3sp><loc> : июлунда
 
  "[twol] with consonantal у":
     серме<v><tv><coop><ger><nom> : сермешиу
     серме<v><tv><coop><ger><dat> : сермешиуге
     кёзюу<n><loc> : кёзюуде
     юс<n><px3sp><abl> : юсюнден
+
+
