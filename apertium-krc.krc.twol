@@ -157,6 +157,7 @@ Rules
             %{ь%}: [ :Cns | %{ъ%}: | [ :0 - %{ь%}: ] | %-: ]* _ ; ! for forced front harmony
             :Cns л ь: [ :Cns | :0 ]* _ ;   ! for words like ансамбль/ансамблда
             [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
+            %{э%}: [ [ :0 - %{э%}: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
 
 !@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
 
