@@ -155,7 +155,9 @@ LEXICON NUM
 %<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
 
 %<num%>%<ord%>:%-ч%{I%} # ;
+%<num%>%<ord%>:%-чы # ; ! Dir/LR ! Use/Sub
 %<num%>%<ord%>%<subst%>%<nom%>:%-ч%{I%} # ;
+%<num%>%<ord%>%<subst%>%<nom%>:%-чы # ; ! Dir/LR ! Use/Sub
 %<num%>%<ord%>%<subst%>:%-ч%{I%} SUBST-NONOM ;
 
 !%<num%>%<coll%>%<advl%>:%-%{е%}в # ;
@@ -3927,6 +3929,7 @@ LEXICON Nouns
 аякъ:аякъ N1 ; ! ""
 марда:марда N1 ; ! ""
 осуй:осуй N1 ; ! ""
+болум:болум N1 ; ! ""
 
 орун:ор%{y%}н N1 ; ! ""
 бурун:бурун  N1 ; ! "nose"
@@ -5957,6 +5960,7 @@ LEXICON Adjectives
 джылгъы:джылгъы A1 ; ! ""
 
 хамандагъы:хамандагъы A1 ; ! ""
+джангыз:джангыз A1 ; ! ""
 
 экили:экили A1 ; ! "двойственный"
 
