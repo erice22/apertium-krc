@@ -187,6 +187,7 @@ Rules
 %{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
             [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
+            [ :AmbigVow :Cns+ ]/:0 _ ;
 
 
 !@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
