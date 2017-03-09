@@ -87,7 +87,7 @@ Rules
             [ .#. | :BackVow ] :AmbigVow/[ :0 - %{ь%}: ] [ :к | :г ] _ ;
         except
             %{G%}:н _ ; ! seems to be necessary to avoid conflicts
-            [ :AmbigVow :у :Cns* ]/:0* [ :к | :г ] _ ;  ! кёзюуге
+            [ [ :AmbigVow | :FrontVow ] :у :Cns* ]/:0* [ :к | :г ] _ ;  ! кёзюуге, сермешиуге
 
 !%{ъ%}:ъ <=> :BackVow [ :Cns ]*/[ :0 | :ъ ]* %{G%}:г _ ;
 !        except
@@ -176,15 +176,20 @@ Rules
 "{I} as ю after front rounded vowels"
 %{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
             :FrontVow [ :у :Cns* ]/[ :0 - AbsVow: ]* _ ; ! e.g., тёлеую
-            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - AbsVow: ] _ ;  ! for words like кёзюуюнде
-            [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
-            %{ү%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+            ! [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - AbsVow: ] _ ;  ! for words like кёзюуюнде
+            [ [ :AmbigVow | :FrontVow ] :у :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: |  %{ꚜ%}: ] ]* _ ;  ! for words like кёзюуюнде
+            [ \:BackVow :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
+            %{ү%}: [ [ :0 - [ AbsVow: | %{ꚜ%}: ] ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
 
 !@ т ё л е у >:0 {I}:ю
 
 "{I} as у after back rounded vowels"
-%{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
+%{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+            [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
+
+
+!@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
 
 
 !!!! Epenthesis !!!!
@@ -217,7 +222,7 @@ Rules
 !!!! Deleteion !!!!
 
 "Remove soft sign with suffix"
-ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ Cns: | Vow: ] ;
+ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ :Cns | :Vow ] ;
 
 "Plural -р- only appears before possessives"
 %{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
@@ -231,5 +236,10 @@ Rules
             :FrontVow [ :у :Cns* ]/[ :0 ]* _ ; ! e.g., тёлеую
             [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
             [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
-            [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | :ъ | %{ъ%}: ]* _ ;  ! avoid conflict with {I}:у
-            AbsVow: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+
+            ! for numerals and abbreviations
+            AbsVow: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; 
+
+				! avoid conflict with {I}:у 
+            [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 ] | :ь | :ъ | %{ъ%}: ]* _ ;  
+            [ :BackVow :ю :Cns+ ]/:0* _ ; ! союзну
