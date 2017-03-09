@@ -164,6 +164,7 @@ Rules
 "{I} as ю after front rounded vowels"
 %{I%}:ю <=> [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
             :FrontVow [ :у :Cns* ]/[ :0 ]* _ ; ! e.g., тёлеую
+            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
 
 !@ т ё л е у >:0 {I}:ю
 
