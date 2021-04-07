@@ -19,3 +19,4 @@
 /config
 /*.prob
 /tests/morphotactics/*.txt.gz
+/*.hfst
