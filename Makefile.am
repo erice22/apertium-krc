@@ -24,7 +24,8 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
 	$(LANG1).rlx.bin \
-	$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
+	$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst \
+	$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -101,6 +102,22 @@ $(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).twol.hfst: ./$(BASENAME).$(SCRIPT1)-$(SCRIPT2).twol
 	hfst-twolc $< -o $@
 
+# compile the first stage of the Seegmiller-Cyrillic transliteration transducer
+.deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).lexc.hfst: ./$(BASENAME).$(SCRIPT2)-$(SCRIPT1).lexc
+	hfst-lexc $< -o $@
+
+# compile the second stage of the Seegmiller-Cyrillic transliteration transducer
+.deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).twol.hfst: ./$(BASENAME).$(SCRIPT2)-$(SCRIPT1).twol
+	hfst-twolc $< -o $@
+
+# Make the full transliterator transducers
+
+$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
+	hfst-fst2fst -O $< -o $@
+
+$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst
+	hfst-fst2fst -O $< -o $@
+
 # script2 analyser
 
 # Seegmiller script analyser is made by composing the Cyrl-Seegmiller transliterator with the base Cyrillic transducer and adding spellrelax
@@ -110,15 +127,17 @@ $(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 .deps/$(LANG1SCRIPT2).spellrelax.hfst: $(BASENAME).$(LANG1)_$(SCRIPT2).spellrelax
 	hfst-regexp2fst -S -o $@ < $<
 
+
 # script2 generator
 
 # compile the transliteration transducer
 .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).twol.hfst .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).lexc.hfst
 	hfst-compose-intersect -1 `echo $(word 2,$^)` -2 $< -o $@
 
-# and make a reversed version
-.deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
-	hfst-invert $< -o $@
+.deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).twol.hfst .deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).lexc.hfst
+	hfst-compose-intersect -1 `echo $(word 2,$^)` -2 $< -o $@
+
+
 
 # compose transliteration transducer with base Cyrillic transducer
 $(LANG1SCRIPT2).autogen.hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst .deps/$(LANG1).RL.hfst
@@ -130,12 +149,6 @@ $(LANG1SCRIPT2).autogen.att.gz: $(LANG1SCRIPT2).autogen.hfst
 $(LANG1SCRIPT2).autogen.bin: $(LANG1SCRIPT2).autogen.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1SCRIPT2).autogen.att
 	lt-comp lr .deps/$(LANG1SCRIPT2).autogen.att $@
-
-$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
-	hfst-fst2fst -O $< -o $@
-
-$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst
-	hfst-fst2fst -O $< -o $@
 
 
 ###############################################################################
