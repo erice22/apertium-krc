@@ -1,0 +1,29 @@
+[
+	! merge apostrophes
+	[ ?* [ ʼ (->) [ %' | %’ | %` | %´ | %‘ | %ʻ ] ] ?* ] .o.
+
+	! accept c for qu before ë
+	[ ?* ( [ [ q u ] (->) [ c ] ] [ ë ] ) ?* ]
+
+	! accept g for ğ
+	[ ?* ( [ ğ (->) g ] ) ?* ]
+
+	! accept k for q
+	[ ?* ( [ q (->) k ] ) ?* ]
+
+	! accept ï for ı
+	[ ?* ( [ ı (->) ï ] ) ?* ]
+
+	! accept š for ş
+	[ ?* ( [ ş (->) š ] ) ?* ]
+
+	! accept č for ç
+	[ ?* ( [ ç (->) č ] ) ?* ]
+
+	! accept ǰ for c
+	[ ?* ( [ ǰ (->) c ] ) ?* ]
+
+
+
+
+]
