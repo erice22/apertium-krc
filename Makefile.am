@@ -24,7 +24,6 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
 	$(LANG1).rlx.bin \
-	$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst \
 	$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
