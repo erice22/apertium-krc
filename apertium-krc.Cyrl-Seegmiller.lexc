@@ -2,6 +2,14 @@ Multichar_Symbols
 
 %<n%> 
 
+%{ö%}
+%{ü%}
+%{c%}
+%{ş%}
+%{ç%}
+%{q%}
+%{ğ%}
+%{ŋ%}
 %{İ%}
 %{й%}
 %{☭%}
@@ -61,6 +69,13 @@ LEXICON Alpha
 
 ю:%{ü%} AlphaLoop "weight: 1.0" ; 
 ё:%{ö%} AlphaLoop "weight: 1.0" ; 
+ю:й%{ü%} AlphaLoop "weight: 1.0" ; 
+ё:й%{ö%} AlphaLoop "weight: 1.0" ; 
+
+дж:%{c%} AlphaLoop "weight: 1.0" ; 
+къ:%{q%} AlphaLoop "weight: 1.0" ; 
+гъ:%{ğ%} AlphaLoop "weight: 1.0" ; 
+нг:%{ŋ%} AlphaLoop "weight: 1.0" ;
 
 И:%{İ%} AlphaLoop "weight: 0.5" ; 
 

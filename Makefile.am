@@ -23,7 +23,9 @@ TARGETS_COMMON =			\
 	$(LANG1SCRIPT2).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
-	$(LANG1).rlx.bin
+	$(LANG1).rlx.bin \
+	$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst \
+	$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -115,7 +117,11 @@ $(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).twol.hfst .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).lexc.hfst
 	hfst-compose-intersect -1 `echo $(word 2,$^)` -2 $< -o $@
 
-# compose with base Cyrillic transducer
+# and make a reversed version
+.deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
+	hfst-invert $< -o $@
+
+# compose transliteration transducer with base Cyrillic transducer
 $(LANG1SCRIPT2).autogen.hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst .deps/$(LANG1).RL.hfst
 	hfst-compose -1 `echo $(word 2,$^)` -2 $< | hfst-fst2fst -w -o $@
 
@@ -125,6 +131,13 @@ $(LANG1SCRIPT2).autogen.att.gz: $(LANG1SCRIPT2).autogen.hfst
 $(LANG1SCRIPT2).autogen.bin: $(LANG1SCRIPT2).autogen.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1SCRIPT2).autogen.att
 	lt-comp lr .deps/$(LANG1SCRIPT2).autogen.att $@
+
+$(LANG1).$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst
+	hfst-fst2fst -O $< -o $@
+
+$(LANG1).$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst: .deps/$(LANG1SCRIPT2)-$(LANG1SCRIPT1).hfst
+	hfst-fst2fst -O $< -o $@
+
 
 ###############################################################################
 ## Debugging transducers (for testvoc)
