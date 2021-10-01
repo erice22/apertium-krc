@@ -206,11 +206,11 @@ Rules
             ! :AmbigVow :Cns %{ꚜ%}: :0* _ ;
             [ [ :BackVow ] :у ]/[ :0 - [ AbsVow: ] | %{ь%}: ]* _ ; ! башланыуу
             :BackRoundVow %{n%}: %>: %{❗%}: %{N%}: _ .#. ; ! after px3sp
+            [ :BackVow :у :Cns+ ]/[ :0 ]* _ .#. ; ! after px3sp
         except
             %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
 
-!FIXME: still broken -JNW 2021-10-01
-!@ д ж а ш а >:0 {I}:0 у > {N}:н {I}:у
+!@ д ж а ш а >:0 {I}:0 у >:0 {N}:н {I}:у
 
 !@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
 
