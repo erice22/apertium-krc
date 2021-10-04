@@ -576,6 +576,14 @@ LEXICON PRON-ITG-NENCHA
 LEXICON PRON-ITG
 
 %<prn%>%<itg%>: CASES ; 
+%<prn%>%<itg%>: POSSESSIVES ; 
+
+LEXICON PRON-ITG-QAYSI
+
+%<prn%>%<itg%>: CASES ; 
+%<prn%>%<itg%>: POSSESSIVES ; 
+%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} CASES ; 
+%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} POSSESSIVES ; 
 
 LEXICON PRON-ITG-KIM
 
@@ -918,52 +926,53 @@ LEXICON Postpositions
 
 LEXICON Pronouns 
  
-мен:м  PRON-PERS-MEN ; ! ""
-сен:с  PRON-PERS-SEN ; ! ""
-       PRON-PERS-OL ; ! ""
-биз:б  PRON-PERS-BIZ ; ! ""
-сиз:с  PRON-PERS-SIZ ; ! ""
-ала:ал PRON-PERS-ALA ; ! ""
+мен:м  PRON-PERS-MEN ; ! "I"
+сен:с  PRON-PERS-SEN ; ! "you"
+       PRON-PERS-OL ; ! "he/she/it"
+биз:б  PRON-PERS-BIZ ; ! "we"
+сиз:с  PRON-PERS-SIZ ; ! "you"
+ала:ал PRON-PERS-ALA ; ! "they"
 
-бу:бу PRON-DEM-BU ; ! ""
+бу:бу PRON-DEM-BU ; ! "this"
 бу%<prn%>%<dem%>%<acc%>:муну # ; ! Dir/LR
 бу%<prn%>%<dem%>%<gen%>:муну # ; ! Dir/LR
 
-бирси:бирси%{n%} PRON-DEM-BIRSI ; ! ""
+бирси:бирси%{n%} PRON-DEM-BIRSI ; ! "one"
 
 бютеу:бютеу PRON-QNT ; ! ""
 бютеу:битеу PRON-QNT ; ! "" ! Dir/LR ! Use/Sub
 бютеу:бютёу PRON-QNT ; ! "" ! Dir/LR ! Use/Sub
 асламы:асламы PRON-QNT ; ! "" ! FIXME:CHECK
-кёбю:кёбю PRON-QNT ; ! ""
-бары:бары PRON-QNT ; ! ""
+кёбю:кёбю PRON-QNT ; ! "most"
+бары:бары PRON-QNT ; ! "all"
 !асламысы:асламысы%{n%} PRON-QNT ; ! ""
 
 кеси:кес PRON-REFL ; ! ""
 
-не:не PRON-ITG ; ! "что"
-ненча:ненча PRON-ITG-NENCHA ; ! "сколько"
-ким:ким PRON-ITG-KIM ; ! "кто"
+не:не PRON-ITG ; ! "что" "what"
+ненча:ненча PRON-ITG-NENCHA ; ! "сколько" "how much; how many"
+ким:ким PRON-ITG-KIM ; ! "кто" "who"
 
-къайсы:къай%>сы%{n%} PRON-ITG ; ! ""
+къайсы:къай%>с%{I%}%{n%} PRON-ITG-QAYSI ; ! "which"
+къайсы:къай%>сын PRON-ITG-QAYSI ; ! "which" ! Dir/LR
 
-биреу:биреу PRON-IND ; ! ""
+биреу:биреу PRON-IND ; ! "someone"
 
 LEXICON Determiners 
 
-бу:бу DET-DEM ; ! ""
-ол:ол DET-DEM ; ! ""
+бу:бу DET-DEM ; ! "this"
+ол:ол DET-DEM ; ! "that"
 
 бютеу:бютеу DET-QNT ; ! "весь"
 бютеулей:бютеулей DET-QNT ; ! "весь"
-талай:талай DET-QNT ; ! "много"
-аз:аз DET-QNT ; ! "малый"
-бары:бары DET-QNT ; ! ""
-бираз:бираз DET-QNT ; ! "несколько"
+талай:талай DET-QNT ; ! "много" "many; much"
+аз:аз DET-QNT ; ! "малый" "few; little"
+бары:бары DET-QNT ; ! "all"
+бираз:бираз DET-QNT ; ! "несколько" "some"
 
-хар:хар DET-IND ; ! "каждый"
+хар:хар DET-IND ; ! "каждый" "each"
 
-къайсы:къайсы DET-ITG ; ! "который, какой"
+къайсы:къайсы DET-ITG ; ! "который, какой" "which"
 къаллай:къаллай DET-ITG ; ! "какой"
 ненча:ненча DET-ITG ; ! ""
 
@@ -1650,21 +1659,22 @@ LEXICON Nouns
 ом:ом N1 ; ! "физ. ом"
 опера:опера N1 ; ! "опера" "opera"
 орам:орам N1 ; ! "улица" "street"
-оригинал:оригинал N1 ; ! "оригинал"
+оригинал:оригинал N1 ; ! "оригинал" "original"
 орис:орис N1 ; ! "уст. наследник"
 орман:орман N1 ; ! "уст. лес" "forest, woods"
+орунбасар:орунбасар N1 ; ! "representative"
 отлукъ:отлукъ N1 ; ! "(-гъу) топливо"
 оу:оу N1 ; ! "IIмертвец"
 палау:палау N1 ; ! "кул. плов" "plov"
 папуас:папуас N1 ; ! "папуас"
 пар:пар N1 ; ! "пар"
-парадигма:парадигма N1 ; ! "схема, парадигма"
-парашютчу:парашютчу N1 ; ! "парашютист"
-паровоз:паровоз N1 ; ! "паровоз"
+парадигма:парадигма N1 ; ! "схема, парадигма" "paradigm"
+парашютчу:парашютчу N1 ; ! "парашютист" "parachutist"
+паровоз:паровоз N1 ; ! "паровоз" "steam engine"
 паром:паром N1 ; ! "паром"
-пароход:пароход N1 ; ! "пароход"
+пароход:пароход N1 ; ! "пароход" "steamship"
 патефон:патефон N1 ; ! "патефон"
-пацифист:пацифист N1 ; ! "пацифист"
+пацифист:пацифист N1 ; ! "пацифист" "pacifist"
 пача:пача N1 ; ! "паша"
 пейзаж:пейзаж N1 ; ! "пейзаж" "landscape"
 петиция:петиция N1 ; ! "полит, петиция"
@@ -8745,6 +8755,8 @@ LEXICON Adjectives
 процентли:процентли A1 ; ! "процентный"
 пудлукъ:пудлукъ A1 ; ! "пудовый"
 пурч:пурч A1 ; ! "чёрный "
+разылыкъ:разылыкъ N1 ; ! "satisfaction"
+разылыкъ:ыразылыкъ N1 ; ! "satisfaction" ! Dir/LR
 разрядлы:разрядлы A1 ; ! "имеющий "
 ракеталы:ракеталы A1 ; ! "ракетный"
 ратификацией:ратификацией A1 ; ! "ратификационный"
