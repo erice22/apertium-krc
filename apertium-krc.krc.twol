@@ -190,6 +190,11 @@ Rules
         except
             %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
 
+!@ б о л >:0 {I}:у ш >:0 {I}:у р >:0 {G}:г {ъ}:ъ {A}:а
+
+!@ б о л >:0 {I}:у р >:0 {G}:г {ъ}:ъ {A}:а
+
+!@ б о л >:0 {I}:у р
 
 !@ т ё л е у >:0 {I}:ю
 
@@ -197,7 +202,7 @@ Rules
 
 "{I} as у after back rounded vowels"
 %{I%}:у <=> [ [ [ :BackVow | :Cns | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: | %{n%}: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
-!            [ %{I%}:у :Cns+ ]/[ :0 - %{ь%}: ]* _ ;
+            [ %{I%}:у :Cns+ ]/[ :0 - %{ь%}: ]* _ ;
             %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
             [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
             ! [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
@@ -255,6 +260,8 @@ Rules
 
 "Remove soft sign with suffix"
 ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ :Cns | :Vow ] ;
+    except
+        _ %{❗%}: ; ! to analyse forms where ь isn't removed, probably orthography errors
 
 "Plural -р- only appears before possessives"
 %{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
@@ -281,8 +288,12 @@ Rules
             ! other conflicts
             :BackRoundVow й:0 %>: _ ; ! къоюб
 
-"Delete й before back {I}:ю"
+"Delete й before back {I}:ю or front {A}:е"
 й:0 <=> :BackRoundVow _ %>: %{I%}: ;
+        [ :AmbigVow | FrontVow: ] _ %>: [ %{A%}:е | %{E%}:е ] ;
+
+!@ к ъ о й:0 >:0 {I}:ю п
+!@ с ү й:0 >:0 {E}:е >:0 м {A}:е
 
 !"Delete {n} before gen, acc, and end of word"
 !%{n%}:0 <=> _ :0* :н ;
