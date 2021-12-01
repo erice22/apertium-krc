@@ -3,8 +3,8 @@
 Multichar_Symbols
 
 %<n%>                   ! Noun
-%<v%>                   ! 
-%<np%>                  ! 
+%<v%>                   !
+%<np%>                  !
 %<adj%>
 %<adv%>
 %<postadv%>
@@ -121,11 +121,11 @@ Multichar_Symbols
 LEXICON Root
 
 Copula ;
-Miscellaneous ; 
+Miscellaneous ;
 Conjunctions ;
-Postpositions ; 
+Postpositions ;
 Pronouns ;
-Determiners ; 
+Determiners ;
 Numerals ;
 Nouns ;
 ProperNouns ;
@@ -135,7 +135,7 @@ Verbs ;
 Interjections ;
 Abbreviations ;
 Punctuation ;
-Guesser ; 
+Guesser ;
 Digits ;
 !Temp ;
 
@@ -164,7 +164,7 @@ CASE-ETC-NONOM ;
 LEXICON SUBST-NONOM
 
 N-INFL-COMMON-NONOM ;
-PLURAL ; 
+PLURAL ;
 
 LEXICON SQRD
 
@@ -288,14 +288,14 @@ LEXICON DIGITLEX
 !==============================================================================!
 
 
-LEXICON CLITICS-NO-COP 
+LEXICON CLITICS-NO-COP
 
 CLIT-QST ;
 # ;
 
 LEXICON CLIT-QST
 
-%+мы%<qst%>:%>м%{I%} # ; 
+%+мы%<qst%>:%>м%{I%} # ;
 
 LEXICON CLIT-COP
 
@@ -318,7 +318,7 @@ LEXICON CASES-OBL
 LEXICON CASES
 
 %<nom%>: CLITICS-INCL-COP ;
-CASES-OBL ; 
+CASES-OBL ;
 
 
 LEXICON ATTR-SUBST
@@ -334,7 +334,7 @@ LEXICON GENERAL-POSSESSIVE-ETC
 
 %<loc%>:%>%{D%}%{A%}г%{ъ%}%{I%} ATTR-SUBST ;
 
-LEXICON CASES-ETC 
+LEXICON CASES-ETC
 
 CASES ;
 GENERAL-POSSESSIVE-ETC ;
@@ -405,7 +405,7 @@ LEXICON NP-AL-ABBR
 
 LEXICON NP-AL
 
-%<np%>%<al%>: CASES-ETC ; 
+%<np%>%<al%>: CASES-ETC ;
 
 LEXICON NP-TOP-ABBR
 
@@ -418,12 +418,12 @@ LEXICON NP-TOP-ABBR
 LEXICON NP-TOP
 
 %<np%>%<top%>%<attr%>: # ;
-%<np%>%<top%>: CASES-ETC ; 
+%<np%>%<top%>: CASES-ETC ;
 
 LEXICON NP-TOP-PL
 
 %<np%>%<top%>%<pl%>%<attr%>: # ;
-%<np%>%<top%>%<pl%>: CASES-ETC ; 
+%<np%>%<top%>%<pl%>: CASES-ETC ;
 
 LEXICON NP-TOP-SK
 
@@ -432,45 +432,45 @@ LEXICON NP-TOP-SK
 
 LEXICON NP-COG
 
-%<np%>%<cog%>: # ; 
+%<np%>%<cog%>: # ;
 
 LEXICON NP-PAT-VICH
 
 %<np%>%<pat%>%<m%>:вич CASES ;
 %<np%>%<pat%>%<f%>:вна CASES ;
 
-LEXICON NP-COG-MF 
+LEXICON NP-COG-MF
 
-%<np%>%<cog%>%<mf%>: CASES ; 
+%<np%>%<cog%>%<mf%>: CASES ;
 
 LEXICON NP-COG-OV
 
-%<np%>%<cog%>%<m%>: CASES ; 
-%<np%>%<cog%>%<f%>:а CASES ; 
+%<np%>%<cog%>%<m%>: CASES ;
+%<np%>%<cog%>%<f%>:а CASES ;
 
 LEXICON NP-COG-IN
 
-%<np%>%<cog%>%<m%>: CASES ; 
-%<np%>%<cog%>%<f%>:а CASES ; 
+%<np%>%<cog%>%<m%>: CASES ;
+%<np%>%<cog%>%<f%>:а CASES ;
 
 LEXICON NP-COG-SKIJ
 
-%<np%>%<cog%>%<m%>:ий CASES ; 
-%<np%>%<cog%>%<f%>:ая CASES ; 
+%<np%>%<cog%>%<m%>:ий CASES ;
+%<np%>%<cog%>%<f%>:ая CASES ;
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>: CASES ; 
-%<np%>%<ant%>%<m%>%<pl%>%<gen%>:%>л%{A%}%{р%}%>%{N%}%{I%} # ; 
+%<np%>%<ant%>%<m%>: CASES ;
+%<np%>%<ant%>%<m%>%<pl%>%<gen%>:%>л%{A%}%{р%}%>%{N%}%{I%} # ;
 %<np%>%<ant%>%<m%>%<pl%>%<gen%>:%>ла%>%{N%}%{I%} # ;  ! Dir/LR FIXME: CHECK: many seem to be like this?
 
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>: CASES ; 
+%<np%>%<ant%>%<f%>: CASES ;
 
 
-LEXICON A1 
+LEXICON A1
 
 %<adj%>: CLITICS-INCL-COP ;
 
@@ -482,12 +482,12 @@ LEXICON A2
 LEXICON A3
 
 %<adj%>: CLITICS-INCL-COP ;
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ; 
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON A4
 
 %<adj%>: CLITICS-INCL-COP ;
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ; 
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;
 
 %<adj%>%<comp%>:%>%{I%}р%{A%}к%{ъ%} CLITICS-INCL-COP ;
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}к%{ъ%} FULL-NOMINAL-INFLECTION ;
@@ -497,7 +497,7 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: # ;
 
 
-LEXICON ADV 
+LEXICON ADV
 
 %<adv%>: # ;
 
@@ -508,110 +508,110 @@ N1 ;
 
 LEXICON PRON-PERS-MEN
 
-%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:ен # ; 
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ени # ; 
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ени # ; 
-%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:еннге # ; 
+%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:ен # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ени # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ени # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:еннге # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:анга # ;  ! Dir/LR
-%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:енде # ; 
-%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:енден # ; 
+%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:енде # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:енден # ;
 
 LEXICON PRON-PERS-SEN
 
-%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ен # ; 
-%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ени # ; 
-%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ени # ; 
-%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:еннге # ; 
+%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ен # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ени # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ени # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:еннге # ;
 %<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:анга # ; ! Dir/LR
-%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:енде # ; 
-%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:енден # ; 
+%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:енде # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:енден # ;
 
-LEXICON PRON-PERS-OL 
+LEXICON PRON-PERS-OL
 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол # ; 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:аны # ; 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:аннга # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол # ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:аны # ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:аннга # ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:анга # ;  ! Dir/LR ! Use/Sub
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:аны # ; 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ; 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:андан # ; 
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:аны # ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:андан # ;
 
 LEXICON PRON-PERS-BIZ
 
-%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:из # ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:изге # ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:изни # ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:изни # ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>%<subst%>:изни%>ки FULL-NOMINAL-INFLECTION ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:изде # ; 
-%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:изден # ; 
+%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:из # ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:изге # ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:изни # ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:изни # ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>%<subst%>:изни%>ки FULL-NOMINAL-INFLECTION ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:изде # ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:изден # ;
 
 LEXICON PRON-PERS-SIZ
 
-%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:из # ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:изге # ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:изни # ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:изни # ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>%<subst%>:изни%>ки FULL-NOMINAL-INFLECTION ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:изде # ; 
-%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:изден # ; 
+%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:из # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:изге # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:изни # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:изни # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>%<subst%>:изни%>ки FULL-NOMINAL-INFLECTION ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:изде # ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:изден # ;
 
 LEXICON PRON-PERS-ALA
 
-%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>:а # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:аны # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:аны # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:агъа # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:ада # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:адан # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>:а # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:аны # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:аны # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:агъа # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:ада # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:адан # ;
 
-LEXICON PRON-DEM-BU 
+LEXICON PRON-DEM-BU
 
-%<prn%>%<dem%>: CASES ; 
+%<prn%>%<dem%>: CASES ;
 
 LEXICON PRON-DEM-BIRSI
 
-%<prn%>%<dem%>: CASES ; 
-%<prn%>%<dem%>: PLURAL ; 
+%<prn%>%<dem%>: CASES ;
+%<prn%>%<dem%>: PLURAL ;
 
 LEXICON PRON-ITG-NENCHA
 
-%<prn%>%<itg%>: CASES ; 
-%<prn%>%<itg%>: POSSESSIVES ; 
+%<prn%>%<itg%>: CASES ;
+%<prn%>%<itg%>: POSSESSIVES ;
 
 LEXICON PRON-ITG
 
-%<prn%>%<itg%>: CASES ; 
-%<prn%>%<itg%>: POSSESSIVES ; 
+%<prn%>%<itg%>: CASES ;
+%<prn%>%<itg%>: POSSESSIVES ;
 
 LEXICON PRON-ITG-QAYSI
 
-%<prn%>%<itg%>: CASES ; 
-%<prn%>%<itg%>: POSSESSIVES ; 
-%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} CASES ; 
-%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} POSSESSIVES ; 
+%<prn%>%<itg%>: CASES ;
+%<prn%>%<itg%>: POSSESSIVES ;
+%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} CASES ;
+%<prn%>%<itg%>%<pl%>:%>л%{A%}%{р%} POSSESSIVES ;
 
 LEXICON PRON-ITG-KIM
 
-%<prn%>%<itg%>%<nom%>: CLITICS-INCL-COP ; 
-%<prn%>%<itg%>%<acc%>:ди # ; 
-%<prn%>%<itg%>%<gen%>:ни # ; 
-%<prn%>%<itg%>%<gen%>%<subst%>:ни%>ки FULL-NOMINAL-INFLECTION ; 
-%<prn%>%<itg%>%<dat%>:ге # ; 
-%<prn%>%<itg%>%<loc%>:де CLITICS-INCL-COP ; 
-%<prn%>%<itg%>%<abl%>:ден CLITICS-INCL-COP ; 
+%<prn%>%<itg%>%<nom%>: CLITICS-INCL-COP ;
+%<prn%>%<itg%>%<acc%>:ди # ;
+%<prn%>%<itg%>%<gen%>:ни # ;
+%<prn%>%<itg%>%<gen%>%<subst%>:ни%>ки FULL-NOMINAL-INFLECTION ;
+%<prn%>%<itg%>%<dat%>:ге # ;
+%<prn%>%<itg%>%<loc%>:де CLITICS-INCL-COP ;
+%<prn%>%<itg%>%<abl%>:ден CLITICS-INCL-COP ;
 
 
 LEXICON PRON-QNT
 
-%<prn%>%<qnt%>: CASES ; 
-%<prn%>%<qnt%>: POSSESSIVES ; 
+%<prn%>%<qnt%>: CASES ;
+%<prn%>%<qnt%>: POSSESSIVES ;
 !%<prn%>%<qnt%>%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
 
 LEXICON PRON-IND
 
-%<prn%>%<qnt%>: CASES ; 
-%<prn%>%<qnt%>: POSSESSIVES ; 
+%<prn%>%<qnt%>: CASES ;
+%<prn%>%<qnt%>: POSSESSIVES ;
 !%<prn%>%<qnt%>%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
 
 
@@ -623,7 +623,7 @@ LEXICON PRON-REFL
 %<prn%>%<ref%>%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
 %<prn%>%<ref%>%<px1pl%>:%>%{I%}б%{I%}з CASES-ETC ;
 %<prn%>%<ref%>%<px2pl%>:%>%{I%}г%{I%}з CASES-ETC ;
-%<prn%>%<ref%>%<px3pl%>:%>л%{A%}р%>%{I%}%{n%} CASES-ETC ; 
+%<prn%>%<ref%>%<px3pl%>:%>л%{A%}р%>%{I%}%{n%} CASES-ETC ;
 
 LEXICON V-PERS-S1
 
@@ -635,7 +635,7 @@ LEXICON V-PERS-S1
 %<p2%>%<pl%>:%>с%{I%}з CLITICS-NO-COP ;
 %<p3%>%<pl%>:%>д%{I%}л%{A%} CLITICS-NO-COP ;
 
-LEXICON V-PERS-S2 
+LEXICON V-PERS-S2
 
 %<p1%>%<sg%>:%>м CLITICS-NO-COP ;
 %<p2%>%<sg%>:%>нг CLITICS-NO-COP ;
@@ -644,65 +644,65 @@ LEXICON V-PERS-S2
 %<p2%>%<pl%>:%>%{G%}%{ъ%}%{I%}з CLITICS-NO-COP ;
 %<p3%>%<pl%>:%>л%{A%} CLITICS-NO-COP ;
 
-LEXICON GER-INFL 
+LEXICON GER-INFL
 
 FULL-NOMINAL-INFLECTION ;
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
-%<past%>:%>%{G%}%{ъ%}%{A%}н V-PERS-S1 ; 
-%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; 
-%<ifi%>%<evid%>:%>%{I%}б V-PERS-S1 ; 
-%<fut2%>:%>%{R%}%{I%}к%{ъ%} V-PERS-S1 ; 
+%<past%>:%>%{G%}%{ъ%}%{A%}н V-PERS-S1 ;
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
+%<ifi%>%<evid%>:%>%{I%}б V-PERS-S1 ;
+%<fut2%>:%>%{R%}%{I%}к%{ъ%} V-PERS-S1 ;
 
-LEXICON V-FINITE-IRREGULAR_NEGATIVE 
+LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
-%<aor%>:%>%{E%} V-PERS-S1 ; 
-%<neg%>%<aor%>:%>м%{A%}%{E%} V-PERS-S1 ; 
+%<aor%>:%>%{E%} V-PERS-S1 ;
+%<neg%>%<aor%>:%>м%{A%}%{E%} V-PERS-S1 ;
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
-%<prc_perf%>:%>%{I%}б # ; ! CLIT-GHANA-ETC 
+%<prc_perf%>:%>%{I%}б # ; ! CLIT-GHANA-ETC
 %<prc_perf%>:%>%{I%}п # ; ! Dir/LR ! Use/Sub
-%<neg%>%<prc_perf%>:%>м%{A%}%>%{E%} # ; ! CLIT-GHANA-ETC 
+%<neg%>%<prc_perf%>:%>м%{A%}%>%{E%} # ; ! CLIT-GHANA-ETC
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
-%<prc_cond%>:%>с%{A%} V-PERS-S2 ; 
-%<prc_impf%>:%>%{E%} # ; 
+%<prc_cond%>:%>с%{A%} V-PERS-S2 ;
+%<prc_impf%>:%>%{E%} # ;
 
-%<ger%>:%>%{I%}у GER-INFL ;  
-%<ger_past%>:%>%{G%}%{ъ%}%{A%}н GER-INFL ; 
+%<ger%>:%>%{I%}у GER-INFL ;
+%<ger_past%>:%>%{G%}%{ъ%}%{A%}н GER-INFL ;
 %<ger_pres%>:%>%{I%}уч%{I%} GER-INFL ;  ! ger_pot?
-%<ger_fut2%>:%>%{R%}%{I%}к%{ъ%} GER-INFL ; 
-%<ger_perf%>:%>м%{A%}к%{ъ%}л%{I%}к%{ъ%} GER-INFL ; ! 
+%<ger_fut2%>:%>%{R%}%{I%}к%{ъ%} GER-INFL ;
+%<ger_perf%>:%>м%{A%}к%{ъ%}л%{I%}к%{ъ%} GER-INFL ; !
 
-%<gpr_past%>:%>%{G%}%{ъ%}%{A%}н # ; 
+%<gpr_past%>:%>%{G%}%{ъ%}%{A%}н # ;
 %<gpr_pres%>:%>%{I%}уч%{I%} # ;  ! gpr_pot?
-%<gpr_fut2%>:%>%{R%}%{I%}к%{ъ%} # ; 
+%<gpr_fut2%>:%>%{R%}%{I%}к%{ъ%} # ;
 
 %<gna_after%>:%>%{G%}%{ъ%}%{A%}нл%{I%} # ;
 %<gna_until%>:%>%{G%}%{ъ%}%{I%}нч%{A%} # ; ! Dir/LR ! FIXME: TTL has -GğnčX
-%<gna_until%>:%>%{G%}%{ъ%}%{A%}нч%{A%} # ; 
+%<gna_until%>:%>%{G%}%{ъ%}%{A%}нч%{A%} # ;
 
 %<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
 
 %<imp%>%<p2%>%<sg%>: CLITICS-NO-COP ;
 %<imp%>%<p2%>%<pl%>:%{I%}г%{ъ%}%{I%}з CLITICS-NO-COP ;
 
-LEXICON V-FORMS-IR 
+LEXICON V-FORMS-IR
 
-%<ger_aor%>:%>%{I%}р GER-INFL ; 
-%<neg%>%<ger_aor%>:%>м%{A%}з GER-INFL ; 
-%<gpr_fut%>:%>%{I%}р # ; 
-%<neg%>%<gpr_fut%>:%>м%{A%}з # ; 
+%<ger_aor%>:%>%{I%}р GER-INFL ;
+%<neg%>%<ger_aor%>:%>м%{A%}з GER-INFL ;
+%<gpr_fut%>:%>%{I%}р # ;
+%<neg%>%<gpr_fut%>:%>м%{A%}з # ;
 
-LEXICON V-FORMS-AR 
+LEXICON V-FORMS-AR
 
-%<ger_aor%>:%>%{A%}р GER-INFL ; 
-%<neg%>%<ger_aor%>:%>м%{A%}з GER-INFL ; 
-%<gpr_fut%>:%>%{A%}р # ; 
-%<neg%>%<gpr_fut%>:%>м%{A%}з # ; 
+%<ger_aor%>:%>%{A%}р GER-INFL ;
+%<neg%>%<ger_aor%>:%>м%{A%}з GER-INFL ;
+%<gpr_fut%>:%>%{A%}р # ;
+%<neg%>%<gpr_fut%>:%>м%{A%}з # ;
 
 LEXICON V-COMMON
 
@@ -716,7 +716,7 @@ V-FINITE-IRREGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
-V-FORMS-IR ; 
+V-FORMS-IR ;
 
 LEXICON V-COMMON-AR
 
@@ -730,44 +730,44 @@ V-FINITE-IRREGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
-V-FORMS-AR ; 
+V-FORMS-AR ;
 
 LEXICON V-DER
 
 %<coop%>:%>%{I%}ш V-COMMON ;
 %<abil%>:%>%{A%}л V-COMMON ;
 
-LEXICON V-IV 
+LEXICON V-IV
 
-%<v%>%<iv%>: V-COMMON ; 
-%<v%>%<iv%>: V-DER ; 
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
 
-LEXICON V-TV 
+LEXICON V-TV
 
-%<v%>%<tv%>: V-COMMON ; 
-%<v%>%<tv%>: V-DER ; 
-%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON ; 
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON ;
 %<v%>%<tv%>%<pass%>:%>%{I%}н V-COMMON ; ! Dir/LR
 
 LEXICON V-IV-AR
 
-%<v%>%<iv%>: V-COMMON-AR ; 
-%<v%>%<iv%>: V-DER ; 
+%<v%>%<iv%>: V-COMMON-AR ;
+%<v%>%<iv%>: V-DER ;
 
 LEXICON V-TV-AR
 
-%<v%>%<tv%>: V-COMMON-AR ; 
-%<v%>%<tv%>: V-DER ; 
-%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON ; 
+%<v%>%<tv%>: V-COMMON-AR ;
+%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>%<pass%>:%>%{I%}л V-COMMON ;
 %<v%>%<tv%>%<pass%>:%>%{I%}н V-COMMON ; ! Dir/LR
 
 LEXICON Vinfl-AUX
 
-%<vaux%>: V-COMMON ; 
+%<vaux%>: V-COMMON ;
 
 LEXICON INTERJ
 
-%<ij%>: # ; 
+%<ij%>: # ;
 
 LEXICON ABBR-INIT
 
@@ -814,13 +814,13 @@ LEXICON ABBR-SENT
 LEXICON ABBR-OPT
 
 %<abbr%>:%. # ; ! Dir/LR
-%<abbr%>: # ; 
+%<abbr%>: # ;
 
 LEXICON ABBR
 
 %<abbr%>: # ;
 
-LEXICON POST 
+LEXICON POST
 
 %<post%>: # ;
 
@@ -845,7 +845,7 @@ LEXICON DET-QNT
 
 %<det%>%<qnt%>: # ;
 
-LEXICON DET-DEM 
+LEXICON DET-DEM
 
 %<det%>%<dem%>: # ;
 
@@ -876,11 +876,11 @@ LEXICON Copula
 
 LEXICON Miscellaneous
 
-а%<qst%>:а # ; 
+а%<qst%>:а # ;
 да%<postadv%>:да # ; ! ""
 
 
-LEXICON Conjunctions 
+LEXICON Conjunctions
 
 эмда:эмда CC ;
 неда:неда CC ; ! "или"
@@ -901,8 +901,8 @@ LEXICON Conjunctions
 
 LEXICON Postpositions
 
-бла:бла POST ; 
-дери:дери POST ; 
+бла:бла POST ;
+дери:дери POST ;
 себебли:себебли POST ; ! ""
 себебли:себепли POST ; ! "" ! Dir/LR ! Use/Sub
 кибик:кибик POST ; ! ""
@@ -911,7 +911,7 @@ LEXICON Postpositions
 чакълы:чакълы POST ; ! "" ! FIXME:CHECK
 ючюн:ючюн POST ; ! ""
 къаршчы:къаршчы POST ; ! "против"
-бери:бери POST ; ! "" ! FIXME: CHECK 
+бери:бери POST ; ! "" ! FIXME: CHECK
 къатыш:къатыш POST ; ! "" ! FIXME: CHECK
 къадар:къадар POST ; ! ""
 
@@ -930,8 +930,8 @@ LEXICON Postpositions
 
 
 
-LEXICON Pronouns 
- 
+LEXICON Pronouns
+
 мен:м  PRON-PERS-MEN ; ! "I"
 сен:с  PRON-PERS-SEN ; ! "you"
        PRON-PERS-OL ; ! "he/she/it"
@@ -964,7 +964,7 @@ LEXICON Pronouns
 
 биреу:биреу PRON-IND ; ! "someone"
 
-LEXICON Determiners 
+LEXICON Determiners
 
 бу:бу DET-DEM ; ! "this"
 ол:ол DET-DEM ; ! "that"
@@ -987,7 +987,7 @@ LEXICON Determiners
 LEXICON Numerals
 
 ноль:ноль NUM-FULL ; ! "ноль, нуль"
-ноль:нуль NUM-FULL ; ! "" ! Dir/LR 
+ноль:нуль NUM-FULL ; ! "" ! Dir/LR
 
 бир:бир NUM-FULL ; ! ""
 эки:эки NUM-FULL ; ! ""
@@ -1322,7 +1322,7 @@ LEXICON Nouns
 бюджет:бюджет N1 ; ! "бюджет"
 бюрократ:бюрократ N1 ; ! "бюрократ"
 вал:вал N1 ; ! "Iтех. вал"
-валюта:валюта N1 ; ! "" ! Loan/rus 
+валюта:валюта N1 ; ! "" ! Loan/rus
 ватт:ватт N1 ; ! "эл.ватт"
 вертолет:вертолет N1 ; ! "вертолёт"
 вес:вес N1 ; ! "вес"
@@ -1334,7 +1334,7 @@ LEXICON Nouns
 вьетнамлы:вьетнамлы N1 ; ! "вьетнамец"
 вьетнамчы:вьетнамчы N1 ; ! "житель Вьетнама"
 газет:газет N1 ; ! "газета"
-газета:газета N1 ; ! "" ! Loan/rus 
+газета:газета N1 ; ! "" ! Loan/rus
 гаккы:гаккы N1 ; ! "яйцо"
 гара:гара N1 ; ! "Iнарзан"
 гарантия:гарантия N1 ; ! "гарантия"
@@ -1484,7 +1484,7 @@ LEXICON Nouns
 климатология:климатология N1 ; ! "климатология"
 кобра:кобра N1 ; ! "кобра" "cobra"
 код:код N1 ; ! "код" "code"
-кода:кода N1 ; ! "" ! Loan/rus 
+кода:кода N1 ; ! "" ! Loan/rus
 коллективист:коллективист N1 ; ! "коллективист"
 коллекция:коллекция N1 ; ! "коллекция"
 колониализм:колониализм N1 ; ! "колониализм" "colonialism"
@@ -1559,7 +1559,7 @@ LEXICON Nouns
 лимон:лимон N1 ; ! "лимон"
 лирик:лирик N1 ; ! "лирик"
 лирика:лирика N1 ; ! ""
-лирика:лирика N1 ; ! "" ! Loan/rus 
+лирика:лирика N1 ; ! "" ! Loan/rus
 листовка:листовка N1 ; ! "листовка"
 литвачы:литвачы N1 ; ! "житель Литвы"
 литературовед:литературовед N1 ; ! "литературовед"
@@ -1592,7 +1592,7 @@ LEXICON Nouns
 меню:меню N1 ; ! "меню" "menu"
 метан:метан N1 ; ! "хим. метан"
 метафизик:метафизик N1 ; ! "филос. метафизик"
-метафизика:метафизика N1 ; ! "" ! Loan/rus 
+метафизика:метафизика N1 ; ! "" ! Loan/rus
 метафора:метафора N1 ; ! "лит. метафора"
 метеор:метеор N1 ; ! "астр. метеор"
 метеорология:метеорология N1 ; ! "метеорология"
@@ -1728,7 +1728,7 @@ LEXICON Nouns
 рейс:рейс N1 ; ! "рейс" "flight"
 рейхстаг:рейхстаг N1 ; ! "рейхстаг"
 рекомендация:рекомендация N1 ; ! "рекомендация"
-рельс:рельс N1 ; ! "рельс" 
+рельс:рельс N1 ; ! "рельс"
 ремонт:ремонт N1 ; ! "ремонт" "renovation"
 рента:рента N1 ; ! "рента"
 репарация:репарация N1 ; ! "репарация"
@@ -1750,7 +1750,7 @@ LEXICON Nouns
 свастика:свастика N1 ; ! "свастика"
 север:север N1 ; ! "север"
 секунд:секунд N5 ; ! "секунда" "second"
-секунда:секунда N1 ; ! "" ! Loan/rus 
+секунда:секунда N1 ; ! "" ! Loan/rus
 селекция:селекция N1 ; ! "селекция"
 селитра:селитра N1 ; ! "селитра"
 семиз:семиз N1 ; ! "1.жир" "fat"
@@ -1776,7 +1776,7 @@ LEXICON Nouns
 старт:старт N1 ; ! "старт"
 статистик:статистик N1 ; ! "(-ги) статистик"
 статистика:статистика N1 ; ! ""
-статистика:статистика N1 ; ! "" ! Loan/rus 
+статистика:статистика N1 ; ! "" ! Loan/rus
 стационар:стационар N1 ; ! "стационар"
 стоматология:стоматология N1 ; ! "стоматология"
 страховка:страховка N1 ; ! "страховка"
@@ -1836,8 +1836,8 @@ LEXICON Nouns
 терси:терси N1 ; ! "неправда"
 техник:техник N1 ; ! "(-ги) техник"
 техника:техника N1 ; ! ""
-техника:техника N1 ; ! "" ! Loan/rus 
-техникум:техникум N1 ; ! "" ! Loan/rus 
+техника:техника N1 ; ! "" ! Loan/rus
+техникум:техникум N1 ; ! "" ! Loan/rus
 тёлеучю:тёлеучю N1 ; ! "редко плательщик"
 тир:тир N1 ; ! "тир"
 тиран:тиран N1 ; ! "редко тиран"
@@ -1875,7 +1875,7 @@ LEXICON Nouns
 фа:фа N1 ; ! "муз. фа"
 фай:фай N1 ; ! "текст. фай"
 файгъамбар:файгъамбар N1 ; ! "prophet"
-файл:файл N1 ; ! "file" ! Loan/rus 
+файл:файл N1 ; ! "file" ! Loan/rus
 факел:факел N1 ; ! "факел"
 фарс:фарс N1 ; ! "фарс"
 фатар:фатар N1 ; ! "квартира"
@@ -1884,7 +1884,7 @@ LEXICON Nouns
 фен:фен N1 ; ! "фен"
 фермер:фермер N1 ; ! "фермер" "farmer"
 физик:физик N1 ; ! "(ги) физик" "physicist"
-физика:физика N1 ; ! "physics" ! Loan/rus 
+физика:физика N1 ; ! "physics" ! Loan/rus
 физикачы:физикачы N1 ; ! "физик" "physicist"
 физиолог:физиолог N1 ; ! "физиолог"
 филантроп:филантроп N1 ; ! "филантроп"
@@ -1970,7 +1970,7 @@ LEXICON Nouns
 электрон:электрон N1 ; ! "электрон"
 электропоезд:электропоезд N1 ; ! "электропоезд"
 электротехник:электротехник N1 ; ! "(-ги) электротехник"
-электротехника:электротехника N1 ; ! "" ! Loan/rus 
+электротехника:электротехника N1 ; ! "" ! Loan/rus
 эллипс:эллипс N1 ; ! "эллипс"
 элчик:элчик N1 ; ! "(-ги) деревушка"
 эм:эм CC ;
@@ -1984,7 +1984,7 @@ LEXICON Nouns
 эмоция:эмоция N1 ; ! "эмоция"
 энергетик:энергетик N1 ; ! "(-ги) энергетик"
 энергетика:энергетика N1 ; ! ""
-энергетика:энергетика N1 ; ! "" ! Loan/rus 
+энергетика:энергетика N1 ; ! "" ! Loan/rus
 эпидемиология:эпидемиология N1 ; ! "эпидемиология"
 эпидемия:эпидемия N1 ; ! "эпидемия"
 эпитет:эпитет N1 ; ! "лит. эпитет"
@@ -2226,640 +2226,640 @@ LEXICON Nouns
 
 боевик:боевик N1 ; ! "" ! Loan/rus
 
-бомба:бомба N1 ; ! "" ! Loan/rus 
-олива:олива N1 ; ! "" ! Loan/rus 
-перспектива:перспектива N1 ; ! "" ! Loan/rus 
-тайга:тайга N1 ; ! "" ! Loan/rus 
-бригада:бригада N1 ; ! "" ! Loan/rus 
-олимпиада:олимпиада N1 ; ! "" ! Loan/rus 
-декада:декада N1 ; ! "" ! Loan/rus 
-блокада:блокада N1 ; ! "" ! Loan/rus 
-правда:правда N1 ; ! "" ! Loan/rus 
-пирамида:пирамида N1 ; ! "" ! Loan/rus 
-пропаганда:пропаганда N1 ; ! "" ! Loan/rus 
-команда:команда N1 ; ! "" ! Loan/rus 
-секунда:секунда N1 ; ! "" ! Loan/rus 
-кода:кода N1 ; ! "" ! Loan/rus 
-мода:мода N1 ; ! "" ! Loan/rus 
-ходжа:ходжа N1 ; ! "" ! Loan/rus 
-фаза:фаза N1 ; ! "" ! Loan/rus 
-глюкоза:глюкоза N1 ; ! "" ! Loan/rus 
-сахароза:сахароза N1 ; ! "" ! Loan/rus 
-проза:проза N1 ; ! "" ! Loan/rus 
-фруктоза:фруктоза N1 ; ! "" ! Loan/rus 
-библиотека:библиотека N1 ; ! "" ! Loan/rus 
-педагогика:педагогика N1 ; ! "" ! Loan/rus 
-логика:логика N1 ; ! "" ! Loan/rus 
-методика:методика N1 ; ! "" ! Loan/rus 
-физика:физика N1 ; ! "" ! Loan/rus 
-метафизика:метафизика N1 ; ! "" ! Loan/rus 
-публика:публика N1 ; ! "" ! Loan/rus 
-республика:республика N1 ; ! "" ! Loan/rus 
-керамика:керамика N1 ; ! "" ! Loan/rus 
-экономика:экономика N1 ; ! "" ! Loan/rus 
-макроэкономика:макроэкономика N1 ; ! "" ! Loan/rus 
-механика:механика N1 ; ! "" ! Loan/rus 
-поликлиника:поликлиника N1 ; ! "" ! Loan/rus 
-электроника:электроника N1 ; ! "" ! Loan/rus 
-техника:техника N1 ; ! "" ! Loan/rus 
-электротехника:электротехника N1 ; ! "" ! Loan/rus 
-фабрика:фабрика N1 ; ! "" ! Loan/rus 
-лирика:лирика N1 ; ! "" ! Loan/rus 
-лексика:лексика N1 ; ! "" ! Loan/rus 
-классика:классика N1 ; ! "" ! Loan/rus 
-математика:математика N1 ; ! "" ! Loan/rus 
-информатика:информатика N1 ; ! "" ! Loan/rus 
-космонавтика:космонавтика N1 ; ! "" ! Loan/rus 
-энергетика:энергетика N1 ; ! "" ! Loan/rus 
-генетика:генетика N1 ; ! "" ! Loan/rus 
-фонетика:фонетика N1 ; ! "" ! Loan/rus 
-политика:политика N1 ; ! "" ! Loan/rus 
-галактика:галактика N1 ; ! "" ! Loan/rus 
-практика:практика N1 ; ! "" ! Loan/rus 
-эклиптика:эклиптика N1 ; ! "" ! Loan/rus 
-журналистика:журналистика N1 ; ! "" ! Loan/rus 
-статистика:статистика N1 ; ! "" ! Loan/rus 
-диагностика:диагностика N1 ; ! "" ! Loan/rus 
-кнопка:кнопка N1 ; ! "" ! Loan/rus 
-марка:марка N1 ; ! "" ! Loan/rus 
-музыка:музыка N1 ; ! "" ! Loan/rus 
-шкала:шкала N1 ; ! "" ! Loan/rus 
-молекула:молекула N1 ; ! "" ! Loan/rus 
-реклама:реклама N1 ; ! "" ! Loan/rus 
-эмблема:эмблема N1 ; ! "" ! Loan/rus 
-тема:тема N1 ; ! "" ! Loan/rus 
-система:система N1 ; ! "" ! Loan/rus 
-схема:схема N1 ; ! "" ! Loan/rus 
-телеграмма:телеграмма N1 ; ! "" ! Loan/rus 
-программа:программа N1 ; ! "" ! Loan/rus 
-сома:сома N1 ; ! "" ! Loan/rus 
-фирма:фирма N1 ; ! "" ! Loan/rus 
-норма:норма N1 ; ! "" ! Loan/rus 
-форма:форма N1 ; ! "" ! Loan/rus 
-реформа:реформа N1 ; ! "" ! Loan/rus 
-дума:дума N1 ; ! "" ! Loan/rus 
-поэма:поэма N1 ; ! "" ! Loan/rus 
-гигиена:гигиена N1 ; ! "" ! Loan/rus 
-жемчужина:жемчужина N1 ; ! "" ! Loan/rus 
-медицина:медицина N1 ; ! "" ! Loan/rus 
-вакцина:вакцина N1 ; ! "" ! Loan/rus 
-машина:машина N1 ; ! "" ! Loan/rus 
-антенна:антенна N1 ; ! "" ! Loan/rus 
-колонна:колонна N1 ; ! "" ! Loan/rus 
-тонна:тонна N1 ; ! "" ! Loan/rus 
-зона:зона N1 ; ! "" ! Loan/rus 
-крона:крона N1 ; ! "" ! Loan/rus 
-корона:корона N1 ; ! "" ! Loan/rus 
-кафедра:кафедра N1 ; ! "" ! Loan/rus 
-атмосфера:атмосфера N1 ; ! "" ! Loan/rus 
-температура:температура N1 ; ! "" ! Loan/rus 
-литература:литература N1 ; ! "" ! Loan/rus 
-прокуратура:прокуратура N1 ; ! "" ! Loan/rus 
-архитектура:архитектура N1 ; ! "" ! Loan/rus 
-инфраструктура:инфраструктура N1 ; ! "" ! Loan/rus 
-скульптура:скульптура N1 ; ! "" ! Loan/rus 
-культура:культура N1 ; ! "" ! Loan/rus 
-актриса:актриса N1 ; ! "" ! Loan/rus 
-масса:масса N1 ; ! "" ! Loan/rus 
-трасса:трасса N1 ; ! "" ! Loan/rus 
-палата:палата N1 ; ! "" ! Loan/rus 
-газета:газета N1 ; ! "" ! Loan/rus 
-ракета:ракета N1 ; ! "" ! Loan/rus 
-планета:планета N1 ; ! "" ! Loan/rus 
-орбита:орбита N1 ; ! "" ! Loan/rus 
-кислота:кислота N1 ; ! "" ! Loan/rus 
-карта:карта N1 ; ! "" ! Loan/rus 
-минута:минута N1 ; ! "" ! Loan/rus 
-почта:почта N1 ; ! "" ! Loan/rus 
-дельта:дельта N1 ; ! "" ! Loan/rus 
-валюта:валюта N1 ; ! "" ! Loan/rus 
-альфа:альфа N1 ; ! "" ! Loan/rus 
-саха:саха N1 ; ! "" ! Loan/rus 
-эпоха:эпоха N1 ; ! "" ! Loan/rus 
-таблица:таблица N1 ; ! "" ! Loan/rus 
-кириллица:кириллица N1 ; ! "" ! Loan/rus 
-араб:араб N1 ; ! "" ! Loan/rus 
-клуб:клуб N1 ; ! "" ! Loan/rus 
-пристав:пристав N1 ; ! "" ! Loan/rus 
-состав:состав N1 ; ! "" ! Loan/rus 
-устав:устав N1 ; ! "" ! Loan/rus 
-норматив:норматив N1 ; ! "" ! Loan/rus 
-коллектив:коллектив N1 ; ! "" ! Loan/rus 
-архив:архив N1 ; ! "" ! Loan/rus 
-педагог:педагог N1 ; ! "" ! Loan/rus 
-геолог:геолог N1 ; ! "" ! Loan/rus 
-археолог:археолог N1 ; ! "" ! Loan/rus 
-биолог:биолог N1 ; ! "" ! Loan/rus 
-социолог:социолог N1 ; ! "" ! Loan/rus 
-тюрколог:тюрколог N1 ; ! "" ! Loan/rus 
-офтальмолог:офтальмолог N1 ; ! "" ! Loan/rus 
-метеоролог:метеоролог N1 ; ! "" ! Loan/rus 
-психолог:психолог N1 ; ! "" ! Loan/rus 
-драматург:драматург N1 ; ! "" ! Loan/rus 
-округ:округ N1 ; ! "" ! Loan/rus 
-поезд:поезд N1 ; ! "" ! Loan/rus 
-астероид:астероид N1 ; ! "" ! Loan/rus 
-зонд:зонд N1 ; ! "" ! Loan/rus 
-фонд:фонд N1 ; ! "" ! Loan/rus 
-завод:завод N1 ; ! "" ! Loan/rus 
-водород:водород N1 ; ! "" ! Loan/rus 
-кислород:кислород N1 ; ! "" ! Loan/rus 
-аккорд:аккорд N1 ; ! "" ! Loan/rus 
-отряд:отряд N1 ; ! "" ! Loan/rus 
-персонаж:персонаж N1 ; ! "" ! Loan/rus 
-тираж:тираж N1 ; ! "" ! Loan/rus 
-хадж:хадж N1 ; ! "" ! Loan/rus 
-колледж:колледж N1 ; ! "" ! Loan/rus 
-газ:газ N1 ; ! "" ! Loan/rus 
-джаз:джаз N1 ; ! "" ! Loan/rus 
+бомба:бомба N1 ; ! "" ! Loan/rus
+олива:олива N1 ; ! "" ! Loan/rus
+перспектива:перспектива N1 ; ! "" ! Loan/rus
+тайга:тайга N1 ; ! "" ! Loan/rus
+бригада:бригада N1 ; ! "" ! Loan/rus
+олимпиада:олимпиада N1 ; ! "" ! Loan/rus
+декада:декада N1 ; ! "" ! Loan/rus
+блокада:блокада N1 ; ! "" ! Loan/rus
+правда:правда N1 ; ! "" ! Loan/rus
+пирамида:пирамида N1 ; ! "" ! Loan/rus
+пропаганда:пропаганда N1 ; ! "" ! Loan/rus
+команда:команда N1 ; ! "" ! Loan/rus
+секунда:секунда N1 ; ! "" ! Loan/rus
+кода:кода N1 ; ! "" ! Loan/rus
+мода:мода N1 ; ! "" ! Loan/rus
+ходжа:ходжа N1 ; ! "" ! Loan/rus
+фаза:фаза N1 ; ! "" ! Loan/rus
+глюкоза:глюкоза N1 ; ! "" ! Loan/rus
+сахароза:сахароза N1 ; ! "" ! Loan/rus
+проза:проза N1 ; ! "" ! Loan/rus
+фруктоза:фруктоза N1 ; ! "" ! Loan/rus
+библиотека:библиотека N1 ; ! "" ! Loan/rus
+педагогика:педагогика N1 ; ! "" ! Loan/rus
+логика:логика N1 ; ! "" ! Loan/rus
+методика:методика N1 ; ! "" ! Loan/rus
+физика:физика N1 ; ! "" ! Loan/rus
+метафизика:метафизика N1 ; ! "" ! Loan/rus
+публика:публика N1 ; ! "" ! Loan/rus
+республика:республика N1 ; ! "" ! Loan/rus
+керамика:керамика N1 ; ! "" ! Loan/rus
+экономика:экономика N1 ; ! "" ! Loan/rus
+макроэкономика:макроэкономика N1 ; ! "" ! Loan/rus
+механика:механика N1 ; ! "" ! Loan/rus
+поликлиника:поликлиника N1 ; ! "" ! Loan/rus
+электроника:электроника N1 ; ! "" ! Loan/rus
+техника:техника N1 ; ! "" ! Loan/rus
+электротехника:электротехника N1 ; ! "" ! Loan/rus
+фабрика:фабрика N1 ; ! "" ! Loan/rus
+лирика:лирика N1 ; ! "" ! Loan/rus
+лексика:лексика N1 ; ! "" ! Loan/rus
+классика:классика N1 ; ! "" ! Loan/rus
+математика:математика N1 ; ! "" ! Loan/rus
+информатика:информатика N1 ; ! "" ! Loan/rus
+космонавтика:космонавтика N1 ; ! "" ! Loan/rus
+энергетика:энергетика N1 ; ! "" ! Loan/rus
+генетика:генетика N1 ; ! "" ! Loan/rus
+фонетика:фонетика N1 ; ! "" ! Loan/rus
+политика:политика N1 ; ! "" ! Loan/rus
+галактика:галактика N1 ; ! "" ! Loan/rus
+практика:практика N1 ; ! "" ! Loan/rus
+эклиптика:эклиптика N1 ; ! "" ! Loan/rus
+журналистика:журналистика N1 ; ! "" ! Loan/rus
+статистика:статистика N1 ; ! "" ! Loan/rus
+диагностика:диагностика N1 ; ! "" ! Loan/rus
+кнопка:кнопка N1 ; ! "" ! Loan/rus
+марка:марка N1 ; ! "" ! Loan/rus
+музыка:музыка N1 ; ! "" ! Loan/rus
+шкала:шкала N1 ; ! "" ! Loan/rus
+молекула:молекула N1 ; ! "" ! Loan/rus
+реклама:реклама N1 ; ! "" ! Loan/rus
+эмблема:эмблема N1 ; ! "" ! Loan/rus
+тема:тема N1 ; ! "" ! Loan/rus
+система:система N1 ; ! "" ! Loan/rus
+схема:схема N1 ; ! "" ! Loan/rus
+телеграмма:телеграмма N1 ; ! "" ! Loan/rus
+программа:программа N1 ; ! "" ! Loan/rus
+сома:сома N1 ; ! "" ! Loan/rus
+фирма:фирма N1 ; ! "" ! Loan/rus
+норма:норма N1 ; ! "" ! Loan/rus
+форма:форма N1 ; ! "" ! Loan/rus
+реформа:реформа N1 ; ! "" ! Loan/rus
+дума:дума N1 ; ! "" ! Loan/rus
+поэма:поэма N1 ; ! "" ! Loan/rus
+гигиена:гигиена N1 ; ! "" ! Loan/rus
+жемчужина:жемчужина N1 ; ! "" ! Loan/rus
+медицина:медицина N1 ; ! "" ! Loan/rus
+вакцина:вакцина N1 ; ! "" ! Loan/rus
+машина:машина N1 ; ! "" ! Loan/rus
+антенна:антенна N1 ; ! "" ! Loan/rus
+колонна:колонна N1 ; ! "" ! Loan/rus
+тонна:тонна N1 ; ! "" ! Loan/rus
+зона:зона N1 ; ! "" ! Loan/rus
+крона:крона N1 ; ! "" ! Loan/rus
+корона:корона N1 ; ! "" ! Loan/rus
+кафедра:кафедра N1 ; ! "" ! Loan/rus
+атмосфера:атмосфера N1 ; ! "" ! Loan/rus
+температура:температура N1 ; ! "" ! Loan/rus
+литература:литература N1 ; ! "" ! Loan/rus
+прокуратура:прокуратура N1 ; ! "" ! Loan/rus
+архитектура:архитектура N1 ; ! "" ! Loan/rus
+инфраструктура:инфраструктура N1 ; ! "" ! Loan/rus
+скульптура:скульптура N1 ; ! "" ! Loan/rus
+культура:культура N1 ; ! "" ! Loan/rus
+актриса:актриса N1 ; ! "" ! Loan/rus
+масса:масса N1 ; ! "" ! Loan/rus
+трасса:трасса N1 ; ! "" ! Loan/rus
+палата:палата N1 ; ! "" ! Loan/rus
+газета:газета N1 ; ! "" ! Loan/rus
+ракета:ракета N1 ; ! "" ! Loan/rus
+планета:планета N1 ; ! "" ! Loan/rus
+орбита:орбита N1 ; ! "" ! Loan/rus
+кислота:кислота N1 ; ! "" ! Loan/rus
+карта:карта N1 ; ! "" ! Loan/rus
+минута:минута N1 ; ! "" ! Loan/rus
+почта:почта N1 ; ! "" ! Loan/rus
+дельта:дельта N1 ; ! "" ! Loan/rus
+валюта:валюта N1 ; ! "" ! Loan/rus
+альфа:альфа N1 ; ! "" ! Loan/rus
+саха:саха N1 ; ! "" ! Loan/rus
+эпоха:эпоха N1 ; ! "" ! Loan/rus
+таблица:таблица N1 ; ! "" ! Loan/rus
+кириллица:кириллица N1 ; ! "" ! Loan/rus
+араб:араб N1 ; ! "" ! Loan/rus
+клуб:клуб N1 ; ! "" ! Loan/rus
+пристав:пристав N1 ; ! "" ! Loan/rus
+состав:состав N1 ; ! "" ! Loan/rus
+устав:устав N1 ; ! "" ! Loan/rus
+норматив:норматив N1 ; ! "" ! Loan/rus
+коллектив:коллектив N1 ; ! "" ! Loan/rus
+архив:архив N1 ; ! "" ! Loan/rus
+педагог:педагог N1 ; ! "" ! Loan/rus
+геолог:геолог N1 ; ! "" ! Loan/rus
+археолог:археолог N1 ; ! "" ! Loan/rus
+биолог:биолог N1 ; ! "" ! Loan/rus
+социолог:социолог N1 ; ! "" ! Loan/rus
+тюрколог:тюрколог N1 ; ! "" ! Loan/rus
+офтальмолог:офтальмолог N1 ; ! "" ! Loan/rus
+метеоролог:метеоролог N1 ; ! "" ! Loan/rus
+психолог:психолог N1 ; ! "" ! Loan/rus
+драматург:драматург N1 ; ! "" ! Loan/rus
+округ:округ N1 ; ! "" ! Loan/rus
+поезд:поезд N1 ; ! "" ! Loan/rus
+астероид:астероид N1 ; ! "" ! Loan/rus
+зонд:зонд N1 ; ! "" ! Loan/rus
+фонд:фонд N1 ; ! "" ! Loan/rus
+завод:завод N1 ; ! "" ! Loan/rus
+водород:водород N1 ; ! "" ! Loan/rus
+кислород:кислород N1 ; ! "" ! Loan/rus
+аккорд:аккорд N1 ; ! "" ! Loan/rus
+отряд:отряд N1 ; ! "" ! Loan/rus
+персонаж:персонаж N1 ; ! "" ! Loan/rus
+тираж:тираж N1 ; ! "" ! Loan/rus
+хадж:хадж N1 ; ! "" ! Loan/rus
+колледж:колледж N1 ; ! "" ! Loan/rus
+газ:газ N1 ; ! "" ! Loan/rus
+джаз:джаз N1 ; ! "" ! Loan/rus
 джаз:жаз N1 ; ! "" ! Loan/rus  ! Dir/LR ! Use/Sub
-указ:указ N1 ; ! "" ! Loan/rus 
-этногенез:этногенез N1 ; ! "" ! Loan/rus 
-анализ:анализ N1 ; ! "" ! Loan/rus 
-совхоз:совхоз N1 ; ! "" ! Loan/rus 
-колхоз:колхоз N1 ; ! "" ! Loan/rus 
-француз:француз N1 ; ! "" ! Loan/rus 
-хаджи:хаджи N1 ; ! "" ! Loan/rus 
-такси:такси N1 ; ! "" ! Loan/rus 
-край:край N1 ; ! "" ! Loan/rus 
-чай:чай N1 ; ! "" ! Loan/rus 
-иудей:иудей N1 ; ! "" ! Loan/rus 
-музей:музей N1 ; ! "" ! Loan/rus 
-хоккей:хоккей N1 ; ! "" ! Loan/rus 
-магний:магний N1 ; ! "" ! Loan/rus 
-санаторий:санаторий N1 ; ! "" ! Loan/rus 
-кальций:кальций N1 ; ! "" ! Loan/rus 
-аммиак:аммиак N1 ; ! "" ! Loan/rus 
-узбек:узбек N1 ; ! "" ! Loan/rus 
-парсек:парсек N1 ; ! "" ! Loan/rus 
-прозаик:прозаик N1 ; ! "" ! Loan/rus 
-большевик:большевик N1 ; ! "" ! Loan/rus 
-таджик:таджик N1 ; ! "" ! Loan/rus 
+указ:указ N1 ; ! "" ! Loan/rus
+этногенез:этногенез N1 ; ! "" ! Loan/rus
+анализ:анализ N1 ; ! "" ! Loan/rus
+совхоз:совхоз N1 ; ! "" ! Loan/rus
+колхоз:колхоз N1 ; ! "" ! Loan/rus
+француз:француз N1 ; ! "" ! Loan/rus
+хаджи:хаджи N1 ; ! "" ! Loan/rus
+такси:такси N1 ; ! "" ! Loan/rus
+край:край N1 ; ! "" ! Loan/rus
+чай:чай N1 ; ! "" ! Loan/rus
+иудей:иудей N1 ; ! "" ! Loan/rus
+музей:музей N1 ; ! "" ! Loan/rus
+хоккей:хоккей N1 ; ! "" ! Loan/rus
+магний:магний N1 ; ! "" ! Loan/rus
+санаторий:санаторий N1 ; ! "" ! Loan/rus
+кальций:кальций N1 ; ! "" ! Loan/rus
+аммиак:аммиак N1 ; ! "" ! Loan/rus
+узбек:узбек N1 ; ! "" ! Loan/rus
+парсек:парсек N1 ; ! "" ! Loan/rus
+прозаик:прозаик N1 ; ! "" ! Loan/rus
+большевик:большевик N1 ; ! "" ! Loan/rus
+таджик:таджик N1 ; ! "" ! Loan/rus
 тюрк:тюрк N1 ; ! ""
-академик:академик N1 ; ! "" ! Loan/rus 
-механик:механик N1 ; ! "" ! Loan/rus 
-полковник:полковник N1 ; ! "" ! Loan/rus 
-заповедник:заповедник N1 ; ! "" ! Loan/rus 
-начальник:начальник N1 ; ! "" ! Loan/rus 
-математик:математик N1 ; ! "" ! Loan/rus 
-политик:политик N1 ; ! "" ! Loan/rus 
-пластик:пластик N1 ; ! "" ! Loan/rus 
-банк:банк N1 ; ! "" ! Loan/rus 
-блок:блок N1 ; ! "" ! Loan/rus 
-парк:парк N1 ; ! "" ! Loan/rus 
-очерк:очерк N1 ; ! "" ! Loan/rus 
-ук:ук N1 ; ! "" ! Loan/rus 
-феодал:феодал N1 ; ! "" ! Loan/rus 
-вокзал:вокзал N1 ; ! "" ! Loan/rus 
-материал:материал N1 ; ! "" ! Loan/rus 
-вокал:вокал N1 ; ! "" ! Loan/rus 
-канал:канал N1 ; ! "" ! Loan/rus 
-телеканал:телеканал N1 ; ! "" ! Loan/rus 
-национал:национал N1 ; ! "" ! Loan/rus 
-журнал:журнал N1 ; ! "" ! Loan/rus 
-генерал:генерал N1 ; ! "" ! Loan/rus 
-адмирал:адмирал N1 ; ! "" ! Loan/rus 
-хурал:хурал N1 ; ! "" ! Loan/rus 
-тал:тал N1 ; ! "" ! Loan/rus 
-капитал:капитал N1 ; ! "" ! Loan/rus 
-квартал:квартал N1 ; ! "" ! Loan/rus 
-файл:файл N1 ; ! "" ! Loan/rus 
-металл:металл N1 ; ! "" ! Loan/rus 
-волейбол:волейбол N1 ; ! "" ! Loan/rus 
-баскетбол:баскетбол N1 ; ! "" ! Loan/rus 
-футбол:футбол N1 ; ! "" ! Loan/rus 
-кол:кол N1 ; ! "" ! Loan/rus 
-протокол:протокол N1 ; ! "" ! Loan/rus 
-ислам:ислам N1 ; ! "" ! Loan/rus 
-буддизм:буддизм N1 ; ! "" ! Loan/rus 
-феодализм:феодализм N1 ; ! "" ! Loan/rus 
-социализм:социализм N1 ; ! "" ! Loan/rus 
-либерализм:либерализм N1 ; ! "" ! Loan/rus 
-организм:организм N1 ; ! "" ! Loan/rus 
-механизм:механизм N1 ; ! "" ! Loan/rus 
-альпинизм:альпинизм N1 ; ! "" ! Loan/rus 
-коммунизм:коммунизм N1 ; ! "" ! Loan/rus 
-парламентаризм:парламентаризм N1 ; ! "" ! Loan/rus 
-терроризм:терроризм N1 ; ! "" ! Loan/rus 
-туризм:туризм N1 ; ! "" ! Loan/rus 
-марксизм:марксизм N1 ; ! "" ! Loan/rus 
-патриотизм:патриотизм N1 ; ! "" ! Loan/rus 
-фашизм:фашизм N1 ; ! "" ! Loan/rus 
-грамм:грамм N1 ; ! "" ! Loan/rus 
-килограмм:килограмм N1 ; ! "" ! Loan/rus 
-альбом:альбом N1 ; ! "" ! Loan/rus 
-астроном:астроном N1 ; ! "" ! Loan/rus 
-референдум:референдум N1 ; ! "" ! Loan/rus 
-президиум:президиум N3 ; ! "" ! Loan/rus 
-техникум:техникум N1 ; ! "" ! Loan/rus 
-вакуум:вакуум N1 ; ! "" ! Loan/rus 
-каган:каган N1 ; ! "" ! Loan/rus 
-курган:курган N1 ; ! "" ! Loan/rus 
-океан:океан N1 ; ! "" ! Loan/rus 
-партизан:партизан N1 ; ! "" ! Loan/rus 
-меридиан:меридиан N1 ; ! "" ! Loan/rus 
-американ:американ N1 ; ! "" ! Loan/rus 
-вулкан:вулкан N1 ; ! "" ! Loan/rus 
-план:план N1 ; ! "" ! Loan/rus 
-роман:роман N1 ; ! "" ! Loan/rus 
-ресторан:ресторан N1 ; ! "" ! Loan/rus 
-капитан:капитан N1 ; ! "" ! Loan/rus 
-хан:хан N1 ; ! "" ! Loan/rus 
-орден:орден N1 ; ! "" ! Loan/rus 
-туркмен:туркмен N1 ; ! "" ! Loan/rus 
-витамин:витамин N1 ; ! "" ! Loan/rus 
-каротин:каротин N1 ; ! "" ! Loan/rus 
-дизайн:дизайн N1 ; ! "" ! Loan/rus 
-бассейн:бассейн N1 ; ! "" ! Loan/rus 
-вагон:вагон N1 ; ! "" ! Loan/rus 
-сезон:сезон N1 ; ! "" ! Loan/rus 
-регион:регион N1 ; ! "" ! Loan/rus 
-стадион:стадион N1 ; ! "" ! Loan/rus 
-район:район N1 ; ! "" ! Loan/rus 
-микрорайон:микрорайон N1 ; ! "" ! Loan/rus 
-циклон:циклон N1 ; ! "" ! Loan/rus 
-эскадрон:эскадрон N1 ; ! "" ! Loan/rus 
-бетон:бетон N1 ; ! "" ! Loan/rus 
-телефон:телефон N1 ; ! "" ! Loan/rus 
-микрофон:микрофон N1 ; ! "" ! Loan/rus 
-орун:орун N1 ; ! "" ! Loan/rus 
-сын:сын N1 ; ! "" ! Loan/rus 
-пиво:пиво N1 ; ! "" ! Loan/rus 
-казначейство:казначейство N1 ; ! "" ! Loan/rus 
-ведомство:ведомство N1 ; ! "" ! Loan/rus 
-министерство:министерство N1 ; ! "" ! Loan/rus 
-агентство:агентство N1 ; ! "" ! Loan/rus 
-видео:видео N1 ; ! "" ! Loan/rus 
-радио:радио N1 ; ! "" ! Loan/rus 
-кино:кино N1 ; ! "" ! Loan/rus 
-евро:евро N1 ; ! "" ! Loan/rus 
-бюро:бюро N1 ; ! "" ! Loan/rus 
-политбюро:политбюро N1 ; ! "" ! Loan/rus 
-вето:вето N1 ; ! "" ! Loan/rus 
-фото:фото N1 ; ! "" ! Loan/rus 
-эфиоп:эфиоп N1 ; ! "" ! Loan/rus 
-телескоп:телескоп N1 ; ! "" ! Loan/rus 
-хазар:хазар N1 ; ! "" ! Loan/rus 
-доллар:доллар N1 ; ! "" ! Loan/rus 
-комиссар:комиссар N1 ; ! "" ! Loan/rus 
-санитар:санитар N1 ; ! "" ! Loan/rus 
-гектар:гектар N1 ; ! "" ! Loan/rus 
-швейцар:швейцар N1 ; ! "" ! Loan/rus 
-бункер:бункер N1 ; ! "" ! Loan/rus 
-дизайнер:дизайнер N1 ; ! "" ! Loan/rus 
-контейнер:контейнер N1 ; ! "" ! Loan/rus 
-продюсер:продюсер N1 ; ! "" ! Loan/rus 
-кратер:кратер N1 ; ! "" ! Loan/rus 
-кондитер:кондитер N1 ; ! "" ! Loan/rus 
-бухгалтер:бухгалтер N1 ; ! "" ! Loan/rus 
-мастер:мастер N1 ; ! "" ! Loan/rus 
-компьютер:компьютер N1 ; ! "" ! Loan/rus 
-офицер:офицер N1 ; ! "" ! Loan/rus 
-акушер:акушер N1 ; ! "" ! Loan/rus 
-режиссёр:режиссёр N1 ; ! "" ! Loan/rus 
-командир:командир N1 ; ! "" ! Loan/rus 
-пассажир:пассажир N1 ; ! "" ! Loan/rus 
-жанр:жанр N1 ; ! "genre" ! Loan/rus 
-майор:майор N1 ; ! "" ! Loan/rus 
-фольклор:фольклор N1 ; ! "folklore" ! Loan/rus 
-прокурор:прокурор N1 ; ! "" ! Loan/rus 
-профессор:профессор N1 ; ! "professor" ! Loan/rus 
-профиль:профиль N5 ; ! "profile" ! Loan/rus 
-инкубатор:инкубатор N1 ; ! "" ! Loan/rus 
-экватор:экватор N1 ; ! "" ! Loan/rus 
-импровизатор:импровизатор N1 ; ! "" ! Loan/rus 
-организатор:организатор N1 ; ! "organiser" ! Loan/rus 
-сенатор:сенатор N1 ; ! "senator" ! Loan/rus 
-губернатор:губернатор N1 ; ! "governor" ! Loan/rus 
-император:император N1 ; ! "emperor" ! Loan/rus 
-оператор:оператор N1 ; ! "operator" ! Loan/rus 
-оратор:оратор N1 ; ! "orator" ! Loan/rus 
-агитатор:агитатор N1 ; ! "agitator" ! Loan/rus 
-коммутатор:коммутатор N1 ; ! "" ! Loan/rus 
-автор:автор N1 ; ! "" ! Loan/rus 
-композитор:композитор N1 ; ! "" ! Loan/rus 
-редактор:редактор N1 ; ! "" ! Loan/rus 
-вектор:вектор N1 ; ! "" ! Loan/rus 
-инспектор:инспектор N1 ; ! "" ! Loan/rus 
-ректор:ректор N1 ; ! "" ! Loan/rus 
-директор:директор N1 ; ! "" ! Loan/rus 
-сектор:сектор N1 ; ! "" ! Loan/rus 
-архитектор:архитектор N1 ; ! "" ! Loan/rus 
-доктор:доктор N1 ; ! "" ! Loan/rus 
-инструктор:инструктор N1 ; ! "" ! Loan/rus 
-мотор:мотор N1 ; ! "" ! Loan/rus 
-скульптор:скульптор N1 ; ! "" ! Loan/rus 
-фосфор:фосфор N1 ; ! "" ! Loan/rus 
-хор:хор N1 ; ! "" ! Loan/rus 
-театр:театр N1 ; ! "" ! Loan/rus 
-кинотеатр:кинотеатр N1 ; ! "" ! Loan/rus 
-диаметр:диаметр N1 ; ! "" ! Loan/rus 
-параметр:параметр N1 ; ! "" ! Loan/rus 
-сантиметр:сантиметр N1 ; ! "" ! Loan/rus 
-километр:километр N1 ; ! "" ! Loan/rus 
+академик:академик N1 ; ! "" ! Loan/rus
+механик:механик N1 ; ! "" ! Loan/rus
+полковник:полковник N1 ; ! "" ! Loan/rus
+заповедник:заповедник N1 ; ! "" ! Loan/rus
+начальник:начальник N1 ; ! "" ! Loan/rus
+математик:математик N1 ; ! "" ! Loan/rus
+политик:политик N1 ; ! "" ! Loan/rus
+пластик:пластик N1 ; ! "" ! Loan/rus
+банк:банк N1 ; ! "" ! Loan/rus
+блок:блок N1 ; ! "" ! Loan/rus
+парк:парк N1 ; ! "" ! Loan/rus
+очерк:очерк N1 ; ! "" ! Loan/rus
+ук:ук N1 ; ! "" ! Loan/rus
+феодал:феодал N1 ; ! "" ! Loan/rus
+вокзал:вокзал N1 ; ! "" ! Loan/rus
+материал:материал N1 ; ! "" ! Loan/rus
+вокал:вокал N1 ; ! "" ! Loan/rus
+канал:канал N1 ; ! "" ! Loan/rus
+телеканал:телеканал N1 ; ! "" ! Loan/rus
+национал:национал N1 ; ! "" ! Loan/rus
+журнал:журнал N1 ; ! "" ! Loan/rus
+генерал:генерал N1 ; ! "" ! Loan/rus
+адмирал:адмирал N1 ; ! "" ! Loan/rus
+хурал:хурал N1 ; ! "" ! Loan/rus
+тал:тал N1 ; ! "" ! Loan/rus
+капитал:капитал N1 ; ! "" ! Loan/rus
+квартал:квартал N1 ; ! "" ! Loan/rus
+файл:файл N1 ; ! "" ! Loan/rus
+металл:металл N1 ; ! "" ! Loan/rus
+волейбол:волейбол N1 ; ! "" ! Loan/rus
+баскетбол:баскетбол N1 ; ! "" ! Loan/rus
+футбол:футбол N1 ; ! "" ! Loan/rus
+кол:кол N1 ; ! "" ! Loan/rus
+протокол:протокол N1 ; ! "" ! Loan/rus
+ислам:ислам N1 ; ! "" ! Loan/rus
+буддизм:буддизм N1 ; ! "" ! Loan/rus
+феодализм:феодализм N1 ; ! "" ! Loan/rus
+социализм:социализм N1 ; ! "" ! Loan/rus
+либерализм:либерализм N1 ; ! "" ! Loan/rus
+организм:организм N1 ; ! "" ! Loan/rus
+механизм:механизм N1 ; ! "" ! Loan/rus
+альпинизм:альпинизм N1 ; ! "" ! Loan/rus
+коммунизм:коммунизм N1 ; ! "" ! Loan/rus
+парламентаризм:парламентаризм N1 ; ! "" ! Loan/rus
+терроризм:терроризм N1 ; ! "" ! Loan/rus
+туризм:туризм N1 ; ! "" ! Loan/rus
+марксизм:марксизм N1 ; ! "" ! Loan/rus
+патриотизм:патриотизм N1 ; ! "" ! Loan/rus
+фашизм:фашизм N1 ; ! "" ! Loan/rus
+грамм:грамм N1 ; ! "" ! Loan/rus
+килограмм:килограмм N1 ; ! "" ! Loan/rus
+альбом:альбом N1 ; ! "" ! Loan/rus
+астроном:астроном N1 ; ! "" ! Loan/rus
+референдум:референдум N1 ; ! "" ! Loan/rus
+президиум:президиум N3 ; ! "" ! Loan/rus
+техникум:техникум N1 ; ! "" ! Loan/rus
+вакуум:вакуум N1 ; ! "" ! Loan/rus
+каган:каган N1 ; ! "" ! Loan/rus
+курган:курган N1 ; ! "" ! Loan/rus
+океан:океан N1 ; ! "" ! Loan/rus
+партизан:партизан N1 ; ! "" ! Loan/rus
+меридиан:меридиан N1 ; ! "" ! Loan/rus
+американ:американ N1 ; ! "" ! Loan/rus
+вулкан:вулкан N1 ; ! "" ! Loan/rus
+план:план N1 ; ! "" ! Loan/rus
+роман:роман N1 ; ! "" ! Loan/rus
+ресторан:ресторан N1 ; ! "" ! Loan/rus
+капитан:капитан N1 ; ! "" ! Loan/rus
+хан:хан N1 ; ! "" ! Loan/rus
+орден:орден N1 ; ! "" ! Loan/rus
+туркмен:туркмен N1 ; ! "" ! Loan/rus
+витамин:витамин N1 ; ! "" ! Loan/rus
+каротин:каротин N1 ; ! "" ! Loan/rus
+дизайн:дизайн N1 ; ! "" ! Loan/rus
+бассейн:бассейн N1 ; ! "" ! Loan/rus
+вагон:вагон N1 ; ! "" ! Loan/rus
+сезон:сезон N1 ; ! "" ! Loan/rus
+регион:регион N1 ; ! "" ! Loan/rus
+стадион:стадион N1 ; ! "" ! Loan/rus
+район:район N1 ; ! "" ! Loan/rus
+микрорайон:микрорайон N1 ; ! "" ! Loan/rus
+циклон:циклон N1 ; ! "" ! Loan/rus
+эскадрон:эскадрон N1 ; ! "" ! Loan/rus
+бетон:бетон N1 ; ! "" ! Loan/rus
+телефон:телефон N1 ; ! "" ! Loan/rus
+микрофон:микрофон N1 ; ! "" ! Loan/rus
+орун:орун N1 ; ! "" ! Loan/rus
+сын:сын N1 ; ! "" ! Loan/rus
+пиво:пиво N1 ; ! "" ! Loan/rus
+казначейство:казначейство N1 ; ! "" ! Loan/rus
+ведомство:ведомство N1 ; ! "" ! Loan/rus
+министерство:министерство N1 ; ! "" ! Loan/rus
+агентство:агентство N1 ; ! "" ! Loan/rus
+видео:видео N1 ; ! "" ! Loan/rus
+радио:радио N1 ; ! "" ! Loan/rus
+кино:кино N1 ; ! "" ! Loan/rus
+евро:евро N1 ; ! "" ! Loan/rus
+бюро:бюро N1 ; ! "" ! Loan/rus
+политбюро:политбюро N1 ; ! "" ! Loan/rus
+вето:вето N1 ; ! "" ! Loan/rus
+фото:фото N1 ; ! "" ! Loan/rus
+эфиоп:эфиоп N1 ; ! "" ! Loan/rus
+телескоп:телескоп N1 ; ! "" ! Loan/rus
+хазар:хазар N1 ; ! "" ! Loan/rus
+доллар:доллар N1 ; ! "" ! Loan/rus
+комиссар:комиссар N1 ; ! "" ! Loan/rus
+санитар:санитар N1 ; ! "" ! Loan/rus
+гектар:гектар N1 ; ! "" ! Loan/rus
+швейцар:швейцар N1 ; ! "" ! Loan/rus
+бункер:бункер N1 ; ! "" ! Loan/rus
+дизайнер:дизайнер N1 ; ! "" ! Loan/rus
+контейнер:контейнер N1 ; ! "" ! Loan/rus
+продюсер:продюсер N1 ; ! "" ! Loan/rus
+кратер:кратер N1 ; ! "" ! Loan/rus
+кондитер:кондитер N1 ; ! "" ! Loan/rus
+бухгалтер:бухгалтер N1 ; ! "" ! Loan/rus
+мастер:мастер N1 ; ! "" ! Loan/rus
+компьютер:компьютер N1 ; ! "" ! Loan/rus
+офицер:офицер N1 ; ! "" ! Loan/rus
+акушер:акушер N1 ; ! "" ! Loan/rus
+режиссёр:режиссёр N1 ; ! "" ! Loan/rus
+командир:командир N1 ; ! "" ! Loan/rus
+пассажир:пассажир N1 ; ! "" ! Loan/rus
+жанр:жанр N1 ; ! "genre" ! Loan/rus
+майор:майор N1 ; ! "" ! Loan/rus
+фольклор:фольклор N1 ; ! "folklore" ! Loan/rus
+прокурор:прокурор N1 ; ! "" ! Loan/rus
+профессор:профессор N1 ; ! "professor" ! Loan/rus
+профиль:профиль N5 ; ! "profile" ! Loan/rus
+инкубатор:инкубатор N1 ; ! "" ! Loan/rus
+экватор:экватор N1 ; ! "" ! Loan/rus
+импровизатор:импровизатор N1 ; ! "" ! Loan/rus
+организатор:организатор N1 ; ! "organiser" ! Loan/rus
+сенатор:сенатор N1 ; ! "senator" ! Loan/rus
+губернатор:губернатор N1 ; ! "governor" ! Loan/rus
+император:император N1 ; ! "emperor" ! Loan/rus
+оператор:оператор N1 ; ! "operator" ! Loan/rus
+оратор:оратор N1 ; ! "orator" ! Loan/rus
+агитатор:агитатор N1 ; ! "agitator" ! Loan/rus
+коммутатор:коммутатор N1 ; ! "" ! Loan/rus
+автор:автор N1 ; ! "" ! Loan/rus
+композитор:композитор N1 ; ! "" ! Loan/rus
+редактор:редактор N1 ; ! "" ! Loan/rus
+вектор:вектор N1 ; ! "" ! Loan/rus
+инспектор:инспектор N1 ; ! "" ! Loan/rus
+ректор:ректор N1 ; ! "" ! Loan/rus
+директор:директор N1 ; ! "" ! Loan/rus
+сектор:сектор N1 ; ! "" ! Loan/rus
+архитектор:архитектор N1 ; ! "" ! Loan/rus
+доктор:доктор N1 ; ! "" ! Loan/rus
+инструктор:инструктор N1 ; ! "" ! Loan/rus
+мотор:мотор N1 ; ! "" ! Loan/rus
+скульптор:скульптор N1 ; ! "" ! Loan/rus
+фосфор:фосфор N1 ; ! "" ! Loan/rus
+хор:хор N1 ; ! "" ! Loan/rus
+театр:театр N1 ; ! "" ! Loan/rus
+кинотеатр:кинотеатр N1 ; ! "" ! Loan/rus
+диаметр:диаметр N1 ; ! "" ! Loan/rus
+параметр:параметр N1 ; ! "" ! Loan/rus
+сантиметр:сантиметр N1 ; ! "" ! Loan/rus
+километр:километр N1 ; ! "" ! Loan/rus
 метр:метр N1 ; ! "" ! Loan/rus
 кубметр:кубметр N1 ; ! "" ! Loan/rus
-кадастр:кадастр N1 ; ! "" ! Loan/rus 
-оркестр:оркестр N1 ; ! "" ! Loan/rus 
-уйгур:уйгур N1 ; ! "" ! Loan/rus 
-адрес:адрес N1 ; ! "" ! Loan/rus 
-синтаксис:синтаксис N1 ; ! "" ! Loan/rus 
-авиарейс:авиарейс N1 ; ! "" ! Loan/rus 
-кодекс:кодекс N1 ; ! "" ! Loan/rus 
-комплекс:комплекс N1 ; ! "" ! Loan/rus 
-космос:космос N1 ; ! "" ! Loan/rus 
-курс:курс N1 ; ! "" ! Loan/rus 
-класс:класс N1 ; ! "" ! Loan/rus 
-конгресс:конгресс N1 ; ! "" ! Loan/rus 
-автобус:автобус N1 ; ! "" ! Loan/rus 
-градус:градус N1 ; ! "" ! Loan/rus 
-вирус:вирус N1 ; ! "" ! Loan/rus 
-статус:статус N1 ; ! "" ! Loan/rus 
-кандидат:кандидат N1 ; ! "" ! Loan/rus 
-лауреат:лауреат N1 ; ! "" ! Loan/rus 
-салат:салат N1 ; ! "" ! Loan/rus 
-автомат:автомат N1 ; ! "" ! Loan/rus 
-сармат:сармат N1 ; ! "" ! Loan/rus 
-комбинат:комбинат N1 ; ! "" ! Loan/rus 
-аппарат:аппарат N1 ; ! "" ! Loan/rus 
-протекторат:протекторат N1 ; ! "" ! Loan/rus 
-депутат:депутат N1 ; ! "" ! Loan/rus 
-штат:штат N1 ; ! "" ! Loan/rus 
-космонавт:космонавт N1 ; ! "" ! Loan/rus 
-совет:совет N1 ; ! "" ! Loan/rus 
-кадет:кадет N1 ; ! "" ! Loan/rus 
-балет:балет N1 ; ! "" ! Loan/rus 
-комитет:комитет N1 ; ! "" ! Loan/rus 
-университет:университет N1 ; ! "" ! Loan/rus 
-факультет:факультет N1 ; ! "" ! Loan/rus 
-самолёт:самолёт N3 ; ! "" ! Loan/rus 
-вертолёт:вертолёт N3 ; ! "" ! Loan/rus 
-пулемёт:пулемёт N3 ; ! "" ! Loan/rus 
-отчёт:отчёт N3 ; ! "" ! Loan/rus 
-алфавит:алфавит N1 ; ! "" ! Loan/rus 
-санскрит:санскрит N1 ; ! "" ! Loan/rus 
-метеорит:метеорит N1 ; ! "" ! Loan/rus 
-сайт:сайт N1 ; ! "" ! Loan/rus 
-диалект:диалект N1 ; ! "" ! Loan/rus 
-объект:объект N1 ; ! "" ! Loan/rus 
-субъект:субъект N1 ; ! "" ! Loan/rus 
-пункт:пункт N1 ; ! "" ! Loan/rus 
-продукт:продукт N1 ; ! "" ! Loan/rus 
-лейтенант:лейтенант N1 ; ! "" ! Loan/rus 
-грант:грант N1 ; ! "" ! Loan/rus 
-мигрант:мигрант N1 ; ! "" ! Loan/rus 
-десант:десант N1 ; ! "" ! Loan/rus 
-консультант:консультант N1 ; ! "" ! Loan/rus 
-агент:агент N1 ; ! "" ! Loan/rus 
-корреспондент:корреспондент N1 ; ! "" ! Loan/rus 
-студент:студент N1 ; ! "" ! Loan/rus 
-коэффициент:коэффициент N1 ; ! "" ! Loan/rus 
-регламент:регламент N1 ; ! "" ! Loan/rus 
-парламент:парламент N1 ; ! "" ! Loan/rus 
-департамент:департамент N1 ; ! "" ! Loan/rus 
-ассортимент:ассортимент N1 ; ! "" ! Loan/rus 
-документ:документ N1 ; ! "" ! Loan/rus 
-патент:патент N1 ; ! "" ! Loan/rus 
-доцент:доцент N1 ; ! "" ! Loan/rus 
-фронт:фронт N1 ; ! "" ! Loan/rus 
-патриот:патриот N1 ; ! "" ! Loan/rus 
-флот:флот N1 ; ! "" ! Loan/rus 
-стандарт:стандарт N1 ; ! "" ! Loan/rus 
-карт:карт N1 ; ! "" ! Loan/rus 
-аэропорт:аэропорт N1 ; ! "" ! Loan/rus 
-спорт:спорт N1 ; ! "" ! Loan/rus 
-паспорт:паспорт N1 ; ! "" ! Loan/rus 
-транспорт:транспорт N1 ; ! "" ! Loan/rus 
-сорт:сорт N1 ; ! "" ! Loan/rus 
-лоббист:лоббист N1 ; ! "" ! Loan/rus 
-активист:активист N1 ; ! "" ! Loan/rus 
-буддист:буддист N1 ; ! "" ! Loan/rus 
-пропагандист:пропагандист N1 ; ! "" ! Loan/rus 
-империалист:империалист N1 ; ! "" ! Loan/rus 
-специалист:специалист N1 ; ! "" ! Loan/rus 
-журналист:журналист N1 ; ! "" ! Loan/rus 
-солист:солист N1 ; ! "" ! Loan/rus 
-экономист:экономист N1 ; ! "" ! Loan/rus 
-пианист:пианист N1 ; ! "" ! Loan/rus 
-альпинист:альпинист N1 ; ! "" ! Loan/rus 
-коммунист:коммунист N1 ; ! "" ! Loan/rus 
-сценарист:сценарист N1 ; ! "" ! Loan/rus 
-фольклорист:фольклорист N1 ; ! "" ! Loan/rus 
-турист:турист N1 ; ! "" ! Loan/rus 
-артист:артист N1 ; ! "" ! Loan/rus 
-публицист:публицист N1 ; ! "" ! Loan/rus 
-фашист:фашист N1 ; ! "" ! Loan/rus 
-бут:бут N1 ; ! "" ! Loan/rus 
-маршрут:маршрут N1 ; ! "" ! Loan/rus 
-институт:институт N1 ; ! "" ! Loan/rus 
-асфальт:асфальт N1 ; ! "" ! Loan/rus 
-географ:географ N1 ; ! "" ! Loan/rus 
-этнограф:этнограф N1 ; ! "" ! Loan/rus 
-фотограф:фотограф N1 ; ! "" ! Loan/rus 
-тариф:тариф N1 ; ! "" ! Loan/rus 
-философ:философ N1 ; ! "" ! Loan/rus 
-монарх:монарх N1 ; ! "" ! Loan/rus 
-чуваш:чуваш N1 ; ! "" ! Loan/rus 
-латыш:латыш N1 ; ! "" ! Loan/rus 
-фестиваль:фестиваль N1 ; ! "" ! Loan/rus 
-кинофестиваль:кинофестиваль N1 ; ! "" ! Loan/rus 
+кадастр:кадастр N1 ; ! "" ! Loan/rus
+оркестр:оркестр N1 ; ! "" ! Loan/rus
+уйгур:уйгур N1 ; ! "" ! Loan/rus
+адрес:адрес N1 ; ! "" ! Loan/rus
+синтаксис:синтаксис N1 ; ! "" ! Loan/rus
+авиарейс:авиарейс N1 ; ! "" ! Loan/rus
+кодекс:кодекс N1 ; ! "" ! Loan/rus
+комплекс:комплекс N1 ; ! "" ! Loan/rus
+космос:космос N1 ; ! "" ! Loan/rus
+курс:курс N1 ; ! "" ! Loan/rus
+класс:класс N1 ; ! "" ! Loan/rus
+конгресс:конгресс N1 ; ! "" ! Loan/rus
+автобус:автобус N1 ; ! "" ! Loan/rus
+градус:градус N1 ; ! "" ! Loan/rus
+вирус:вирус N1 ; ! "" ! Loan/rus
+статус:статус N1 ; ! "" ! Loan/rus
+кандидат:кандидат N1 ; ! "" ! Loan/rus
+лауреат:лауреат N1 ; ! "" ! Loan/rus
+салат:салат N1 ; ! "" ! Loan/rus
+автомат:автомат N1 ; ! "" ! Loan/rus
+сармат:сармат N1 ; ! "" ! Loan/rus
+комбинат:комбинат N1 ; ! "" ! Loan/rus
+аппарат:аппарат N1 ; ! "" ! Loan/rus
+протекторат:протекторат N1 ; ! "" ! Loan/rus
+депутат:депутат N1 ; ! "" ! Loan/rus
+штат:штат N1 ; ! "" ! Loan/rus
+космонавт:космонавт N1 ; ! "" ! Loan/rus
+совет:совет N1 ; ! "" ! Loan/rus
+кадет:кадет N1 ; ! "" ! Loan/rus
+балет:балет N1 ; ! "" ! Loan/rus
+комитет:комитет N1 ; ! "" ! Loan/rus
+университет:университет N1 ; ! "" ! Loan/rus
+факультет:факультет N1 ; ! "" ! Loan/rus
+самолёт:самолёт N3 ; ! "" ! Loan/rus
+вертолёт:вертолёт N3 ; ! "" ! Loan/rus
+пулемёт:пулемёт N3 ; ! "" ! Loan/rus
+отчёт:отчёт N3 ; ! "" ! Loan/rus
+алфавит:алфавит N1 ; ! "" ! Loan/rus
+санскрит:санскрит N1 ; ! "" ! Loan/rus
+метеорит:метеорит N1 ; ! "" ! Loan/rus
+сайт:сайт N1 ; ! "" ! Loan/rus
+диалект:диалект N1 ; ! "" ! Loan/rus
+объект:объект N1 ; ! "" ! Loan/rus
+субъект:субъект N1 ; ! "" ! Loan/rus
+пункт:пункт N1 ; ! "" ! Loan/rus
+продукт:продукт N1 ; ! "" ! Loan/rus
+лейтенант:лейтенант N1 ; ! "" ! Loan/rus
+грант:грант N1 ; ! "" ! Loan/rus
+мигрант:мигрант N1 ; ! "" ! Loan/rus
+десант:десант N1 ; ! "" ! Loan/rus
+консультант:консультант N1 ; ! "" ! Loan/rus
+агент:агент N1 ; ! "" ! Loan/rus
+корреспондент:корреспондент N1 ; ! "" ! Loan/rus
+студент:студент N1 ; ! "" ! Loan/rus
+коэффициент:коэффициент N1 ; ! "" ! Loan/rus
+регламент:регламент N1 ; ! "" ! Loan/rus
+парламент:парламент N1 ; ! "" ! Loan/rus
+департамент:департамент N1 ; ! "" ! Loan/rus
+ассортимент:ассортимент N1 ; ! "" ! Loan/rus
+документ:документ N1 ; ! "" ! Loan/rus
+патент:патент N1 ; ! "" ! Loan/rus
+доцент:доцент N1 ; ! "" ! Loan/rus
+фронт:фронт N1 ; ! "" ! Loan/rus
+патриот:патриот N1 ; ! "" ! Loan/rus
+флот:флот N1 ; ! "" ! Loan/rus
+стандарт:стандарт N1 ; ! "" ! Loan/rus
+карт:карт N1 ; ! "" ! Loan/rus
+аэропорт:аэропорт N1 ; ! "" ! Loan/rus
+спорт:спорт N1 ; ! "" ! Loan/rus
+паспорт:паспорт N1 ; ! "" ! Loan/rus
+транспорт:транспорт N1 ; ! "" ! Loan/rus
+сорт:сорт N1 ; ! "" ! Loan/rus
+лоббист:лоббист N1 ; ! "" ! Loan/rus
+активист:активист N1 ; ! "" ! Loan/rus
+буддист:буддист N1 ; ! "" ! Loan/rus
+пропагандист:пропагандист N1 ; ! "" ! Loan/rus
+империалист:империалист N1 ; ! "" ! Loan/rus
+специалист:специалист N1 ; ! "" ! Loan/rus
+журналист:журналист N1 ; ! "" ! Loan/rus
+солист:солист N1 ; ! "" ! Loan/rus
+экономист:экономист N1 ; ! "" ! Loan/rus
+пианист:пианист N1 ; ! "" ! Loan/rus
+альпинист:альпинист N1 ; ! "" ! Loan/rus
+коммунист:коммунист N1 ; ! "" ! Loan/rus
+сценарист:сценарист N1 ; ! "" ! Loan/rus
+фольклорист:фольклорист N1 ; ! "" ! Loan/rus
+турист:турист N1 ; ! "" ! Loan/rus
+артист:артист N1 ; ! "" ! Loan/rus
+публицист:публицист N1 ; ! "" ! Loan/rus
+фашист:фашист N1 ; ! "" ! Loan/rus
+бут:бут N1 ; ! "" ! Loan/rus
+маршрут:маршрут N1 ; ! "" ! Loan/rus
+институт:институт N1 ; ! "" ! Loan/rus
+асфальт:асфальт N1 ; ! "" ! Loan/rus
+географ:географ N1 ; ! "" ! Loan/rus
+этнограф:этнограф N1 ; ! "" ! Loan/rus
+фотограф:фотограф N1 ; ! "" ! Loan/rus
+тариф:тариф N1 ; ! "" ! Loan/rus
+философ:философ N1 ; ! "" ! Loan/rus
+монарх:монарх N1 ; ! "" ! Loan/rus
+чуваш:чуваш N1 ; ! "" ! Loan/rus
+латыш:латыш N1 ; ! "" ! Loan/rus
+фестиваль:фестиваль N1 ; ! "" ! Loan/rus
+кинофестиваль:кинофестиваль N1 ; ! "" ! Loan/rus
 инициатива:инициатива N1 ; ! "" ! Loan/rus
 прерогатива:прерогатива N1 ; ! "" ! Loan/rus
-медаль:медаль N1 ; ! "" ! Loan/rus 
-февраль:февраль N1 ; ! "" ! Loan/rus 
-автомагистраль:автомагистраль N1 ; ! "" ! Loan/rus 
-госпиталь:госпиталь N1 ; ! "" ! Loan/rus 
-ансамбль:ансамбль N1 ; ! "" ! Loan/rus 
-модель:модель N1 ; ! "" ! Loan/rus 
-апрель:апрель N1 ; ! "" ! Loan/rus 
-автомобиль:автомобиль N1 ; ! "" ! Loan/rus 
-роль:роль N1 ; ! "" ! Loan/rus 
-контроль:контроль N1 ; ! "" ! Loan/rus 
-патруль:патруль N1 ; ! "" ! Loan/rus 
-словарь:словарь N1 ; ! "" ! Loan/rus 
-секретарь:секретарь N1 ; ! "" ! Loan/rus 
+медаль:медаль N1 ; ! "" ! Loan/rus
+февраль:февраль N1 ; ! "" ! Loan/rus
+автомагистраль:автомагистраль N1 ; ! "" ! Loan/rus
+госпиталь:госпиталь N1 ; ! "" ! Loan/rus
+ансамбль:ансамбль N1 ; ! "" ! Loan/rus
+модель:модель N1 ; ! "" ! Loan/rus
+апрель:апрель N1 ; ! "" ! Loan/rus
+автомобиль:автомобиль N1 ; ! "" ! Loan/rus
+роль:роль N1 ; ! "" ! Loan/rus
+контроль:контроль N1 ; ! "" ! Loan/rus
+патруль:патруль N1 ; ! "" ! Loan/rus
+словарь:словарь N1 ; ! "" ! Loan/rus
+секретарь:секретарь N1 ; ! "" ! Loan/rus
 секретарь:секеретарь N1 ; ! "" ! Loan/rus ! Dir/LR ! Use/Sub
-ноябрь:ноябрь N1 ; ! "" ! Loan/rus 
-октябрь:октябрь N1 ; ! "" ! Loan/rus 
-лагерь:лагерь N1 ; ! "" ! Loan/rus 
-область:область N1 ; ! "" ! Loan/rus 
-античность:античность N1 ; ! "" ! Loan/rus 
-интервью:интервью N1 ; ! "" ! Loan/rus 
-идея:идея N1 ; ! "" ! Loan/rus 
-ассамблея:ассамблея N1 ; ! "" ! Loan/rus 
-галерея:галерея N1 ; ! "" ! Loan/rus 
-коллегия:коллегия N1 ; ! "" ! Loan/rus 
-стратегия:стратегия N1 ; ! "" ! Loan/rus 
-трилогия:трилогия N1 ; ! "" ! Loan/rus 
-геология:геология N1 ; ! "" ! Loan/rus 
-идеология:идеология N1 ; ! "" ! Loan/rus 
-археология:археология N1 ; ! "" ! Loan/rus 
-биология:биология N1 ; ! "" ! Loan/rus 
-социология:социология N1 ; ! "" ! Loan/rus 
-гинекология:гинекология N1 ; ! "" ! Loan/rus 
-экология:экология N1 ; ! "" ! Loan/rus 
-филология:филология N1 ; ! "" ! Loan/rus 
-этимология:этимология N1 ; ! "" ! Loan/rus 
-этнология:этнология N1 ; ! "" ! Loan/rus 
-технология:технология N1 ; ! "" ! Loan/rus 
-гидрология:гидрология N1 ; ! "" ! Loan/rus 
-астрология:астрология N1 ; ! "" ! Loan/rus 
-культурология:культурология N1 ; ! "" ! Loan/rus 
-политология:политология N1 ; ! "" ! Loan/rus 
-психология:психология N1 ; ! "" ! Loan/rus 
-энергия:энергия N1 ; ! "" ! Loan/rus 
-металлургия:металлургия N1 ; ! "" ! Loan/rus 
-хирургия:хирургия N1 ; ! "" ! Loan/rus 
-драматургия:драматургия N1 ; ! "" ! Loan/rus 
-трагедия:трагедия N1 ; ! "" ! Loan/rus 
-энциклопедия:энциклопедия N1 ; ! "" ! Loan/rus 
-гвардия:гвардия N1 ; ! "" ! Loan/rus 
-студия:студия N1 ; ! "" ! Loan/rus 
-киностудия:киностудия N1 ; ! "" ! Loan/rus 
-гимназия:гимназия N1 ; ! "" ! Loan/rus 
-буржуазия:буржуазия N1 ; ! "" ! Loan/rus 
-дивизия:дивизия N1 ; ! "" ! Loan/rus 
-лицензия:лицензия N1 ; ! "" ! Loan/rus 
-поэзия:поэзия N1 ; ! "" ! Loan/rus 
-монополия:монополия N1 ; ! "" ! Loan/rus 
-академия:академия N1 ; ! "" ! Loan/rus 
-премия:премия N1 ; ! "" ! Loan/rus 
-химия:химия N1 ; ! "" ! Loan/rus 
-экономия:экономия N1 ; ! "" ! Loan/rus 
-астрономия:астрономия N1 ; ! "" ! Loan/rus 
-автономия:автономия N1 ; ! "" ! Loan/rus 
-армия:армия N1 ; ! "" ! Loan/rus 
-кампания:кампания N1 ; ! "" ! Loan/rus 
-компания:компания N1 ; ! "" ! Loan/rus 
-авиакомпания:авиакомпания N1 ; ! "" ! Loan/rus 
-телерадиокомпания:телерадиокомпания N1 ; ! "" ! Loan/rus 
+ноябрь:ноябрь N1 ; ! "" ! Loan/rus
+октябрь:октябрь N1 ; ! "" ! Loan/rus
+лагерь:лагерь N1 ; ! "" ! Loan/rus
+область:область N1 ; ! "" ! Loan/rus
+античность:античность N1 ; ! "" ! Loan/rus
+интервью:интервью N1 ; ! "" ! Loan/rus
+идея:идея N1 ; ! "" ! Loan/rus
+ассамблея:ассамблея N1 ; ! "" ! Loan/rus
+галерея:галерея N1 ; ! "" ! Loan/rus
+коллегия:коллегия N1 ; ! "" ! Loan/rus
+стратегия:стратегия N1 ; ! "" ! Loan/rus
+трилогия:трилогия N1 ; ! "" ! Loan/rus
+геология:геология N1 ; ! "" ! Loan/rus
+идеология:идеология N1 ; ! "" ! Loan/rus
+археология:археология N1 ; ! "" ! Loan/rus
+биология:биология N1 ; ! "" ! Loan/rus
+социология:социология N1 ; ! "" ! Loan/rus
+гинекология:гинекология N1 ; ! "" ! Loan/rus
+экология:экология N1 ; ! "" ! Loan/rus
+филология:филология N1 ; ! "" ! Loan/rus
+этимология:этимология N1 ; ! "" ! Loan/rus
+этнология:этнология N1 ; ! "" ! Loan/rus
+технология:технология N1 ; ! "" ! Loan/rus
+гидрология:гидрология N1 ; ! "" ! Loan/rus
+астрология:астрология N1 ; ! "" ! Loan/rus
+культурология:культурология N1 ; ! "" ! Loan/rus
+политология:политология N1 ; ! "" ! Loan/rus
+психология:психология N1 ; ! "" ! Loan/rus
+энергия:энергия N1 ; ! "" ! Loan/rus
+металлургия:металлургия N1 ; ! "" ! Loan/rus
+хирургия:хирургия N1 ; ! "" ! Loan/rus
+драматургия:драматургия N1 ; ! "" ! Loan/rus
+трагедия:трагедия N1 ; ! "" ! Loan/rus
+энциклопедия:энциклопедия N1 ; ! "" ! Loan/rus
+гвардия:гвардия N1 ; ! "" ! Loan/rus
+студия:студия N1 ; ! "" ! Loan/rus
+киностудия:киностудия N1 ; ! "" ! Loan/rus
+гимназия:гимназия N1 ; ! "" ! Loan/rus
+буржуазия:буржуазия N1 ; ! "" ! Loan/rus
+дивизия:дивизия N1 ; ! "" ! Loan/rus
+лицензия:лицензия N1 ; ! "" ! Loan/rus
+поэзия:поэзия N1 ; ! "" ! Loan/rus
+монополия:монополия N1 ; ! "" ! Loan/rus
+академия:академия N1 ; ! "" ! Loan/rus
+премия:премия N1 ; ! "" ! Loan/rus
+химия:химия N1 ; ! "" ! Loan/rus
+экономия:экономия N1 ; ! "" ! Loan/rus
+астрономия:астрономия N1 ; ! "" ! Loan/rus
+автономия:автономия N1 ; ! "" ! Loan/rus
+армия:армия N1 ; ! "" ! Loan/rus
+кампания:кампания N1 ; ! "" ! Loan/rus
+компания:компания N1 ; ! "" ! Loan/rus
+авиакомпания:авиакомпания N1 ; ! "" ! Loan/rus
+телерадиокомпания:телерадиокомпания N1 ; ! "" ! Loan/rus
 телерадио:телерадио N1 ; ! "" Loan/rus
-колония:колония N1 ; ! "" ! Loan/rus 
-пневмония:пневмония N1 ; ! "" ! Loan/rus 
-филармония:филармония N1 ; ! "" ! Loan/rus 
-симфония:симфония N1 ; ! "" ! Loan/rus 
-губерния:губерния N1 ; ! "" ! Loan/rus 
-терапия:терапия N1 ; ! "" ! Loan/rus 
-авария:авария N1 ; ! "" ! Loan/rus 
-артиллерия:артиллерия N1 ; ! "" ! Loan/rus 
-империя:империя N1 ; ! "" ! Loan/rus 
-серия:серия N1 ; ! "" ! Loan/rus 
-бухгалтерия:бухгалтерия N1 ; ! "" ! Loan/rus 
-категория:категория N1 ; ! "" ! Loan/rus 
-теория:теория N1 ; ! "" ! Loan/rus 
-консерватория:консерватория N1 ; ! "" ! Loan/rus 
-лаборатория:лаборатория N1 ; ! "" ! Loan/rus 
-педиатрия:педиатрия N1 ; ! "" ! Loan/rus 
-геометрия:геометрия N1 ; ! "" ! Loan/rus 
-индустрия:индустрия N1 ; ! "" ! Loan/rus 
-канцелярия:канцелярия N1 ; ! "" ! Loan/rus 
-версия:версия N1 ; ! "" ! Loan/rus 
-агрессия:агрессия N1 ; ! "" ! Loan/rus 
-репрессия:репрессия N1 ; ! "" ! Loan/rus 
-сессия:сессия N1 ; ! "" ! Loan/rus 
-конфессия:конфессия N1 ; ! "" ! Loan/rus 
-концессия:концессия N1 ; ! "" ! Loan/rus 
-миссия:миссия N1 ; ! "" ! Loan/rus 
-комиссия:комиссия N1 ; ! "" ! Loan/rus 
-дискуссия:дискуссия N1 ; ! "" ! Loan/rus 
-дипломатия:дипломатия N1 ; ! "" ! Loan/rus 
-демократия:демократия N1 ; ! "" ! Loan/rus 
-бюрократия:бюрократия N1 ; ! "" ! Loan/rus 
-партия:партия N1 ; ! "" ! Loan/rus 
-компартия:компартия N1 ; ! "" ! Loan/rus 
-династия:династия N1 ; ! "" ! Loan/rus 
-география:география N1 ; ! "" ! Loan/rus 
-хореография:хореография N1 ; ! "" ! Loan/rus 
-демография:демография N1 ; ! "" ! Loan/rus 
-этнография:этнография N1 ; ! "" ! Loan/rus 
-топография:топография N1 ; ! "" ! Loan/rus 
-гидрография:гидрография N1 ; ! "" ! Loan/rus 
-кинематография:кинематография N1 ; ! "" ! Loan/rus 
-фотография:фотография N1 ; ! "" ! Loan/rus 
-философия:философия N1 ; ! "" ! Loan/rus 
-монархия:монархия N1 ; ! "" ! Loan/rus 
-делегация:делегация N1 ; ! "" ! Loan/rus 
-навигация:навигация N1 ; ! "" ! Loan/rus 
-глобализация:глобализация N1 ; ! "" ! Loan/rus 
-канализация:канализация N1 ; ! "" ! Loan/rus 
-сигнализация:сигнализация N1 ; ! "" ! Loan/rus 
-мобилизация:мобилизация N1 ; ! "" ! Loan/rus 
-цивилизация:цивилизация N1 ; ! "" ! Loan/rus 
-организация:организация N1 ; ! "" ! Loan/rus 
-модернизация:модернизация N1 ; ! "" ! Loan/rus 
-авиация:авиация N1 ; ! "" ! Loan/rus 
-радиация:радиация N1 ; ! "" ! Loan/rus 
-ассоциация:ассоциация N1 ; ! "" ! Loan/rus 
-публикация:публикация N1 ; ! "" ! Loan/rus 
-коммуникация:коммуникация N1 ; ! "" ! Loan/rus 
-квалификация:квалификация N1 ; ! "" ! Loan/rus 
-информация:информация N1 ; ! "" ! Loan/rus 
-координация:координация N1 ; ! "" ! Loan/rus 
-номинация:номинация N1 ; ! "" ! Loan/rus 
-интонация:интонация N1 ; ! "" ! Loan/rus 
-интонат:интернат N5 ; ! "" ! Loan/rus 
-декларация:декларация N1 ; ! "" ! Loan/rus 
-вибрация:вибрация N1 ; ! "" ! Loan/rus 
-реставрация:реставрация N1 ; ! "" ! Loan/rus 
-интеграция:интеграция N1 ; ! "" ! Loan/rus 
-миграция:миграция N1 ; ! "" ! Loan/rus 
-федерация:федерация N1 ; ! "" ! Loan/rus 
-операция:операция N1 ; ! "" ! Loan/rus 
-кооперация:кооперация N1 ; ! "" ! Loan/rus 
-декорация:декорация N1 ; ! "" ! Loan/rus 
-корпорация:корпорация N1 ; ! "" ! Loan/rus 
-регистрация:регистрация N1 ; ! "" ! Loan/rus 
-администрация:администрация N1 ; ! "" ! Loan/rus 
-демонстрация:демонстрация N1 ; ! "" ! Loan/rus 
-инаугурация:инаугурация N1 ; ! "" ! Loan/rus 
-релаксация:релаксация N1 ; ! "" ! Loan/rus 
-компенсация:компенсация N1 ; ! "" ! Loan/rus 
-эксплуатация:эксплуатация N1 ; ! "" ! Loan/rus 
-гравитация:гравитация N1 ; ! "" ! Loan/rus 
-агитация:агитация N1 ; ! "" ! Loan/rus 
-реабилитация:реабилитация N1 ; ! "" ! Loan/rus 
-плантация:плантация N1 ; ! "" ! Loan/rus 
-диссертация:диссертация N1 ; ! "" ! Loan/rus 
-эвакуация:эвакуация N1 ; ! "" ! Loan/rus 
-экспедиция:экспедиция N1 ; ! "" ! Loan/rus 
-позиция:позиция N1 ; ! "" ! Loan/rus 
-композиция:композиция N1 ; ! "" ! Loan/rus 
-оппозиция:оппозиция N1 ; ! "" ! Loan/rus 
-экспозиция:экспозиция N1 ; ! "" ! Loan/rus 
-коалиция:коалиция N1 ; ! "" ! Loan/rus 
-милиция:милиция N1 ; ! "" ! Loan/rus 
-полиция:полиция N1 ; ! "" ! Loan/rus 
-инвестиция:инвестиция N1 ; ! "" ! Loan/rus 
-юстиция:юстиция N1 ; ! "" ! Loan/rus 
-акция:акция N1 ; ! "" ! Loan/rus 
-редакция:редакция N1 ; ! "" ! Loan/rus 
-реакция:реакция N1 ; ! "" ! Loan/rus 
-лекция:лекция N1 ; ! "" ! Loan/rus 
-дирекция:дирекция N1 ; ! "" ! Loan/rus 
-коррекция:коррекция N1 ; ! "" ! Loan/rus 
-юрисдикция:юрисдикция N1 ; ! "" ! Loan/rus 
-санкция:санкция N1 ; ! "" ! Loan/rus 
-продукция:продукция N1 ; ! "" ! Loan/rus 
-конструкция:конструкция N1 ; ! "" ! Loan/rus 
-станция:станция N1 ; ! "" ! Loan/rus 
-субстанция:субстанция N1 ; ! "" ! Loan/rus 
-дистанция:дистанция N1 ; ! "" ! Loan/rus 
-электростанция:электростанция N1 ; ! "" ! Loan/rus 
-гидроэлектростанция:гидроэлектростанция N1 ; ! "" ! Loan/rus 
-конвенция:конвенция N1 ; ! "" ! Loan/rus 
-интеллигенция:интеллигенция N1 ; ! "" ! Loan/rus 
-корреспонденция:корреспонденция N1 ; ! "" ! Loan/rus 
-конференция:конференция N1 ; ! "" ! Loan/rus 
-провинция:провинция N1 ; ! "" ! Loan/rus 
-транскрипция:транскрипция N1 ; ! "" ! Loan/rus 
-коррупция:коррупция N1 ; ! "" ! Loan/rus 
-коммерция:коммерция N1 ; ! "" ! Loan/rus 
-конституция:конституция N1 ; ! "" ! Loan/rus 
-революция:революция N1 ; ! "" ! Loan/rus 
-резолюция:резолюция N1 ; ! "" ! Loan/rus 
-инфляция:инфляция N1 ; ! "" ! Loan/rus 
-таможня:таможня N1 ; ! "" ! Loan/rus 
-статья:статья N1 ; ! "" ! Loan/rus 
+колония:колония N1 ; ! "" ! Loan/rus
+пневмония:пневмония N1 ; ! "" ! Loan/rus
+филармония:филармония N1 ; ! "" ! Loan/rus
+симфония:симфония N1 ; ! "" ! Loan/rus
+губерния:губерния N1 ; ! "" ! Loan/rus
+терапия:терапия N1 ; ! "" ! Loan/rus
+авария:авария N1 ; ! "" ! Loan/rus
+артиллерия:артиллерия N1 ; ! "" ! Loan/rus
+империя:империя N1 ; ! "" ! Loan/rus
+серия:серия N1 ; ! "" ! Loan/rus
+бухгалтерия:бухгалтерия N1 ; ! "" ! Loan/rus
+категория:категория N1 ; ! "" ! Loan/rus
+теория:теория N1 ; ! "" ! Loan/rus
+консерватория:консерватория N1 ; ! "" ! Loan/rus
+лаборатория:лаборатория N1 ; ! "" ! Loan/rus
+педиатрия:педиатрия N1 ; ! "" ! Loan/rus
+геометрия:геометрия N1 ; ! "" ! Loan/rus
+индустрия:индустрия N1 ; ! "" ! Loan/rus
+канцелярия:канцелярия N1 ; ! "" ! Loan/rus
+версия:версия N1 ; ! "" ! Loan/rus
+агрессия:агрессия N1 ; ! "" ! Loan/rus
+репрессия:репрессия N1 ; ! "" ! Loan/rus
+сессия:сессия N1 ; ! "" ! Loan/rus
+конфессия:конфессия N1 ; ! "" ! Loan/rus
+концессия:концессия N1 ; ! "" ! Loan/rus
+миссия:миссия N1 ; ! "" ! Loan/rus
+комиссия:комиссия N1 ; ! "" ! Loan/rus
+дискуссия:дискуссия N1 ; ! "" ! Loan/rus
+дипломатия:дипломатия N1 ; ! "" ! Loan/rus
+демократия:демократия N1 ; ! "" ! Loan/rus
+бюрократия:бюрократия N1 ; ! "" ! Loan/rus
+партия:партия N1 ; ! "" ! Loan/rus
+компартия:компартия N1 ; ! "" ! Loan/rus
+династия:династия N1 ; ! "" ! Loan/rus
+география:география N1 ; ! "" ! Loan/rus
+хореография:хореография N1 ; ! "" ! Loan/rus
+демография:демография N1 ; ! "" ! Loan/rus
+этнография:этнография N1 ; ! "" ! Loan/rus
+топография:топография N1 ; ! "" ! Loan/rus
+гидрография:гидрография N1 ; ! "" ! Loan/rus
+кинематография:кинематография N1 ; ! "" ! Loan/rus
+фотография:фотография N1 ; ! "" ! Loan/rus
+философия:философия N1 ; ! "" ! Loan/rus
+монархия:монархия N1 ; ! "" ! Loan/rus
+делегация:делегация N1 ; ! "" ! Loan/rus
+навигация:навигация N1 ; ! "" ! Loan/rus
+глобализация:глобализация N1 ; ! "" ! Loan/rus
+канализация:канализация N1 ; ! "" ! Loan/rus
+сигнализация:сигнализация N1 ; ! "" ! Loan/rus
+мобилизация:мобилизация N1 ; ! "" ! Loan/rus
+цивилизация:цивилизация N1 ; ! "" ! Loan/rus
+организация:организация N1 ; ! "" ! Loan/rus
+модернизация:модернизация N1 ; ! "" ! Loan/rus
+авиация:авиация N1 ; ! "" ! Loan/rus
+радиация:радиация N1 ; ! "" ! Loan/rus
+ассоциация:ассоциация N1 ; ! "" ! Loan/rus
+публикация:публикация N1 ; ! "" ! Loan/rus
+коммуникация:коммуникация N1 ; ! "" ! Loan/rus
+квалификация:квалификация N1 ; ! "" ! Loan/rus
+информация:информация N1 ; ! "" ! Loan/rus
+координация:координация N1 ; ! "" ! Loan/rus
+номинация:номинация N1 ; ! "" ! Loan/rus
+интонация:интонация N1 ; ! "" ! Loan/rus
+интонат:интернат N5 ; ! "" ! Loan/rus
+декларация:декларация N1 ; ! "" ! Loan/rus
+вибрация:вибрация N1 ; ! "" ! Loan/rus
+реставрация:реставрация N1 ; ! "" ! Loan/rus
+интеграция:интеграция N1 ; ! "" ! Loan/rus
+миграция:миграция N1 ; ! "" ! Loan/rus
+федерация:федерация N1 ; ! "" ! Loan/rus
+операция:операция N1 ; ! "" ! Loan/rus
+кооперация:кооперация N1 ; ! "" ! Loan/rus
+декорация:декорация N1 ; ! "" ! Loan/rus
+корпорация:корпорация N1 ; ! "" ! Loan/rus
+регистрация:регистрация N1 ; ! "" ! Loan/rus
+администрация:администрация N1 ; ! "" ! Loan/rus
+демонстрация:демонстрация N1 ; ! "" ! Loan/rus
+инаугурация:инаугурация N1 ; ! "" ! Loan/rus
+релаксация:релаксация N1 ; ! "" ! Loan/rus
+компенсация:компенсация N1 ; ! "" ! Loan/rus
+эксплуатация:эксплуатация N1 ; ! "" ! Loan/rus
+гравитация:гравитация N1 ; ! "" ! Loan/rus
+агитация:агитация N1 ; ! "" ! Loan/rus
+реабилитация:реабилитация N1 ; ! "" ! Loan/rus
+плантация:плантация N1 ; ! "" ! Loan/rus
+диссертация:диссертация N1 ; ! "" ! Loan/rus
+эвакуация:эвакуация N1 ; ! "" ! Loan/rus
+экспедиция:экспедиция N1 ; ! "" ! Loan/rus
+позиция:позиция N1 ; ! "" ! Loan/rus
+композиция:композиция N1 ; ! "" ! Loan/rus
+оппозиция:оппозиция N1 ; ! "" ! Loan/rus
+экспозиция:экспозиция N1 ; ! "" ! Loan/rus
+коалиция:коалиция N1 ; ! "" ! Loan/rus
+милиция:милиция N1 ; ! "" ! Loan/rus
+полиция:полиция N1 ; ! "" ! Loan/rus
+инвестиция:инвестиция N1 ; ! "" ! Loan/rus
+юстиция:юстиция N1 ; ! "" ! Loan/rus
+акция:акция N1 ; ! "" ! Loan/rus
+редакция:редакция N1 ; ! "" ! Loan/rus
+реакция:реакция N1 ; ! "" ! Loan/rus
+лекция:лекция N1 ; ! "" ! Loan/rus
+дирекция:дирекция N1 ; ! "" ! Loan/rus
+коррекция:коррекция N1 ; ! "" ! Loan/rus
+юрисдикция:юрисдикция N1 ; ! "" ! Loan/rus
+санкция:санкция N1 ; ! "" ! Loan/rus
+продукция:продукция N1 ; ! "" ! Loan/rus
+конструкция:конструкция N1 ; ! "" ! Loan/rus
+станция:станция N1 ; ! "" ! Loan/rus
+субстанция:субстанция N1 ; ! "" ! Loan/rus
+дистанция:дистанция N1 ; ! "" ! Loan/rus
+электростанция:электростанция N1 ; ! "" ! Loan/rus
+гидроэлектростанция:гидроэлектростанция N1 ; ! "" ! Loan/rus
+конвенция:конвенция N1 ; ! "" ! Loan/rus
+интеллигенция:интеллигенция N1 ; ! "" ! Loan/rus
+корреспонденция:корреспонденция N1 ; ! "" ! Loan/rus
+конференция:конференция N1 ; ! "" ! Loan/rus
+провинция:провинция N1 ; ! "" ! Loan/rus
+транскрипция:транскрипция N1 ; ! "" ! Loan/rus
+коррупция:коррупция N1 ; ! "" ! Loan/rus
+коммерция:коммерция N1 ; ! "" ! Loan/rus
+конституция:конституция N1 ; ! "" ! Loan/rus
+революция:революция N1 ; ! "" ! Loan/rus
+резолюция:резолюция N1 ; ! "" ! Loan/rus
+инфляция:инфляция N1 ; ! "" ! Loan/rus
+таможня:таможня N1 ; ! "" ! Loan/rus
+статья:статья N1 ; ! "" ! Loan/rus
 
 
 чууут:чууут N1 ; ! ""
@@ -2990,7 +2990,7 @@ LEXICON Nouns
 дуния:дуния N1 ; ! ""
 къол:къол N1 ; ! "рука" "hand, arm"
 оноу:оноу N1 ; ! "совет"
-улоу:улоу N1 ; ! 
+улоу:улоу N1 ; !
 орта:орта N1 ; ! "середина"
 
 джер:джер N1 ; ! "земля" "earth"
@@ -3488,7 +3488,7 @@ LEXICON Nouns
 
 джарым:джарым N1 ; ! "половина"
 джарым:жарым N1 ; ! "половина" ! Dir/LR ! Use/Sub
-кеме:кеме N1 ; ! "корабль" 
+кеме:кеме N1 ; ! "корабль"
 джюрюш:джюрюш N1 ; ! "походка"
 премьер%-министр:премьер%-министр N1 ; ! ""
 премьер:премьер N1 ; ! ""
@@ -3571,7 +3571,7 @@ LEXICON Nouns
 байлам:байлам N1 ; ! "свёрток"
 шималчы:шималчы N1 ; ! ""
 джал:джал N1 ; ! ""
-джал:жал N1 ; ! "" !Dir/LR ! Use/Sub 
+джал:жал N1 ; ! "" !Dir/LR ! Use/Sub
 
 башхалыкъ:башхалыкъ N1 ; ! ""
 джёнгер:джёнгер N1 ; ! ""
@@ -3864,8 +3864,8 @@ LEXICON Nouns
 плебисцит:плебисцит N1 ; ! ""
 
 риксмол:риксмол N1 ; ! ""
-букмол:буксмол  N1 ; ! "" ! Dir/LR 
-букмол:букмол  N1 ; ! "" 
+букмол:буксмол  N1 ; ! "" ! Dir/LR
+букмол:букмол  N1 ; ! ""
 нюношк:нюношк N1 ; ! ""
 самношк:самношк N1 ; ! ""
 лансмол:лансмол N1 ; ! ""
@@ -3951,7 +3951,7 @@ LEXICON Nouns
 интернационалист:интернационалист N1 ; ! ""
 кемалист:кемалист N1 ; ! ""
 коллаборационист:коллаборацинист N1 ; ! "" ! Dir/LR ! Use/Sub
-коллаборационист:коллаборационист N1 ; ! "" 
+коллаборационист:коллаборационист N1 ; ! ""
 конгрегационалист:конгрегационалист N1 ; ! ""
 кореист:кореист N1 ; ! ""
 либералист:либералист N1 ; ! ""
@@ -4155,7 +4155,7 @@ LEXICON Nouns
 заведение:заведени N6 ; ! "заведение"
 илипин:илипин N1 ; ! "канава"
 ички:ички N1 ; ! "спиртное"
-кадр:кадр N1 ; ! "кадр" 
+кадр:кадр N1 ; ! "кадр"
 классик:классик N1 ; ! "(-ги) классик"
 комментарий:комментарий N1 ; ! "комментарий"
 координат:координат N1 ; ! "координата"
@@ -4264,7 +4264,7 @@ LEXICON Nouns
 дюгер:дюгер N1 ; ! ""
 саудюгерчи:саудюгерчи N1 ; ! "" ! Der/čI
 саудюгерлик:саудюгерлик N1 ; ! "" ! Der/lIK
-саудюгерчилик:саудюгерчилик N1 ; ! "" 
+саудюгерчилик:саудюгерчилик N1 ; ! ""
 хазырлыкъ:хазырлыкъ N1 ; ! "" ! Der/lIK
 
 бек:бек N1 ; ! ""
@@ -4760,10 +4760,10 @@ LEXICON Nouns
 бурун:бур%{y%}н  N1 ; ! "nose" ! Dir/LR
 халыкъ:хал%{y%}къ N1 ; ! "people"
 
-къаршчы:къаршчы N1 ; ! "" ! FIXME: CHECK 
+къаршчы:къаршчы N1 ; ! "" ! FIXME: CHECK
 этки:этки N1 ; ! "" ! FIXME: CHECK
 
-LEXICON ProperNouns 
+LEXICON ProperNouns
 
 ВДР:ВДР%{э%} NP-AL-ABBR ; ! ""
 ВКП%(б%):ВКП%(б%)%{а%} NP-AL-ABBR ; ! ""
@@ -5314,7 +5314,7 @@ ISO:ISO NP-AL ; !  ""
 Персия:Персия NP-TOP ; ! ""
 
 Россия:Россия NP-TOP ; ! "" ! Loan/rus
-Эресей:Эресей NP-TOP ; ! "" 
+Эресей:Эресей NP-TOP ; ! ""
 Россей:Россей NP-TOP ; ! ""
 
 Белоруссия:Белоруссия NP-TOP ; ! ""
@@ -5541,10 +5541,10 @@ ISO:ISO NP-AL ; !  ""
 Франклин:Франклин NP-COG-MF ; ! ""
 
 
-ибн:ибн NP-COG ; 
-ван:ван NP-COG ; 
-де:де NP-COG ; 
-аль:аль NP-COG ; 
+ибн:ибн NP-COG ;
+ван:ван NP-COG ;
+де:де NP-COG ;
+аль:аль NP-COG ;
 
 Анзор:Анзор NP-ANT-M ; ! ""
 Азрет:Азрет NP-ANT-M ; ! ""
@@ -5555,7 +5555,7 @@ ISO:ISO NP-AL ; !  ""
 
 Абдулькъадыр:Абдулькъадыр NP-ANT-M ; ! ""
 Абдулькъадыр:Абдулькадыр NP-ANT-M ; ! "" ! Dir/LR ! Use/Sub
-Абдулла:Абдула NP-ANT-M ; ! "" Dir/LR 
+Абдулла:Абдула NP-ANT-M ; ! "" Dir/LR
 Абдулла:Абдулла NP-ANT-M ; ! ""
 Абдулменнан:Абдулменнан NP-ANT-M ; ! ""
 Абдурахман:Абдурахман NP-ANT-M ; ! ""
@@ -5575,7 +5575,7 @@ ISO:ISO NP-AL ; !  ""
 Вальтер:Вальтер NP-ANT-M ; ! ""
 Эндрю:Эндрю NP-ANT-M ; ! ""
 Ллойд:Ллойд NP-ANT-M ; ! ""
-Франклин:Франклин NP-ANT-M ; 
+Франклин:Франклин NP-ANT-M ;
 Мартин:Мартин NP-ANT-M ; ! ""
 Франц:Франц NP-ANT-M ; ! ""
 Кемал:Кемал NP-ANT-M ; ! ""
@@ -7402,7 +7402,7 @@ ISO:ISO NP-AL ; !  ""
 Саратов:Саратов NP-COG-OV ; ! ""
 
 
-LEXICON Adjectives 
+LEXICON Adjectives
 
 бар:бар A3 ; ! ""
 джокъ:джокъ A3 ; ! ""
@@ -7481,12 +7481,12 @@ LEXICON Adjectives
 теократ:теократ A1 ; ! ""
 лаик:лаик A1 ; ! ""
 лаикли:лаикли A1 ; ! ""
-бютеухалкъ:бютеухалкъ A1 ; 
-бютеудуния:бютеудуния A1 ; 
-бютеусоюз:бютеусоюз A1 ; 
-бютеуроссия:бютеуроссия A1 ; 
-бютеумиллет:бютеумиллет A1 ; 
-бютеуукраин:бютеуукраин A1 ; 
+бютеухалкъ:бютеухалкъ A1 ;
+бютеудуния:бютеудуния A1 ;
+бютеусоюз:бютеусоюз A1 ;
+бютеуроссия:бютеуроссия A1 ;
+бютеумиллет:бютеумиллет A1 ;
+бютеуукраин:бютеуукраин A1 ;
 бютеухалкъ:битеухалкъ A1 ;  ! Dir/LR ! Use/Sub
 бютеудуния:битеудуния A1 ;  ! Dir/LR ! Use/Sub
 бютеусоюз:битеусоюз A1 ;  ! Dir/LR ! Use/Sub
@@ -7539,12 +7539,12 @@ LEXICON Adjectives
 административ%-территория:административ%-территория A1 ; ! ""
 григориан:григориан A1 ; ! ""
 континетал:континетал A1 ; ! ""
-скандинав:скандинав A1 ; ! "" ! Loan/rus 
+скандинав:скандинав A1 ; ! "" ! Loan/rus
 
 сыйлы:сыйлы A3 ; ! ""
 
 артыкъ:артыкъ A3 ; ! ""
-терс:терс A4 ; ! "" 
+терс:терс A4 ; ! ""
 
 политикалыкъ:политикалыкъ A1 ; ! "" ! Der/lIK
 джыллыкъ:джыллыкъ N1 ; ! "anniversary" ! Der/lIK
@@ -8787,7 +8787,7 @@ LEXICON Adjectives
 ракеталы:ракеталы A1 ; ! "ракетный"
 ратификацией:ратификацией A1 ; ! "ратификационный"
 рахатлыкъ:рахатлыкъ N1 ; ! "(-гъы) 1) спокойствие, покой"
-рахатлыкъ:ырахатлыкъ N1 ; ! Dir/LR 
+рахатлыкъ:ырахатлыкъ N1 ; ! Dir/LR
 рахатлы:рахатлы A1 ; ! "спокойный "
 реактивли:реактивли A1 ; ! "реактивный"
 реакцион:реакцион A1 ; ! "реакционный"
@@ -9152,7 +9152,7 @@ LEXICON Adjectives
 
 эртдеги:эртдеги A1 ; ! "раный" "early"
 
-LEXICON Adverbs 
+LEXICON Adverbs
 
 къайда:къайда ADV-ITG ; ! "где" "where"
 къачан:къачан ADV-ITG ; ! "когда" "when"
@@ -9198,7 +9198,7 @@ LEXICON Adverbs
 былайда:былайда ADV ; ! "тут, здесь" "here"
 аллай:аллай ADV ; ! "такой, вон такой" "that kind of"
 алкъын:алкъын ADV ; ! "караещё, пока, всё ещё"
-алыкъа:алыкъа ADV ; ! "ещё" 
+алыкъа:алыкъа ADV ; ! "ещё"
 
 мында:мында ADV ; ! "I(сандаI)здесь, тут" "here"
 огъуна:огъуна ADV ; ! "кара частица усидаже, хоть"
@@ -9309,7 +9309,7 @@ LEXICON Adverbs
 японча:японча ADV-LANG ; ! "Japanese"
 
 
-LEXICON Verbs 
+LEXICON Verbs
 
 
 тур:тур Vinfl-AUX ; ! ""
@@ -9377,7 +9377,7 @@ LEXICON Verbs
 джаша:джаша V-IV ; ! "жить"                  !  Inf/джашаргъа
 джаша:жаша V-IV ; ! "жить"                  !  Inf/джашаргъа ! Dir/LR ! Use/Sub
 бегит:бегит V-TV ; ! "прикреплять"           !  Inf/бегитилирге
-башлан:башлан V-IV ; ! "начинаться"          !  Inf/башланыргъа 
+башлан:башлан V-IV ; ! "начинаться"          !  Inf/башланыргъа
 башлат:башлат V-TV ; ! ""                    !  Inf/башлатыргъа ! Der/Caus
 серме:серме V-TV ; ! "схватить"              !  Inf/сермерге
 къар:къар V-TV ; ! "хватать"               !  Inf/къарыргъа
@@ -9398,7 +9398,7 @@ LEXICON Verbs
 джюрют:жюрют V-TV ; ! "заставлять работать" !  Inf/джюрютюрге ! Der/Caus ! Dir/LR ! Use/Sub
 
 аша:аша V-TV ; ! "кушать" ! Inf/ашаргъа
-!аш:аш V-TV ; ! "кушать" ! Inf/ашаргъа		
+!аш:аш V-TV ; ! "кушать" ! Inf/ашаргъа
 
 азай:азай V-IV ; ! "уменьшаться" ! Inf/азайыргъа
 алын:алын V-IV ; ! "помешаться" ! Inf/алыныргъа ! Der/Pass
@@ -9428,55 +9428,55 @@ LEXICON Verbs
 кеч:кеч V-TV-AR ; ! "прощать" ! Inf/кечерге
 кёч:кёч V-IV-AR ; ! "переезжать" ! Inf/кёчерге
 
-аш:аш V-TV ; ! "кушать" ! Inf/ашаргъа		
-бич:бич V-TV-AR ; ! "кроить" ! Inf/бичерге		
-биш:биш V-IV-AR ; ! "вариться" ! Inf/бишерге		
-джылын:джылын V-IV ; ! "греться" ! Inf/джылыныргъа		
+аш:аш V-TV ; ! "кушать" ! Inf/ашаргъа
+бич:бич V-TV-AR ; ! "кроить" ! Inf/бичерге
+биш:биш V-IV-AR ; ! "вариться" ! Inf/бишерге
+джылын:джылын V-IV ; ! "греться" ! Inf/джылыныргъа
 джылын:жылын V-IV ; ! "греться" ! Inf/джылыныргъа		 ! Dir/LR ! Use/Sub
-джюз:джюз V-IV-AR ; ! "плавать" ! Inf/джюзерге	
+джюз:джюз V-IV-AR ; ! "плавать" ! Inf/джюзерге
 джюз:жюз V-IV-AR ; ! "плавать" ! Inf/джюзерге	 ! Dir/LR ! Use/Sub
-ёчюл:ёчюл V-IV ; ! "тухнуть" ! Inf/ёчюлюрге	
-инджил:инджил V-IV ; ! "нуждаться" ! Inf/инджилирге		
-кенгер:кенгер V-IV ; ! "расширяться" ! Inf/кенгерирге		
-кёргюз:кёргюз V-TV ; ! "показывать" ! Inf/кёргюзюрге		
-кёргюзт:кёргюзт V-TV ; ! "показывать" ! Inf/кёргюзтюрге	! Der/Caus	
-кёрюн:кёрюн V-IV ; ! "показываться" ! Inf/кёрюнюрге	! Der/Pass	
+ёчюл:ёчюл V-IV ; ! "тухнуть" ! Inf/ёчюлюрге
+инджил:инджил V-IV ; ! "нуждаться" ! Inf/инджилирге
+кенгер:кенгер V-IV ; ! "расширяться" ! Inf/кенгерирге
+кёргюз:кёргюз V-TV ; ! "показывать" ! Inf/кёргюзюрге
+кёргюзт:кёргюзт V-TV ; ! "показывать" ! Inf/кёргюзтюрге	! Der/Caus
+кёрюн:кёрюн V-IV ; ! "показываться" ! Inf/кёрюнюрге	! Der/Pass
 кирлендир:кирлендир V-TV ; ! "запачкать" ! Inf/кирлендирирге
-къаз:къаз V-TV-AR ; ! "копать" ! Inf/къазаргъа		
+къаз:къаз V-TV-AR ; ! "копать" ! Inf/къазаргъа
 къайгъыр:къайгъыр V-IV ; ! "тревожиться" ! Inf/къайгъырыргъа
-къатыл:къатыл V-TV-AR ; ! "подгонять" ! Inf/къатыларгъа		
-къутул:къутул V-IV ; ! "спасаться" ! Inf/къутулургъа		
-къууандыр:къууандыр V-TV ; ! "радовать" ! Inf/къууандырыргъа	
-къыйнал:къыйнал V-IV ; ! "затрудняться" ! Inf/къыйналыргъа		
-къыр:къыр V-TV ; ! "уничтожать" ! Inf/къырыргъа		
-къыз:къыз V-TV-AR ; ! "греться" "get warm" ! Inf/къызаргъа		
+къатыл:къатыл V-TV-AR ; ! "подгонять" ! Inf/къатыларгъа
+къутул:къутул V-IV ; ! "спасаться" ! Inf/къутулургъа
+къууандыр:къууандыр V-TV ; ! "радовать" ! Inf/къууандырыргъа
+къыйнал:къыйнал V-IV ; ! "затрудняться" ! Inf/къыйналыргъа
+къыр:къыр V-TV ; ! "уничтожать" ! Inf/къырыргъа
+къыз:къыз V-TV-AR ; ! "греться" "get warm" ! Inf/къызаргъа
 оз:оз V-TV-AR ; ! "обгонять" ! Inf/озаргъа
-олтур:олтур V-IV ; ! "садиться" ! Inf/олтурургъа		
-оюл:оюл V-IV ; ! "разрушаться" ! Inf/оюлургъа		
-саркъ:саркъ V-TV ; ! "течь     " ! Inf/саркъаргъа		
-сез:сез V-TV-AR ; ! "почувствовать" ! Inf/сезерге		
-сёлеш:сёлеш V-IV ; ! "говорить" ! Inf/сёлеширге		
-сирел:сирел V-IV ; ! "стоять" ! Inf/сирелирге	
-созул:созул V-IV ; ! "вытянуться" ! Inf/созулургъа		
-сор:сор V-TV ; ! "спрашивать" ! Inf/сорургъа		
-сюел:сюел V-IV ; ! "стоять   " ! Inf/сюелирге		
-сюз:сюз V-TV-AR ; ! "цедить   " ! Inf/сюзерге		
-сюр:сюр V-TV ; ! "выгонять" ! Inf/сюрюрге		
-тауусул:тауусул V-IV ; ! "кончаться" ! Inf/тауусулургъа		
-ташай:ташай V-IV ; ! "скрываться" ! Inf/ташайыргъа		
-тебер:тебер V-TV ; ! "толкать" ! Inf/теберирге	
-теш:теш V-TV-AR ; ! "снимать   " ! Inf/тешерге		
-тол:тол V-IV ; ! "наполняться" ! Inf/толургъа		
-толтур:толтур V-TV ; ! "наполнять" ! Inf/толтурургъа ! Der/Caus	
-тюзет:тюзет V-TV ; ! "исправлять" ! Inf/тюзетирге		
-чыгъар:чыгъар V-TV ; ! "выносить" ! Inf/чыгъарыргъа		
-юрет:юрет V-TV ; ! "учить" ! Inf/юретирге	
+олтур:олтур V-IV ; ! "садиться" ! Inf/олтурургъа
+оюл:оюл V-IV ; ! "разрушаться" ! Inf/оюлургъа
+саркъ:саркъ V-TV ; ! "течь     " ! Inf/саркъаргъа
+сез:сез V-TV-AR ; ! "почувствовать" ! Inf/сезерге
+сёлеш:сёлеш V-IV ; ! "говорить" ! Inf/сёлеширге
+сирел:сирел V-IV ; ! "стоять" ! Inf/сирелирге
+созул:созул V-IV ; ! "вытянуться" ! Inf/созулургъа
+сор:сор V-TV ; ! "спрашивать" ! Inf/сорургъа
+сюел:сюел V-IV ; ! "стоять   " ! Inf/сюелирге
+сюз:сюз V-TV-AR ; ! "цедить   " ! Inf/сюзерге
+сюр:сюр V-TV ; ! "выгонять" ! Inf/сюрюрге
+тауусул:тауусул V-IV ; ! "кончаться" ! Inf/тауусулургъа
+ташай:ташай V-IV ; ! "скрываться" ! Inf/ташайыргъа
+тебер:тебер V-TV ; ! "толкать" ! Inf/теберирге
+теш:теш V-TV-AR ; ! "снимать   " ! Inf/тешерге
+тол:тол V-IV ; ! "наполняться" ! Inf/толургъа
+толтур:толтур V-TV ; ! "наполнять" ! Inf/толтурургъа ! Der/Caus
+тюзет:тюзет V-TV ; ! "исправлять" ! Inf/тюзетирге
+чыгъар:чыгъар V-TV ; ! "выносить" ! Inf/чыгъарыргъа
+юрет:юрет V-TV ; ! "учить" ! Inf/юретирге
 
 
 айыр:айыр V-TV ; ! ""
 айыр:ай%{y%}р V-TV ; ! "" ! Dir/LR
 бирикдир:бирикдир V-TV ; ! "" ! Der/Caus
-джай:джай V-TV ; ! "расстилать" ! Inf/джаяргъа 
+джай:джай V-TV ; ! "расстилать" ! Inf/джаяргъа
 джай:жай V-TV ; ! "расстилать" ! Inf/джаяргъа  ! Dir/LR ! Use/Sub
 къатыш:къатыш V-IV ; ! "мешаться" ! Inf/къатышыргьа
 ойла:ойла V-TV ; ! "думать" ! Inf/ойларгъа
@@ -9494,7 +9494,7 @@ LEXICON Verbs
 
 джаб:джаб V-TV ; ! "закрывать" ! Inf/джабаргъа
 джаб:жаб V-TV ; ! "закрывать" ! Inf/джабаргъа ! Dir/LR ! Use/Sub
-къыйынлаш:къыйынлаш V-IV ; ! "осложняться" ! Inf/къыйынлашыргъа 
+къыйынлаш:къыйынлаш V-IV ; ! "осложняться" ! Inf/къыйынлашыргъа
 къыйынлашдыр:къыйынлашдыр V-TV ; ! "затруднять" ! Inf/къыйынлашдырыргъа ! Der/Caus
 
 кемей:кемей V-IV ; ! "уменьшаться" ! Inf/кемейирге
@@ -9542,7 +9542,7 @@ LEXICON Verbs
 зорла:зорла V-TV ; ! "принуждать" ! Inf/зорларгъа
 зорлан:зорлан V-IV ; ! "" ! Inf/зорланыргъа ! Der/Pass
 
-сына:сына V-TV ; ! "испытывать" ! Inf/сынаргъа  
+сына:сына V-TV ; ! "испытывать" ! Inf/сынаргъа
 сынал:сынал V-IV ; ! "быть испытанным" ! Inf/сыналыргъа ! Der/Pass
 
 джерле:джерле V-TV ; ! "заряжать" ! Inf/джерлерге
@@ -9556,7 +9556,7 @@ LEXICON Verbs
 басмалан:басмалан V-IV ; ! "" ! Inf/басмаланыргъа ! Der/Pass
 
 азатла:азатла V-TV ; ! "освобождать" ! Inf/азатларгъа
-даула:даула V-TV ; ! "требовать" ! Inf/дауларгъа 
+даула:даула V-TV ; ! "требовать" ! Inf/дауларгъа
 айны:айны V-TV ; ! "поправляться" ! Inf/айныргъа
 айныт:айныт V-TV ; ! "откармливать" ! Inf/айнытыргъа ! Der/Caus
 синг:синг V-IV-AR ; ! "впитываться" ! Inf/сингерге
@@ -9599,7 +9599,7 @@ LEXICON Verbs
 тамаллан:тамаллан V-TV; ! "_" Inf/тамалланыргъа
 ур:ур V-TV; ! "бить" Inf/урургъа
 чакъыр:чакъыр V-TV; ! "звать" Inf/чакъырыргъа
-чач:чач V-TV-AR; ! "раздавать" Inf/чачаргъа 
+чач:чач V-TV-AR; ! "раздавать" Inf/чачаргъа
 
 ачыкъла:ачыкъла V-TV ; ! "выяснять" ! Inf/ачыкъларгъа
 ачыкълан:ачыкълан V-IV ; ! "выясняться" ! Inf/ачыкъларгъа ! Der/Pass
@@ -9690,7 +9690,7 @@ LEXICON Verbs
 джалчыт:джалчыт V-TV ; ! "" ! Inf/джалчытыргъа ! Dial/balk
 джалчыт:жалчыт V-TV ; ! "" ! Inf/джалчытыргъа ! Dir/LR ! Dial/balk
 
-тазала:тазала V-TV ; ! "чистить" ! Inf/тазаларгъа 
+тазала:тазала V-TV ; ! "чистить" ! Inf/тазаларгъа
 тазалан:тазалан V-IV ; ! "чиститься" ! Inf/тазаланыргъа ! Der/Pass
 
 эсгер:эсгер V-TV ; ! "замечать" ! Inf/эсгерирге
@@ -9710,7 +9710,7 @@ LEXICON Verbs
 эткиле:эткиле V-TV ; ! ""
 тёле:тёле V-TV ; ! ""
 
-LEXICON Interjections 
+LEXICON Interjections
 
 хайыр:хайыр INTERJ ; ! ""
 
@@ -9719,7 +9719,7 @@ LEXICON Interjections
 ма:ма INTERJ ; ! ""
 
 огъай:угъай INTERJ ; ! "нет" ! Dir/LR ! Dial/balk
-огъай:огъай INTERJ ; ! "нет" 
+огъай:огъай INTERJ ; ! "нет"
 
 LEXICON Abbreviations
 
@@ -9860,13 +9860,13 @@ LEXICON Punctuation
 %.%<sent%>:%. # ;
 %.%.%<sent%>:%.%. # ;
 %.%.%.%<sent%>:%.%.%. # ;
-…%<sent%>:… # ; 
+…%<sent%>:… # ;
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
 %-%-%<guio%>:%-%- # ;
 %-%<guio%>:%- # ;
-%−%<guio%>:%− # ; 
+%−%<guio%>:%− # ;
 %—%<guio%>:%— # ;
 %–%<guio%>:%– # ;
 ,%<cm%>:, # ;
@@ -9884,10 +9884,10 @@ LEXICON Punctuation
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
 
-%$%<sym%>:%$ # ; 
-%†%<sym%>:%† # ; 
-%×%<sym%>:%× # ; 
-%%%<sym%>:%% # ; 
+%$%<sym%>:%$ # ;
+%†%<sym%>:%† # ;
+%×%<sym%>:%× # ;
+%%%<sym%>:%% # ;
 
 ! Temporary numeral lexicon
 !<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
@@ -9899,7 +9899,7 @@ LEXICON Punctuation
 !%<num%>%<percent%>:% %% # ; ! Dir/LR
 !%<num%>%<percent%>:% %% # ;
 
-LEXICON NP-UNK 
+LEXICON NP-UNK
 
 %<np%>%<unk%>: # ;
 %<barb%>: # ;
@@ -9910,31 +9910,31 @@ LEXICON GUESS-QUEUE
 
 LEXICON Guesser
 
-A:A GUESS-QUEUE ; 
-B:B GUESS-QUEUE ; 
-C:C GUESS-QUEUE ; 
-D:D GUESS-QUEUE ; 
-E:E GUESS-QUEUE ; 
-F:F GUESS-QUEUE ; 
-G:G GUESS-QUEUE ; 
-H:H GUESS-QUEUE ; 
-J:J GUESS-QUEUE ; 
-K:K GUESS-QUEUE ; 
-L:L GUESS-QUEUE ; 
-M:M GUESS-QUEUE ; 
-N:N GUESS-QUEUE ; 
-O:O GUESS-QUEUE ; 
-P:P GUESS-QUEUE ; 
-Q:Q GUESS-QUEUE ; 
-R:R GUESS-QUEUE ; 
-S:S GUESS-QUEUE ; 
-T:T GUESS-QUEUE ; 
-U:U GUESS-QUEUE ; 
-V:V GUESS-QUEUE ; 
-W:W GUESS-QUEUE ; 
-X:X GUESS-QUEUE ; 
-Y:Y GUESS-QUEUE ; 
-Z:Z GUESS-QUEUE ; 
+A:A GUESS-QUEUE ;
+B:B GUESS-QUEUE ;
+C:C GUESS-QUEUE ;
+D:D GUESS-QUEUE ;
+E:E GUESS-QUEUE ;
+F:F GUESS-QUEUE ;
+G:G GUESS-QUEUE ;
+H:H GUESS-QUEUE ;
+J:J GUESS-QUEUE ;
+K:K GUESS-QUEUE ;
+L:L GUESS-QUEUE ;
+M:M GUESS-QUEUE ;
+N:N GUESS-QUEUE ;
+O:O GUESS-QUEUE ;
+P:P GUESS-QUEUE ;
+Q:Q GUESS-QUEUE ;
+R:R GUESS-QUEUE ;
+S:S GUESS-QUEUE ;
+T:T GUESS-QUEUE ;
+U:U GUESS-QUEUE ;
+V:V GUESS-QUEUE ;
+W:W GUESS-QUEUE ;
+X:X GUESS-QUEUE ;
+Y:Y GUESS-QUEUE ;
+Z:Z GUESS-QUEUE ;
 
 
 !LEXICON Temp
@@ -9946,4 +9946,3 @@ LEXICON Digits ! Use/Circ
 DIGITLEX ; ! Use/Circ
 LASTDIGIT ; ! Use/Circ
 LASTDIGIT-REST ; ! Use/Circ
-
